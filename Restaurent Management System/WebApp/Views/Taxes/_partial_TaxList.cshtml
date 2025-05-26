@@ -1,0 +1,64 @@
+@model List<TaxDetails>
+
+<div class="table-responsive">
+    <table id="TaxesTable" class="table table-hover table-fixed">
+        <thead class="thead-dark">
+            <tr>
+                <th><span>Name</span></th>
+                <th>Type</th>
+                <th>IsEnabled</th>
+                <th>Default</th>
+                <th>Tax Value</th>
+                <th class="text-center">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (TaxDetails tax in Model)
+                {
+                    <tr>
+                        <td>
+                            @tax.TaxName
+
+                        </td>
+                        <td>@tax.TaxType</td>
+                        <td>
+                            <div class="form-check form-switch custom-check-input">
+                                <input class="form-check-input" type="checkbox" @(tax.Isenabled ? "checked" : " ") disabled>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-switch custom-check-input">
+                                <input class="form-check-input" type="checkbox" @(tax.Isdefault ? "checked" : " ") disabled>
+                            </div>
+                        </td>
+                        <td>@tax.TaxValue</td>
+                        <td class="text-center">
+                            <a data-action="Update-Tax" class="crudAction text-decoration-none"
+                                onclick="AssignValueForEditTax(@tax.TaxId,'@tax.TaxName','@tax.TaxType','@tax.Isenabled','@tax.Isdefault',@tax.TaxValue)">
+                                <img src="@Url.Content("~/images/edit.png")" class="ms-4" width="15">
+                            </a>
+                            <a onclick="AssignValueForDeleteTax(@tax.TaxId)" class="crudAction" data-action="Delete-Tax"
+                                data-bs-toggle="modal" data-bs-target="#DeleteModalForTax">
+                                <img src="@Url.Content("~/images/delete.png")" class="ms-4" width="15">
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted">
+                        <div class="no-items-container flex-column d-flex">
+                            <img src="~/images/Animatation/empty-box.gif" alt="No Taxes Found" class="animated-empty-box" />
+                            <p class="mt-3 text-blue">
+                                @MessageHelper.GetInfoMessageForNoRecordsFound(Constants.TAXES)</p>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

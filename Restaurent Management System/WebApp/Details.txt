@@ -1,0 +1,178 @@
+// "ConnectionStrings": {
+//     "PizzashopDbConection": "Server=localhost;Database=PizzaShop;Trusted_Connection=false; MultipleActiveResultSets=true; Encrypt= false; user id =postgres; password=Tatva@123;"
+//   },
+//   "EmailSettings": {
+//     "SmtpServer": "mail.etatvasoft.com", 
+//     "SmtpPort": 587, 
+//     "SenderEmail": "test.dotnet@etatvasoft.com", 
+//     "SenderPassword": "P}N^{z-]7Ilp",
+//     "Encryption" : "STARTTLS"
+//   },
+//   "JwtConfig": {
+//     "Key": "CIProject98765ANGENT12345678910@CIProject",
+//     "Duration": "2"
+//   },
+
+
+        [ForeignKey("UserId")]
+    [InverseProperty("Userdetail")]
+    public virtual Userauthentication User { get; set; } = null!;
+
+
+    
+    [InverseProperty("User")]
+    public virtual Userdetail? Userdetail { get; set; }
+
+    dotnet ef dbcontext scaffold "Host=localhost;Database=Pizzashop;Username=postgres;Password=Tatva@123"
+     Npgsql.EntityFrameworkCore.PostgreSQL -c AppDbContext --context-dir . --output-dir ../Core/Entities
+      --force --data-annotations 
+
+
+
+> Repository
+
+        Avoid returning null in error scenarios; instead, use a standardized response or exception handling.
+        Replace hardcoded strings (e.g., error messages) with constants or resource files for better maintainability. ✔️
+        Validate paginationDetails.PageNumber and paginationDetails.PageSize before using them. at Repository
+
+> Service
+
+        Input validation is inconsistent in Menu service 
+        Tasks like "Excel/PDF generation" in OrdersService are tightly coupled with specific libraries, try to improve that with abstraction.✔️
+
+> Controller
+
+        Ensure exception messages are not leaked to the client in production to avoid exposing sensitive information.✔️
+        Impliment Middleware to handle exception and error {It helps to show toaster}✔️
+        Avoid use of Temp data in some files(Such as TaxesController,MenuController,UserController)✔️
+        Validation at permission controller
+
+> Javascript
+
+        Minimize DOM lookups by caching frequently used selectors.
+        Extract shared pagination logic into a utility function that can be reused. (same as selecting check box)
+
+> View
+
+        Avoid exposing sensitive data (like IDs) directly in the view >< avoid hidden input fields >< Need to find better alternative.
+        Use anti-forgery tokens (@Html.AntiForgeryToken()) in forms to protect against CSRF attacks.
+
+> UI
+
+        need to improve Alignment (like padding, margin etc...) based on SRS
+        need to improve mobile view in some pages or responsiveness
+
+
+<div class="no-items-container flex-column w-100 d-flex">
+                            <img src="~/images/Animatation/empty-box.gif" alt="No KOTS Found" class="animated-empty-box" />
+                            <p class="mt-3 text-blue">
+                                @MessageHelper.GetInfoMessageForNoRecordsFound(Constants.WAITING_TOKEN)</p>
+                        </div>
+
+
+-- PROCEDURE: public.u_orderitemsupdatepreparedstatusarray(integer, integer[], integer[], character varying)
+ 
+-- DROP PROCEDURE IF EXISTS public.u_orderitemsupdatepreparedstatusarray(integer, integer[], integer[], character varying);
+ 
+CREATE OR REPLACE PROCEDURE public.u_orderitemsupdatepreparedstatusarray(
+	IN intorderid integer,
+	IN intitemids integer[],
+	IN intpreparedquantities integer[],
+	IN stractiontype character varying)
+LANGUAGE 'plpgsql'
+AS $BODY$
+DECLARE
+    i INT;
+    intNewPreparedQty INT;
+    bitIsFirstItemPrepared BOOLEAN := FALSE;
+    dtmFirstServed TIMESTAMP;
+BEGIN
+   
+    FOR i IN 1 .. array_length(intItemIds, 1) LOOP
+        IF strActionType = 'InProgress' THEN
+            -- Decrease prepared quantity
+            SELECT COALESCE(prepared_quantity, 0)
+            INTO intNewPreparedQty
+            FROM orderitems
+            WHERE id = intItemIds[i] AND order_id = intOrderId;
+ 
+           
+ 
+            intNewPreparedQty := GREATEST(intNewPreparedQty - intPreparedQuantities[i], 0);
+ 
+            UPDATE orderitems
+            SET 
+                prepared_quantity = intNewPreparedQty,
+                isprepared = FALSE
+            WHERE id = intItemIds[i] AND order_id = intOrderId;
+ 
+        ELSIF strActionType = 'Ready' THEN
+            -- Increase prepared quantity
+            UPDATE orderitems
+            SET 
+                prepared_quantity = intPreparedQuantities[i],
+                isprepared = (intPreparedQuantities[i] >= quantity)
+            WHERE id = intItemIds[i] AND order_id = intOrderId;
+ 
+            IF intPreparedQuantities[i] > 0 THEN
+                bitIsFirstItemPrepared := TRUE;
+            END IF;
+        END IF;
+    END LOOP;
+ 
+    -- Update order status or firstserved
+    IF strActionType = 'InProgress' THEN
+        UPDATE orders
+        SET status = 'In Progress'
+        WHERE id = intOrderId;
+ 
+    ELSIF strActionType = 'Ready' AND bitIsFirstItemPrepared THEN
+        SELECT firstserved INTO dtmFirstServed FROM orders WHERE id = intOrderId;
+ 
+        IF dtmFirstServed IS NULL THEN
+            UPDATE orders
+            SET firstserved = (now() at time zone 'UTC') at time zone 'Asia/Kolkata'
+            WHERE id = intOrderId;
+        END IF;
+    END IF;
+END;
+$BODY$;
+ALTER PROCEDURE public.u_orderitemsupdatepreparedstatusarray(integer, integer[], integer[], character varying)
+    OWNER TO postgres;
+ 
+
+
+
+
+private async Task<bool> UpdateItemPreparedStatus(int orderId, List<KOTViewmodel.KOTOrderItemViewModel> updatedItems, string actionType)
+        {
+            try
+            {
+                var itemIds = updatedItems.Select(x => x.OrderItemId).ToArray();
+                var preparedQuantities = updatedItems.Select(x => x.PreparedQuantity ?? 0).ToArray();
+ 
+                using var conn = (NpgsqlConnection)_context.Database.GetDbConnection();
+                await using (conn)
+                {
+                    await conn.OpenAsync();
+                    await using var cmd = conn.CreateCommand();
+ 
+                    cmd.CommandText = "CALL u_OrderitemsUpdatePreparedStatusArray(@intOrderId, @intItemIds, @intPreparedQuantities, @strActionType)";
+                    cmd.CommandType = CommandType.Text;
+ 
+                    cmd.Parameters.Add(new Npgsql.NpgsqlParameter("intOrderId", orderId));
+                    cmd.Parameters.Add(new Npgsql.NpgsqlParameter("intItemIds", NpgsqlTypes.NpgsqlDbType.Array | NpgsqlTypes.NpgsqlDbType.Integer) { Value = itemIds });
+                    cmd.Parameters.Add(new Npgsql.NpgsqlParameter("intPreparedQuantities", NpgsqlTypes.NpgsqlDbType.Array | NpgsqlTypes.NpgsqlDbType.Integer) { Value = preparedQuantities });
+                    cmd.Parameters.Add(new Npgsql.NpgsqlParameter("strActionType", actionType));
+ 
+                    await cmd.ExecuteNonQueryAsync();
+                }
+ 
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in UpdateItemPreparedStatus ({actionType}): {ex.Message}");
+                throw;
+            }
+        }

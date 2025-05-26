@@ -1,0 +1,9 @@
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.csproj.AssemblyReference.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.AssemblyInfoInputs.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.AssemblyInfo.cs
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.csproj.CoreCompileInputs.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.MvcApplicationPartsAssemblyInfo.cs
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.RazorAssemblyInfo.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\WebApp\obj\x64\Debug\net7.0\PMSWebApp.RazorAssemblyInfo.cs

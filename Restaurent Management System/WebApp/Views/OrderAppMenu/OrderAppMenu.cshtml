@@ -1,0 +1,386 @@
+@model List<CategoryDetails>
+@{
+    ViewData["Title"] = "OrderAppMenu";
+    Layout = Constants.ORDER_APP_LAYOUT;
+    CustomerDetails customer = new();
+    int editorId = User.GetUserId();
+}
+
+<!-- ---Users Content--- -->
+<div class="parentContainerMenuPage row" style="position:relative;">
+    <!-- ---Side Bar --- -->
+    <div id="sidebarOrderBackdrop"></div>
+    <div class="col-lg-2 col-auto d-flex flex-column bg-white align-items-center px-0" id="sidebarAtOrderApp"
+        data-editor-id="@editorId">
+        <span class="fs-4 fw-bold ps-3 sidebarHeading">Category</span>
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start text-dark fs-6 fw-bold w-100"
+            id="orderAppMenu">
+            <li class="w-100 px-2 py-2 text-muted rounded sidebarItem" id="favoriteItems">
+                <a class="nav-link fw-semibold">
+                    <span class="ms-1 ">Favorite Items</span>
+                </a>
+            </li>
+            <li class="w-100 px-2 py-2 rounded text-muted sidebarItem" id="allItems">
+                <a class="nav-link fw-semibold">
+                    <span class="ms-1 ">All</span>
+                </a>
+            </li>
+            @if (Model.Any())
+            {
+                foreach (CategoryDetails category in Model)
+                {
+                    <li class="w-100 px-2 py-2 rounded text-muted sidebarItem itemCategoryAtOrderApp"
+                        data-category-id="@category.id" id="categoryIdAtOrderApp-@category.id">
+                        <a class="nav-link fw-semibold">
+                            <span class="ms-1 ">@category.categoryName</span>
+                        </a>
+                    </li>
+                }
+            }
+            else
+            {
+                <li class="w-100 px-2 py-2 rounded" class="sidebar-item">
+                    <span
+                        class="nav-link text-dark ms-1 d-none d-sm-inline">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.CATEGORY_LIST)</span>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <!-- ---Right Box--- -->
+    <div class="d-flex flex-nowrap col-lg-10 col-auto px-2 ">
+        <div class="d-flex flex-column gap-3 w-100">
+            <div class="d-flex flex-column flex-xl-row gap-2">
+                <div class="d-flex justify-content-start">
+                    <div class="d-block d-lg-none me-4">
+                        <button class="btn  p-3 shadow-sm ms-2" type="button" id="categoryMenuBtn">
+                            <i class="bi bi-list fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control custom-input" maxlength="100" id="searchInputAtOrderApp"
+                            placeholder="Search" aria-label="Search">
+                    </div>
+                    <button class="btn cart-icon-btn p-3 shadow-sm d-none ms-2" id="openPopupBtn">
+                        <i class="fa-solid fa-cart-shopping fs-4"></i>
+                    </button>
+                </div>
+                <div class="ms-auto">
+                    <div class="d-flex gap-3">
+                        <span class="d-flex align-items-center gap-2">
+                            <div class="indicator bg-success rounded-circle"></div> Vegetarian
+                        </span>
+                        <span class="d-flex align-items-center gap-2">
+                            <div class="indicator bg-danger rounded-circle"></div> Non-Vegetarian
+                        </span>
+                        <span class="d-flex align-items-center gap-2">
+                            <div class="indicator bg-warning rounded-circle"></div> Vegan
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="orderAppMenuItemListPartialView" class="w-100 my-0 py-0" >
+            </div>
+        </div>
+        <div id="orderPlaceSection" class="ms-5"></div>
+
+        <!-- Custom Popup -->
+        <div id="customPopup" class="customPopup" style="display: none;">
+            <div class="customPopupContent">
+                <div class="popupHeader">
+                    <h5 class="popupTitle">Order Details</h5>
+                    <button type="button" class="btn-close" id="closePopupBtn" aria-label="Close"></button>
+                </div>
+                <div class="popupBody" id="orderPlacePopupBody">
+                    <!-- Order details go here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------------- QR Modal -------------------------------- --->
+
+<div class="modal fade" id="qrModal" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content " style="width: 320px;">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="qrModalLabel">Scan to View</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body text-center p-0">
+                <!-- Carousel -->
+                <div id="qrCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <!-- Customer Menu QR Slide -->
+                        <div class="carousel-item">
+                            <div class="qr-slide position-relative">
+                                <h6 class="mb-2">Order Menu</h6>
+                                <div class="qr-loader position-absolute top-50 start-50 translate-middle">
+                                    <div class="spinner-border text-success" role="status"
+                                        style="width: 2rem; height: 2rem; ">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                                <img id="pdfQR" class="img-fluid qr-img d-none" />
+                            </div>
+                        </div>
+
+                        <!-- Download Invoice QR Slide -->
+                        <div class="carousel-item active">
+                            <div class="qr-slide position-relative">
+                                <h6 class="mb-2">Invoice</h6>
+                                <div class="qr-loader position-absolute top-50 start-50 translate-middle">
+                                    <div class="spinner-border text-primary" role="status"
+                                        style="width: 2rem; height: 2rem;">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                                <img id="staticQR" class="img-fluid qr-img d-none" />
+                            </div>
+                        </div>
+
+                        <!-- Menu QR Slide -->
+                        <div class="carousel-item">
+                            <div class="qr-slide position-relative">
+                                <h6 class="mb-2">Customer Menu</h6>
+                                <div class="qr-loader position-absolute top-50 start-50 translate-middle">
+                                    <div class="spinner-border text-primary" role="status"
+                                        style="width: 2rem; height: 2rem;">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                                <img id="menuQR" class="img-fluid qr-img d-none" />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev custom-prev-btn" type="button" data-bs-target="#qrCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next custom-next-btn" type="button" data-bs-target="#qrCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-center border-0 pt-2">
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close"
+                        class="btn  btn-outline-primary w-50">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------------- Comment Modal -------------------------------- --->
+
+<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="commentModalLabel">Order Wise Comment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form id="orderCommentForm">
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <textarea class="form-control custom-input" id="orderComment" name="orderComment"
+                                style="min-height: 120px; max-height: 220px;" maxlength="500"
+                                placeholder="Add your comment here..." required></textarea>
+                            <label for="orderComment" class="form-label">Comment</label>
+                        </div>
+                        <small class="form-text text-muted">
+                            Maximum 500 characters.
+                            <span id="charCount">0</span>/500
+                        </small>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-end align-content-center w-100">
+
+                    <button type="button" class="btn updateBtn me-2 w-25" id="saveCommentBtn">Save</button>
+                    <button type="reset" class="btn cancelbtn w-25" form="orderCommentForm">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------------------- Edit Customer Modal -------------------------- ------------------------->
+<div class="modal fade" id="EditCustomerModal" tabindex="-1" aria-labelledby="EditCustomerModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="EditCustomerModalLabel">Customer Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="EditCustomerForm">
+                    <input type="number" id="customerIdForEdit" hidden>
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input type="text" id="EditCustomerName" asp-for="@customer.CustomerName"
+                                class="form-control custom-input" required />
+                            <label for="EditCustomerName">Name</label>
+                            <span class="text-danger" asp-validation-for="@customer.CustomerName"></span>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap">
+                        <div class="col-md-6 col-12 pe-1">
+                            <div class="form-floating mb-3 ">
+                                <input type="text" id="EditCustomerPhone" asp-for="@customer.CustomerPhone"
+                                    class="form-control custom-input">
+                                <label for="EditCustomerPhone">Mobile Number</label>
+                                <span class="text-danger" asp-validation-for="@customer.CustomerPhone"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 ps-1">
+                            <div class="form-floating mb-3">
+                                <input type="number" id="EditCustomerNoOfPersons" min="1" max="100"
+                                    asp-for="@customer.NoOfPerson" disabled class="form-control custom-input">
+                                <label for="EditCustomerNoOfPersons">No Of Person</label>
+                                <span class="text-danger" asp-validation-for="@customer.NoOfPerson"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input type="email" id="EditCustomerEmail" asp-for="@customer.CustomerEmail"
+                                class="form-control custom-input"></textarea>
+                            <label for="EditCustomerEmail">Email</label>
+                            <span class="text-danger" asp-validation-for="@customer.CustomerEmail"></span>
+                        </div>
+                    </div>
+                    <div class="m-2 me-3 d-flex flex-nowrap justify-content-end">
+                        <button type="submit" class="updateBtn btn w-25" id="updateSectionBtn"
+                            form="EditSectionForm">Save</button>
+                        <button type="button" class="btn ms-3 cancelbtn w-25" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cancel Confirmation Modal -->
+<div class="modal fade" id="CancelConfirmationModal" tabindex="-1" aria-labelledby="CancelConfirmationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="CancelConfirmationModalLabel">Cancel Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="25" fill="#ffc107"
+                        class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                        <path
+                            d="M7.938 2.016a.13.13 0 0 1 .125 0c.042.015.083.042.12.08l6.857 11.667c.037.038.064.08.08.123a.144.144 0 0 1-.02.136.15.15 0 0 1-.107.053H1.008a.15.15 0 0 1-.127-.189L7.738 2.096c.037-.038.078-.065.12-.08zM8 4.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5zm0 6a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 1 0v-.5a.5.5 0 0 0-.5-.5z" />
+                    </svg>
+                </div>
+                <p>@Constants.CANCEL_ORDER_CONFIRMATION</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-primary statusBtnsOfBill">YES</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">NO</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Complete Confirmation Modal -->
+<div class="modal fade" id="completeConfirmationModal" tabindex="-1" aria-labelledby="completeConfirmationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="completeConfirmationModalLabel">Complete Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-exclamation-triangle text-warning" style="font-size: 2rem;"></i>
+                </div>
+                <p>@Constants.COMPLETE_ORDER_CONFIRMATION</p>
+                <div class="d-flex justify-content-center gap-2">
+                    <button type="button" class="btn btn-primary statusBtnsOfBill"
+                        id="completeBtnForPlacedOrder">YES</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">NO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Customer Review Modal -->
+<div class="modal fade" id="customerReviewModal" tabindex="-1" aria-labelledby="customerReviewModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-secondary" id="customerReviewModalLabel">Customer Review</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <input type="hidden" id="customerIdReview" value="">
+                    <input type="hidden" id="orderIdReview" value="">
+                    <div class=" d-flex justify-content-between">
+                        <label class="form-label text-secondary">Food</label>
+                        <div class="star-rating-static d-flex gap-1" data-category="food">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                        <input type="hidden" name="foodRating" id="foodRating" value="0">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label class="form-label text-secondary">Service</label>
+                        <div class="star-rating-static d-flex gap-1" data-category="service">
+                            <span class="star " data-value="1">★</span>
+                            <span class="star " data-value="2">★</span>
+                            <span class="star " data-value="3">★</span>
+                            <span class="star " data-value="4">★</span>
+                            <span class="star " data-value="5">★</span>
+                        </div>
+                        <input type="hidden" name="serviceRating" id="serviceRating" value="0">
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom border-warning border-2 mb-2">
+                        <label class="form-label text-secondary">Ambience</label>
+                        <div class="star-rating-static d-flex gap-1" data-category="ambience">
+                            <span class="star " data-value="1">★</span>
+                            <span class="star " data-value="2">★</span>
+                            <span class="star " data-value="3">★</span>
+                            <span class="star " data-value="4">★</span>
+                            <span class="star " data-value="5">★</span>
+                        </div>
+                        <input type="hidden" name="ambienceRating" id="ambienceRating" value="0">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Enter your comment" id="reviewComment"
+                            name="comment" style="height: 100px"></textarea>
+                        <label for="reviewComment">Comment</label>
+                    </div>
+                    <div class="d-flex justify-content-center gap-2">
+                        <button type="button" class="btn btn-primary closeReviewModal" data-bs-dismiss="modal"
+                            id="saveReview">Save</button>
+                        <button type="button" class="btn btn-outline-secondary closeReviewModal"
+                            data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/OrderAppMenu.js" asp-append-version="true"></script>

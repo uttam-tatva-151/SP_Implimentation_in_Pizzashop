@@ -1,0 +1,154 @@
+#ChangePasswordVMBox{
+    width: 500px;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.cancelbtn{
+    width: 100px;
+    color: #0066a7;
+    margin-left: 5px;
+}
+
+.profile-box {
+    padding: 0;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    overflow: hidden;
+  }
+  
+  .background-box img {
+    width: 100%;
+    height: 40px;
+  }
+  .ProfilePhoto{
+    border-radius: 50%;
+  }
+  .Profilecover{
+    background-image: url("../images/profile_div_bg.jpg");
+    height: 50px;
+    background-size: cover;
+    /* background-color:  #0066a7; */
+  }
+  .profile-box-body{
+    padding: 10px;
+    /* margin-top: 20px; */
+  }
+  .profile-box-footer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* .profile-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.camera-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    padding: 0px 5px 0px 5px;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+.camera-icon input{
+  opacity: 0;
+  width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer; 
+    bottom: 5px; 
+    right: 5px;
+}
+.camera-icon:hover {
+    transform: scale(1.1);
+}
+.profile-box-body {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.profile-box-header {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+
+/* Profile Photo */
+.ProfilePhoto {
+  position: relative;
+  border: 3px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProfilePhoto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.camera-icon:hover {
+  background: #007bff59;
+}
+
+/* User Info */
+.profile-box-header span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.profile-box-header span.text-muted {
+  font-size: 0.9rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .ProfilePhoto {
+      height: 80px;
+      width: 80px;
+  }
+
+  .profile-box-header span {
+      font-size: 0.9rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

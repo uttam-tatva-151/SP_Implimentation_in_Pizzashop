@@ -1,0 +1,60 @@
+@model List<ItemDetails>
+@functions {
+
+}
+<div class="row d-flex justify-content-lg-start justify-content-center overflow-y-hidden itemContainerAtOrderappMenu w-100">
+    @if (Model.Any())
+    {
+        foreach (ItemDetails item in Model)
+        {
+
+            <div class="d-flex menuItem shadow-sm cursor-pointer m-2 p-0 m-0" data-item-id="@item.id"
+                data-item-name="@item.itemName">
+
+                @if (item.photo == null)
+                {
+                    <img class="h-100 menuItemImg" src="~/images/dining-menu.png"></img>
+                }
+                else
+                {
+                    <img class="h-100 menuItemImg" src="@item.photo"></img>
+                }
+
+                <div class="w-100 d-flex flex-column justify-content-between p-1 ms-2 position-relative">
+
+                    @if (item.itemType == Constants.VEG_ITEM)
+                    {
+                        <div class="covercolor"></div>
+                    }
+                    else if (item.itemType == Constants.NON_VEG_ITEM)
+                    {
+                        <div class="covercolor non-vegcolor"></div>
+                    }
+                    else
+                    {
+                        <div class="covercolor vegancolor"></div>
+                    }
+                    <span class="itemName">@item.itemName</span>
+
+                    <div class="d-flex justify-content-between me-3">
+                        <span class="item-price">$<span>@item.unitPrice</span></span>
+                        @if(item.IsFavorite == true){
+                            <i class="bi  favoriteIcon liked bi-heart-fill text-blue" data-item-id="@item.id"
+                            data-status="@item.IsFavorite.ToString().ToLower()" ></i>
+                        }else{
+
+                        <i class="bi bi-heart favoriteIcon text-blue" data-item-id="@item.id"
+                            data-status="@item.IsFavorite.ToString().ToLower()" ></i>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <h5 class="w-100 text-center">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ITEM)</h5>
+    }
+</div>
+<!-- Modal for Item Modifier Relation-->
+<div id="modalPlaceholder"></div>

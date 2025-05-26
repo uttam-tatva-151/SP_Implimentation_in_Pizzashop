@@ -1,0 +1,260 @@
+@model MenuDetails
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu PDF</title>
+    <link rel="stylesheet" href="~/css/MenuPDF.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0066a7;
+            color: white;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .category-card {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-card h3 {
+            font-size: 1.75rem;
+            color: #343a40;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .item-card {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .item-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .item-card:hover .item-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .item-card-front,
+        .item-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+
+        .item-card-front {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .item-card-front img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .item-card-back {
+            background-color: #0067a7ce;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .order-item-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #343a40;
+        }
+
+        .order-item-price {
+            font-size: 1.1rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0066a7;
+            color: white;
+            margin-top: 30px;
+        }
+        .capture-front-only .item-card-inner {
+        transform: none !important; /* Disable flipping */
+    }
+
+    .capture-front-only .item-card-back {
+        display: none !important; /* Hide the back view */
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Pizza Shop Menu</h2>
+    </header>
+
+    <div class="container" id="menuContent">
+        <div class="d-flex justify-content-center align-items-center">
+            <button id="downloadMenuPdf" class="btn btn-primary m-2" style="display: none;">Download</button>
+        </div>
+        @if (Model?.categories != null)
+        {
+            foreach (CategoryDetails category in Model.categories)
+            {
+                <div class="category-card">
+                    <h3>@category.categoryName</h3>
+                    <div class="items-grid">
+                        @foreach (ItemDetails item in Model.items?.Where(i => i.categoryId == category.id) ??
+                                        Enumerable.Empty<ItemDetails>())
+                        {
+                            <div class="item-card">
+                                <div class="item-card-inner">
+                                    <!-- Front Side -->
+                                    <div class="item-card-front">
+                                        <div class="order-item-image">
+                                            <img src="@(string.IsNullOrWhiteSpace(item.photo?.Trim()) ? Url.Content("~/images/dominos_background.jpg") : Url.Content(item.photo.Trim()))"
+                                                alt="@item.itemName">
+                                        </div>
+                                        <div class="order-item-name">
+                                            @item.itemName
+                                            @if (!item.isAvailable)
+                                            {
+                                                <span style="color:red;">(Unavailable)</span>
+                                            }
+                                        </div>
+                                        <div class="order-item-price">
+                                            ₹@item.unitPrice
+                                        </div>
+                                    </div>
+                                    <!-- Back Side -->
+                                    <div class="item-card-back">
+                                        <p>@item.Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No categories available!</p>
+        }
+
+    </div>
+
+    <footer>
+        <p>© 2025 Pizza Shop. All rights reserved ~ TATVASOFT.</p>
+    </footer>
+
+    <script>
+        window.onload = function () {
+            const downloadButton = document.getElementById('downloadMenuPdf');
+            downloadButton.style.display = 'block';
+
+            downloadButton.onclick = function () {
+                // Hide the button before capturing the content
+                downloadButton.style.display = 'none';
+
+                // Add a temporary class to disable the back view and flipping animation
+                const menuContent = document.getElementById('menuContent');
+                menuContent.classList.add('capture-front-only');
+
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF({
+                    orientation: 'portrait',
+                    unit: 'mm',
+                    format: 'a4'
+                });
+
+                html2canvas(menuContent, {
+                    scale: 2,
+                    useCORS: true
+                }).then(function (canvas) {
+                    const imgData = canvas.toDataURL('image/jpeg', 1.0);
+                    const imgProps = doc.getImageProperties(imgData);
+                    const pdfWidth = doc.internal.pageSize.getWidth() - 20; // Account for margins
+                    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+                    let heightLeft = pdfHeight;
+                    let position = 10;
+
+                    doc.addImage(imgData, 'JPEG', 10, position, pdfWidth, pdfHeight);
+                    heightLeft -= doc.internal.pageSize.getHeight() - 20;
+
+                    while (heightLeft > 0) {
+                        position = heightLeft - pdfHeight + 10;
+                        doc.addPage();
+                        doc.addImage(imgData, 'JPEG', 10, position, pdfWidth, pdfHeight);
+                        heightLeft -= doc.internal.pageSize.getHeight() - 20;
+                    }
+
+                    doc.save('PizzaShop_Menu.pdf');
+                }).catch(function (error) {
+                    console.error("Error generating the PDF: ", error);
+                }).finally(function () {
+                    // Remove the temporary class after PDF generation
+                    menuContent.classList.remove('capture-front-only');
+                    // Show the button again after PDF generation
+                    downloadButton.style.display = 'block';
+                });
+            };
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,718 @@
+/* --------------------------- KOT btns at Navbar --------------------------- */
+.kotBtns .customButton {
+  border: 2px solid whitesmoke;
+  border-radius: 50px;
+  display: inline-block;
+  padding:1em;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0px 5px 0px 10px;
+}
+.kotBtns .customButton:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.kotBtns .customButton img {
+  width: 19px;
+}
+
+.activePageInOrderApp {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* ----------------- For Wating Table modal shows right side ---------------- */
+.modal-left-show .modal-dialog {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 25%;
+  transform: translate3d(0, 0, 0);
+}
+
+.modal-left-show .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal-left-show.fade .modal-dialog {
+  transition: transform 0.2s ease-out;
+  transform: translateX(100%);
+}
+
+.modal-left-show.fade.show .modal-dialog {
+  transform: translateX(0);
+}
+
+/* ---------------------------- Sidebar of category menu in order app ---------------------------- */
+.parentContainerMenuPage {
+  position: relative !important; 
+  overflow: hidden; 
+}
+#sidebarOrderBackdrop {
+  display: none;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.4);
+  z-index: 1040;
+}
+#sidebarOrderBackdrop.active { display: block; }
+
+#sidebarAtOrderApp.sidebar-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  height: inherit;
+  width: 280px;
+  background: #fff;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  z-index: 1050;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+#sidebarAtOrderApp.sidebar-overlay.active {
+  transform: translateX(0);
+}
+/* ---------------------------- Tabs at KOT Page ---------------------------- */
+
+.tabAtKOTPage button {
+  box-shadow: none;
+  text-decoration: none;
+  color: #0066a7;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.tabAtKOTPage button:hover {
+  color: #000;
+}
+.activeTabAtKOTPage {
+  text-decoration: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #0066a7;
+}
+.activeBtnInOrderApp {
+  background: #0066a7;
+  color: #fff;
+}
+
+.tabAtWatingListPage button {
+  box-shadow: none;
+  text-decoration: none;
+  color: #0066a7;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+/* -------------------------------- Kot Cards ------------------------------- */
+
+.kotCard {
+  /* min-width: 25%; */
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px dashed #0066a7;
+  margin: 10px 7px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.374);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.kotCard .card-body {
+  height: 200px;
+}
+
+/* ------------------------------ OrderAppMenu ------------------------------ */
+
+.vegetarian {
+  background-color: #07a855;
+}
+
+.non-vegetarian {
+  background-color: #f14338;
+}
+
+.vegan {
+  background-color: #f88d1a;
+}
+
+.itemContainerAtOrderappMenu {
+  max-height: 82vh;
+  overflow-y: auto;
+}
+
+.itemPrice {
+  color: grey;
+  font-size: 1rem;
+}
+
+.itemName {
+  color: black;
+  font-weight: 400;
+  display: inline-block;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds the ellipsis (...) */
+}
+.modifierName{
+  color: black;
+  font-weight: 400;
+  display: inline-block;
+  max-width: 75px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds the ellipsis (...) */
+}
+.covercolor {
+  position: absolute;
+  z-index: 1;
+  border-radius: 0 1rem;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 2rem solid green;
+  border-left: 2rem solid transparent;
+}
+
+.covercolor.non-vegcolor {
+  border-top-color: red;
+}
+
+.covercolor.vegancolor {
+  border-top-color: orange;
+}
+.covercolor.modifierColor {
+  border-top-color: #0066a7;
+}
+.menuItem,
+.itemModifier {
+  width: 100%;
+  max-width: 250px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.menuItem:hover,
+.itemModifier:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.menuItemImg {
+  max-width: 70px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* ensures the image fits without being cut */
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 3px 0 7px -2px #a1a192;
+  padding: 5px; /* adds spacing inside the container */
+}
+
+.menuItemImg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.indicator {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+#orderAppMenuItemListPartialView {
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+#sidebarAtOrderApp {
+  height: fit-content;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.sidebarHeading {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+}
+
+#sidebarAtOrderApp ul {
+  margin-top: 2.5rem;
+}
+
+.sidebarItem .nav-link {
+  color: #444444;
+}
+
+.activeCategoryAtOrderApp {
+  border-radius: 0 2.5rem 2.5rem 0 !important;
+  background: #0066a7 !important;
+}
+
+.activeCategoryAtOrderApp .nav-link {
+  color: #fff;
+  background: #0066a7 !important;
+}
+.orderAppDropdownItem {
+  background-color: #ffe082 !important; /* example: light yellow */
+  color: #333 !important;
+}
+.order-details {
+  width: 600px;
+  max-width: 90vw;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.option-button {
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  min-width: 8rem;
+  text-align: center;
+}
+
+.option-button.active {
+  border-color: #fd7e14;
+  background-color: #fff5eb;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.info-text {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.bill-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+}
+
+.completed-overlay {
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.cancelled-overlay {
+  background-color: rgba(128, 0, 0, 0.1);
+}
+
+.stamp-text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stamp-text-cancelled {
+  color: #c70404;
+  border: 2px solid #a73128;
+}
+
+.stamp-text-completed {
+  color: #1bc704;
+  border: 2px solid #37a728;
+}
+
+.btn-show {
+  position: relative;
+  z-index: 20;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.tooltip-text {
+  font-size: x-small;
+  width: 100px;
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 100%; /* Position tooltip above the image */
+  left: 600%;
+  transform: translateX(-70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+.btn-show:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.custom-prev-btn .carousel-control-prev-icon,
+.custom-next-btn .carousel-control-next-icon {
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.custom-prev-btn:hover .carousel-control-prev-icon,
+.custom-next-btn:hover .carousel-control-next-icon {
+  background-color: #0056b3;
+}
+
+.no-items-container {
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.favoriteIcon {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.favoriteIcon.liked {
+  color: #0066a7;
+  transform: scale(1.2);
+  animation: heartBeat 0.3s ease;
+}
+
+.order-details-card .table-reponsive .table tbody {
+  max-height: 300px !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #dee2e6;
+}
+
+.order-details-card .table-reponsive .table tbody tr {
+  width: inherit;
+  table-layout: fixed;
+}
+
+.order-details-card .table-reponsive .table tbody td {
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+/* Responsive Card Width */
+.custom-width-15 {
+  width: 15rem;
+  max-width: 100%;
+}
+
+/* Interactive Card Animations */
+.interactiveCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interactiveCard:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+/* Overlay for the popup */
+.customPopup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Backdrop for popup */
+.customPopupBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+}
+
+/* Custom popup wrapper */
+.customPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    display: none;
+}
+
+/* Inner popup box */
+.customPopupContent {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: fit-content;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header section */
+.popupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    /* margin-bottom: 15px; */
+}
+
+/* Title */
+.popupTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Body content */
+.popupBody {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+ .cart-icon-btn {
+    background-color: #0066a7;
+    color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .cart-icon-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 15px rgba(0, 102, 167, 0.4);
+  }
+
+  .cart-icon-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 102, 167, 0.3);
+  }
+/* Animation (optional) */
+.customPopup.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Icon Interactivity */
+.icon-interactive {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-interactive:hover {
+  color: #ff5722; 
+  transform: scale(1.2); 
+}
+.star {
+  font-size: 24px;
+  color: #ccc; 
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Highlighted stars */
+.star.highlighted {
+  color: #fbc02d;
+}
+/* Live Timer Styling */
+.live-timer {
+  font-weight: bold;
+  color: #28a745; /* Green text */
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* "No Table Found" Styling */
+.text-center {
+  font-weight: bold;
+  color: #6c757d; /* Bootstrap muted text color */
+}
+
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+/* Accordion toggle animation */
+.accordion-button .toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* Animate accordion open/close */
+.accordion-collapse {
+  transition: height 0.4s ease-in-out;
+}
+
+/* Fade in accordion content */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Hover interaction */
+.tableSectionAtOrderApp {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.tableSectionAtOrderApp:hover {
+  background-color: #f0f8ff;
+}
+
+/* Small icon pulse effect */
+.icon-pulse:hover {
+  animation: pulse 1.5s infinite;
+}
+.tableCardsSection{
+  width: 80vw;
+}
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.animate-status i{
+  animation: pulse 1.5s infinite;
+}
+@media screen and (max-width: 992px){
+  .order-details{
+    width: 600px;
+    max-width: 90vw;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    border: none !important;
+  }
+}
+@media screen and (max-width: 767.69px) {
+  .tabAtWatingListPage button{
+    zoom: 60%;
+  }
+  .kotCard{
+    width: 95% !important;
+    zoom: 80%;
+  }
+  .customPopup{
+    zoom: 80%;
+  }
+  
+}
+@media screen and (max-width: 425px) {
+  .interactiveCard{
+    zoom: 70%;
+  }
+}

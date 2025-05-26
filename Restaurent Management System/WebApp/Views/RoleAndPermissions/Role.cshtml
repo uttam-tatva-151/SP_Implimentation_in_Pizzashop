@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Role Page";
+}
+
+
+<div class="bg-light col-12 min-vh-100  py-3 ">
+
+        <div class="col-10 m-4 role">
+            <div class="container bg-white  mainContent overflow-hidden justify-content-center ">
+                <div class="row  p-3">
+                    <div class="col-8 font-weight-bold"><span class="fs-3">Role</span></div>
+                    <div class="col-3 text-end me-3"><span class="fs-3 ">Action</span></div>
+                </div>
+                <hr>
+                <div class="row m-2">
+                    <div class="col-8"><span class="fs-5">Admin</span></div>
+                    <div class="col-3 me-3 text-end">
+                        <a asp-action="Permissions" asp-controller="RoleAndPermissions" asp-route-roleName="admin"
+                            class="mx-4 ">
+                            <img src="@Url.Content("~/images/pen.png")" width="25" class=""></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row m-2">
+                    <div class="col-8"><span class="fs-5">Account Manager</span></div>
+                    <div class="col-3 me-3 text-end">
+                        <a asp-action="Permissions" asp-controller="RoleAndPermissions" asp-route-roleName="account manager"
+                            class="mx-4  ">
+                            <img src="@Url.Content("~/images/pen.png")" width="25" class=""></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row m-2">
+                    <div class="col-8"><span class="fs-5">Chef</span></div>
+                    <div class="col-3 me-3 text-end">
+                        <a asp-action="Permissions" asp-controller="RoleAndPermissions" asp-route-roleName="chef"
+                            class="mx-4  ">
+                            <img src="@Url.Content("~/images/pen.png")" width="25" class=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>

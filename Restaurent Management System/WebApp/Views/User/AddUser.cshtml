@@ -1,0 +1,166 @@
+@model PMSCore.ViewModel.NewUser
+@{
+    ViewData["Title"] = "Add User Page";
+    int editor = User.GetUserId(); /* * Get the user ID from the claims (If you want to see method go to > Extensions > JWTMiddleware.cs) */
+}
+
+<div class=" bg-light min-vh-100">
+    <div class="row d-flex align-items-center justify-content-between">
+        <h2 class="pt-1 ps-1 text-blue col-sm-6  col-8  fw-bold ">Add new user</h2>
+        <button type="button" class=" mt-2 backbtn col-sm-3 col-md-2 col-lg-1 col-6"
+            onclick="location.href='@Url.Action("UserList", "User")'">&lt;
+            Back</button>
+
+    </div>
+
+    <div class="mainContent">
+        <form asp-action="AddUser" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="EditorId" value=@editor />
+            <div class="row d-flex ">
+                <div class="col-md-6 col-12 p-2">
+                    <div class="form-floating">
+                        <input type="text" asp-for="FirstName" id="Firstname" placeholder=""
+                            class="form-control custom-input" required />
+                        <label for="Firstname">First Name</label>
+                        <span class="text-danger" asp-validation-for="FirstName"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 p-2">
+                    <div class="form-floating">
+                        <input type="text" asp-for="LastName" placeholder="" id="Lastname"
+                            class="form-control custom-input" required />
+                        <label for="Lastname">Last Name</label>
+                        @* <span class="text-danger" asp-validation-for="LastName"></span> *@
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex row">
+                <div class="col-md-6 col-12 p-2">
+                    <div class="form-floating">
+                        <input type="text" asp-for="UserName" placeholder="" id="Username"
+                            class="form-control custom-input" required />
+                        <label for="Username">User Name</label>
+                        <span class="text-danger" asp-validation-for="UserName"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 p-2">
+                    <div class="form-floating">
+                        <select asp-for="RoleId" class="form-control custom-select" id="RoleDropdown" required>
+                            <option selected value="">Select Role</option>
+                            <option value=1>Admin</option>
+                            <option value=2>Account Manager</option>
+                            <option value=3>Chef</option>
+                        </select>
+                        <label for="RoleDropdown">Role</label>
+                        <span class="text-danger" asp-validation-for="RoleId"></span>
+                    </div>
+                </div>
+            </div>
+            <div class=" d-flex row">
+                <div class="col-md-6 col-12 p-2">
+                    <div class="form-floating">
+                        <input type="email" asp-for="EmailId" placeholder="" id="email"
+                            class="form-control custom-input" required />
+                        <label for="email">Email</label>
+                        <span class="text-danger" asp-validation-for="EmailId"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 p-2">
+                    <div class="form-floating ">
+                        <span class="icon"><img src="~/images/icons/eye.png" onclick="showPassword('Password','pImage')"
+                                id="pImage" alt="eye_button" width="20" height="20"></span>
+                        <input type="Password" asp-for="Password" placeholder="" id="Password"
+                            class="form-control custom-input" required />
+                        <label for="Password">Password</label>
+                        <span class="text-danger" asp-validation-for="Password"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex p-2 w-100">
+                <!-- Browse Files -->
+                <div id="dropzone" class="dropzone w-100 d-flex flex-column justify-content-center align-items-center">
+                    <i class="bi bi-cloud-arrow-up z-2 fs-4 browseFileElements"></i>
+                    <h6 class="colour-styling d-flex justify-content-center browseFileElements">Browse File</h6>
+                    <input asp-for="Photo" id="fileInput" class="upload-input" accept="image/*" />
+                    <div id="fileDetails" class="file-details-container mt-2 d-none">
+                        <p id="fileName" class="file-name mb-1"></p>
+                        <div class="image-preview-wrapper">
+                            <img id="imagePreview" src="#" alt="Image Preview"
+                                class="image-preview img-thumbnail mb-1" />
+                        </div>
+                        <button type="button" id="removeImageButton" class="btn btn-danger">Remove Image</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex row">
+                <div class="col-md-4 col-12 p-2">
+                    <div class="form-floating mb-3">
+                        <select id="CountryDropdown" asp-for="ContryId" class="form-control custom-select"
+                            asp-items="ViewBag.CountryList">
+                            <option value="">Select a Country</option>
+                        </select>
+
+                        <label for="CountryDropdown">Country</label>
+                        <span class="text-danger" asp-validation-for="ContryId"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 p-2">
+                    <div class="form-floating mb-3">
+                        <select id="StateDropdown" asp-for="StateId" class="form-control custom-select">
+                            <option value="">Loading...</option> <!-- Placeholder -->
+                        </select>
+                        <label for="StateDropdown">State</label>
+                        <span class="text-danger" asp-validation-for="StateId"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 p-2">
+                    <div class="form-floating mb-3">
+                        <select id="CityDropdown" asp-for="CityId" class="form-control custom-select">
+                            <option value="">Loading...</option> <!-- Placeholder -->
+                        </select>
+                        <label for="CityDropdown">City</label>
+                        <span class="text-danger" asp-validation-for="CityId"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex ">
+                <div class="col-md-4 col-12 p-2">
+                    <div class="form-floating">
+                        <input type="text" asp-for="Address" placeholder="" id="address"
+                            class="form-control custom-input" required />
+                        <label for="address">Address</label>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 p-2">
+                    <div class="form-floating">
+                        <input type="text" asp-for="ZipCode" placeholder="" id="zipcode"
+                            class="form-control custom-input" required />
+                        <label for="zipcode">ZipCode</label>
+                        <span class="text-danger" asp-validation-for="ZipCode"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 p-2">
+                    <div class="form-floating">
+                        <input type="text" asp-for="PhoneNumber" placeholder="" id="Phone"
+                            class="form-control custom-input" required />
+                        <label for="Phone">Phone</label>
+                        <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex col-md-6 col-lg-4 col-12">
+                <button type="submit" class="btn updateBtn mt-2 me-1 w-50">Update User</button>
+                <button type="reset" class="mt-2 ms-1 btn cancelbtn w-50" asp-action="AddUser"
+                    asp-controller="User">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="~/js/Users.js"></script>

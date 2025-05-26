@@ -1,0 +1,121 @@
+@model List<waitingTokenVM>
+
+<div class="table-responsive w-100 d-none d-lg-block">
+    <table id="WaitingTable" class="table table-hover text-center align-middle">
+        <thead class="text-blue">
+            <tr>
+                <th>#Token No</th>
+                <th>Create At</th>
+                <th>Waiting Time</th>
+                <th>Name</th>
+                <th>No. of Persons</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (waitingTokenVM token in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => token.TokenId)</td>
+                        <td>@Html.DisplayFor(modelItem => token.CreateAt)</td>
+                        <td class="live-timer fw-bold"
+                            data-order-time="@token.CreateAt?.ToString("yyyy-MM-ddTHH:mm:ss")"></td>
+                        <td>@Html.DisplayFor(modelItem => token.CustomerName)</td>
+                        <td>@Html.DisplayFor(modelItem => token.NoOfPersons)</td>
+                        <td>@Html.DisplayFor(modelItem => token.PhoneNumber)</td>
+                        <td>@Html.DisplayFor(modelItem => token.Email)</td>
+                        <td>
+                            <a class="text-decoration-none mx-1 editTokenBtn" title="Edit"
+                                data-token-details='@Html.Raw(Json.Serialize(token))'>
+                                <img src="@Url.Content("~/images/edit.png")" width="20" alt="Edit">
+                            </a>
+                            <a class="text-decoration-none mx-1 deleteTokenBtn" title="Delete" data-token-id="@token.TokenId"
+                                data-token-section-id="@token.SectionId">
+                                <img src="@Url.Content("~/images/delete.png")" width="20" alt="Delete">
+                            </a>
+                            <a class="text-decoration-none mx-1 assignWaititngTokenBtn" title="Assign"
+                                data-token-details='@Html.Raw(Json.Serialize(token))'>
+                                <img src="@Url.Content("~/images/assign_table.png")" width="20" alt="Assign">
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="8" class="text-center text-muted">
+                        <div class="no-items-container flex-column w-100 d-flex">
+                            <img src="~/images/Animatation/empty-box.gif" alt="No KOTS Found" class="animated-empty-box" />
+                            <p class="mt-3 text-blue">
+                                @MessageHelper.GetInfoMessageForNoRecordsFound(Constants.WAITING_TOKEN)</p>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- ACCORDION: visible on md and below (<1024px) -->
+<div class="d-block d-lg-none w-100">
+    <div class="accordion" id="waitingTokenAccordion">
+        @if (Model.Any())
+        {
+            foreach (waitingTokenVM token in Model)
+            {
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="heading-@token.TokenId">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-@token.TokenId" aria-expanded="false" aria-controls="collapse-@token.TokenId">
+                            #@token.TokenId &ndash; @token.CustomerName
+                        </button>
+                    </h2>
+                    <div id="collapse-@token.TokenId" class="accordion-collapse collapse"
+                         aria-labelledby="heading-@token.TokenId"
+                         data-bs-parent="#waitingTokenAccordion">
+                        <div class="accordion-body px-2">
+                            <div><strong>Create At:</strong> @Html.DisplayFor(modelItem => token.CreateAt)</div>
+                            <div>
+                                <strong>Waiting Time:</strong>
+                                <span class="live-timer fw-bold"
+                                      data-order-time="@token.CreateAt?.ToString("yyyy-MM-ddTHH:mm:ss")"></span>
+                            </div>
+                            <div><strong>No. of Persons:</strong> @Html.DisplayFor(modelItem => token.NoOfPersons)</div>
+                            <div><strong>Phone Number:</strong> @Html.DisplayFor(modelItem => token.PhoneNumber)</div>
+                            <div><strong>Email:</strong> @Html.DisplayFor(modelItem => token.Email)</div>
+                            <div class="mt-2">
+                                <a class="text-decoration-none mx-1 editTokenBtn" title="Edit"
+                                   data-token-details='@Html.Raw(Json.Serialize(token))'>
+                                    <img src="@Url.Content("~/images/edit.png")" width="20" alt="Edit">
+                                </a>
+                                <a class="text-decoration-none mx-1 deleteTokenBtn" title="Delete"
+                                   data-token-id="@token.TokenId"
+                                   data-token-section-id="@token.SectionId">
+                                    <img src="@Url.Content("~/images/delete.png")" width="20" alt="Delete">
+                                </a>
+                                <a class="text-decoration-none mx-1 assignWaititngTokenBtn" title="Assign"
+                                   data-token-details='@Html.Raw(Json.Serialize(token))'>
+                                    <img src="@Url.Content("~/images/assign_table.png")" width="20" alt="Assign">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="text-center text-muted w-100">
+                <img src="~/images/Animatation/empty-box.gif" alt="No KOTS Found" class="animated-empty-box" />
+                <p class="mt-3 text-blue">
+                    @MessageHelper.GetInfoMessageForNoRecordsFound(Constants.WAITING_TOKEN)
+                </p>
+            </div>
+        }
+    </div>
+</div>

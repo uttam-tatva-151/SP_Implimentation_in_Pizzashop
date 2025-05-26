@@ -1,0 +1,33 @@
+@model List<waitingTokenVM>
+
+<table class="w-100 table">
+    <thead>
+        <tr>
+            <th></th>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">No. of Person</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Any())
+        {
+            @foreach (waitingTokenVM waitingToken in Model)
+            {
+                <tr>
+                    <td scope="row"><input type="radio" class="waitngTokenDetails" name="customerDetails" id="waitingToken-@waitingToken.TokenId" data-token-details='@Html.Raw(Json.Serialize(waitingToken))'></td>
+                    <td>#@waitingToken.TokenId</td>
+                    <td>@waitingToken.CustomerName</td>
+                    <td>@waitingToken.NoOfPersons</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td scope="row" colspan="4">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.WAITING_TOKEN)</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

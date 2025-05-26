@@ -1,0 +1,68 @@
+               
+<div class="d-flex flex-column align-items-center px-0 pt-2 min-vh-100" id="sidebar">
+    <div class="d-flex align-items-center pb-3 ps-2 z-3 position-relative pizzashopLogo" id="pizzashopLogo">
+        <img src="@Url.Content("~/images/logos/pizzashop_logo.png")" width="70" alt="pizzashop_logo"
+            class="d-inline-block align-text-top" />
+        <span class="fw-bolder fs-6 ps-2 d-none d-sm-inline">PIZZASHOP</span>
+    </div>
+    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start text-dark fs-6 fw-bold w-100" id="menu">
+        <li class="nav-item w-100 ps-4 py-2 rounded" class="sidebar-item" >
+            <a asp-action="Index" asp-controller="Home" data-page-name="dashboard" class="nav-link" data-title="Dashboard">
+                <img src="@Url.Content("~/images/sidebar_icons/dashboard.png")" alt="dashboard-default" width="22"
+                    class="mb-1 p-0" />
+                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item w-100 ps-4 py-2 rounded" data-module="Users" class="sidebar-item">
+            <a asp-action="UserList" asp-controller="User" data-page-name="users" class="nav-link" data-title="Users Details">
+                <img src="@Url.Content("~/images/sidebar_icons/users.png")" alt="users-default" width="25"
+                    class="mb-1 p-0" />
+                <span class="ms-1 d-none d-sm-inline">Users</span>
+            </a>
+        </li>
+        <li class="nav-item w-100 ps-4 py-2 rounded" data-module="RoleAndPermission" class="sidebar-item">
+            <a asp-action="Role" asp-controller="RoleAndPermissions"  data-page-name="roles_permissions"
+                class="nav-link" data-title="Role & Permission">
+                <img src="@Url.Content("~/images/sidebar_icons/roles-permissions.png")" alt="dashboard-default"
+                    width="23" class="mb-1 p-0" />
+                <span class="ms-1 d-none d-sm-inline">Role and Permission</span>
+            </a>
+        </li>
+        <li class="nav-item w-100 ps-4 py-2 rounded" data-module="Menu" class="sidebar-item" class="nav-link">
+            <a asp-action="Menu" asp-controller="Menu" data-page-name="menu" class="nav-link" data-title="Menu Page">
+                <img src="@Url.Content("~/images/sidebar_icons/menu.png")" alt="Menu-default" width="22"
+                    class="mb-1 p-0" />
+                <span class="ms-1 d-none d-sm-inline">Menu</span>
+            </a>
+        </li>
+        <li class="nav-item w-100 ps-4 py-2 rounded" data-module="TableAndSection" class="sidebar-item">
+            <a asp-action="SectionAndTables" asp-controller="SectionAndTables" data-page-name="section_table"
+                class="nav-link" data-title="Table & Section">
+                <img src="@Url.Content("~/images/sidebar_icons/dinner-table.png")" alt="Table and Section-default"
+                    width="25" class="mb-1 p-0" />
+                <span class="ms-1 d-none d-sm-inline">Table and Section</span>
+            </a>
+        </li>
+        <li class="nav-item w-100 ps-4 py-2 rounded" data-module="TaxAndFee" class="sidebar-item">
+            <a asp-action="Taxes" asp-controller="Taxes" data-page-name="taxes" class="nav-link" data-title="Taxes & Fees">
+                <img src="@Url.Content("~/images/sidebar_icons/money-bag.png")" alt="Taxes And Fees-default" width="25"
+                    class="mb-1 p-0" />
+                <span class="ms-1 d-none d-sm-inline">Taxes And Fees</span>
+            </a>
+        </li>
+        <li class="nav-item w-100 ps-4 py-2 rounded" data-module="Order" class="sidebar-item">
+            <a asp-action="Order" asp-controller="Orders" data-page-name="orders" class="nav-link" data-title="Orders Details">
+                <img src="@Url.Content("~/images/sidebar_icons/clipboard.png")" alt="Orders-default" width="25"
+                    class="mb-1 p-0" />
+                <span class="ms-1 d-none d-sm-inline">Orders</span>
+            </a>
+        </li>
+        <li class="nav-item w-100 ps-4 py-2 rounded" data-module="Customers" class="sidebar-item">
+            <a asp-action="Customer" asp-controller="Customers" data-page-name="customers" class="nav-link" data-title="Customers Details">
+                <img src="@Url.Content("~/images/sidebar_icons/client.png")" alt="Customers-default" width="25"
+                    class="mb-1 p-0" />
+                <span class="ms-1 d-none d-sm-inline">Customers</span>
+            </a>
+        </li>
+    </ul>
+</div>

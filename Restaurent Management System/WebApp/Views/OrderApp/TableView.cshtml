@@ -1,0 +1,248 @@
+@model List<SectionDetails>
+
+@{
+    ViewData["Title"] = "Order App";
+    waitingTokenVM watingToken = new waitingTokenVM();
+    int editorId = User.GetUserId();
+}
+
+
+<div class="container-fluid p-3 px-5 col-12">
+
+    <div class="container-fluid mb-3">
+        <div class="row align-items-center justify-content-between flex-wrap">
+            <!-- Title -->
+            <div class="col-12 col-md-6 mb-2 mb-md-0">
+                <a class="text-decoration-none text-blue fs-2 fw-bolder">Table View</a>
+            </div>
+
+            <!-- Status Legends -->
+            <div
+                class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end flex-wrap gap-3 status-legend">
+                <span class="d-flex align-items-center small animate-status">
+                    <i class="fa-solid fa-circle me-1 text-secondary"></i>Available
+                </span>
+                <span class="d-flex align-items-center small animate-status">
+                    <i class="fa-regular fa-circle me-1 text-success"></i>Selected
+                </span>
+                <span class="d-flex align-items-center small animate-status">
+                    <i class="fa-solid fa-circle me-1 text-success"></i>Assigned
+                </span>
+                <span class="d-flex align-items-center small animate-status">
+                    <i class="fa-solid fa-circle me-1 text-primary opacity-75"></i>Running
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="tableOrderAppContainer">
+                <div class=" my-3 sectionAccordion">
+                    <div class="accordion" id="accordionAtOrderAppTableView">
+                        @foreach (SectionDetails sectionDetails in Model)
+                        {
+                            <div class="accordion-item my-4">
+                                <h2 class="accordion-header">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center p-3">
+
+                                        <!-- Section Title & Toggle -->
+                                        <div class="d-flex align-items-center col-12 col-md-8 mb-2 mb-md-0 tableSectionAtOrderApp"
+                                            data-bs-target="#collapse-@sectionDetails.SectionId" aria-expanded="false"
+                                            aria-controls="collapse-@sectionDetails.SectionId" data-bs-toggle="collapse"
+                                            data-section-id="@sectionDetails.SectionId">
+                                            <button class="accordion-button rounded-pill p-1 me-2" style="width: 28px;"
+                                                type="button"></button>
+                                            <span class="text-blue fw-medium">@sectionDetails.SectionName</span>
+                                        </div>
+
+                                        <!-- Status Indicators + Button -->
+                                        <div
+                                            class="d-flex align-items-center justify-content-end col-12 col-md-4 flex-wrap gap-2">
+                                            <span class="d-flex align-items-center fs-sm icon-pulse"><i
+                                                    class="fa-solid fa-circle mx-2 text-secondary"></i>@sectionDetails.Available</span>
+                                            <span class="d-flex align-items-center fs-sm icon-pulse"><i
+                                                    class="fa-solid fa-circle mx-2 text-success"></i>@sectionDetails.Assigned</span>
+                                            <span class="d-flex align-items-center fs-sm icon-pulse"><i
+                                                    class="fa-solid fa-circle mx-2 text-primary opacity-75"></i>@sectionDetails.Running</span>
+
+                                            <a class="btn border border-blue text-blue ms-md-2 mt-2 mt-md-0 animated-btn"
+                                                id="waitingTokenBtn" data-bs-toggle="modal"
+                                                data-bs-target="#waitingTokenModal"
+                                                data-section-id="@sectionDetails.SectionId">
+                                                <i class="bi bi-plus"></i> Waiting Token
+                                            </a>
+                                        </div>
+                                    </div>
+                                </h2>
+
+                                <div id="collapse-@sectionDetails.SectionId" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionAtOrderAppTableView">
+                                    <div class="accordion-body d-flex flex-column">
+                                       <div class="d-flex flex-wrap tableCardsSection overflow-auto justify-content-start p-3 interactive-table-view" id="tableViewList-@sectionDetails.SectionId">
+                                            <!-- Partial View Content -->
+                                        </div>
+
+                                        <div class="d-flex justify-content-end align-items-center m-3 mx-4 assignBtn d-none"
+                                            data-section-id="@sectionDetails.SectionId"
+                                            id="assignBtn-@sectionDetails.SectionId">
+                                            <button class="btn updateBtn text-white" data-bs-toggle="modal"
+                                                data-bs-target="#assignTableModal">Assign</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Assign Table to Customer Modal*@
+<div class="modal modal-left-show fade" id="assignTableModal" tabindex="0" role="dialog"
+    aria-labelledby="assignTableModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-blue">Waiting List</h5>
+                <input type="number" id="waitingTokenEditorId" value="@editorId" hidden>
+                <input type="number" id="waitingTokenCustomerId" hidden>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row d-flex flex-column m-0 p-0">
+                <div class="col-12 " id="waitiningListAtAssignTable">
+                    <!-- ------------------------ Waiting List Partial view ----------------------- -->
+                </div>
+                <div class="col-12 d-flex flex-column">
+                    <h3 class="text-blue my-4">Table Details</h3>
+                    <span class="text-dark fs-5" id="tableIdsForAssignToCustomer"></span>
+                    <span class="text-dark fs-5" id="tablesCapacityForAssignToCustomer"></span>
+                </div>
+                <div class="col-12 my-2">
+                    <form id="assignTableFormAtTableView">
+                        <h3 class="text-blue my-4">Customer Details</h3>
+                        <div class="form-floating m-4">
+                            <input type="email" asp-for="@watingToken.Email" class="form-control custom-input"
+                                id="emailIdForAssigningTable" >
+                            <label for="emailIdForAssigningTable">Email* </label>
+                            <span class="text-danger" asp-validation-for="@watingToken.Email"></span>
+                        </div>
+                        <div class="form-floating m-4 ">
+                            <input type="text" class="form-control custom-input" asp-for="@watingToken.CustomerName"
+                                id="customerNameForAssigningTable" required>
+                            <label for="customerNameForAssigningTable">Name* </label>
+                            <span class="text-danger" asp-validation-for="@watingToken.CustomerName"></span>
+                        </div>
+                        <div class="form-floating m-4 ">
+                            <input type="text" class="form-control custom-input" asp-for="@watingToken.PhoneNumber"
+                                id="phoneNumberForAssigningTable" >
+                            <label for="phoneNumberForAssigningTable">Mobile Number* </label>
+                            <span class="text-danger" asp-validation-for="@watingToken.PhoneNumber"></span>
+                        </div>
+                        <div class="d-flex m-4">
+                            <div class="form-floating w-50 mx-1">
+                                <input type="number" class="form-control custom-input" asp-for="@watingToken.NoOfPersons" value="1"
+                                    min="1" id="noOfPersonForAssigningTable" placeholder="Number Of Person">
+                                <label for="noOfPersonForAssigningTable" class="fs-sm">Number Of Person* </label>
+                                <span class="text-danger" asp-validation-for="@watingToken.NoOfPersons"></span>
+                            </div>
+                            <div class="form-floating w-50 mx-1">
+                                <select asp-for="@watingToken.SectionId" class="form-control custom-select"
+                                    id="sectionIdForAssigningTable" disabled>
+                                    <option value="">Select Section</option>
+                                    @foreach (SectionDetails sectionDetails in Model)
+                                    {
+
+                                        <option value="@sectionDetails.SectionId">@sectionDetails.SectionName</option>
+                                    }
+                                </select>
+                                <label for="sectionIdForAssigningTable">Section*</label>
+                                <span class="text-danger" asp-validation-for="@watingToken.SectionId"></span>
+                            </div>
+                        </div>
+                    </form>
+                        <div class="d-flex m-4 p-1 align-item-center justify-content-end">
+                            <button type="button" class="btn updateBtn me-2" id="assignTableBtn">Assign</button>
+                            <button type="button" class="btn cancelbtn me-2" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="waitingTokenModal" tabindex="-1" aria-labelledby="waitingTokenModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="mb-2 d-flex flex-nowrap justify-content-between">
+                    <h5 class="modal-title mt-1" id="waitingTokenModalLabel">Waiting Token Details</h5>
+                    <button type="button" class="btn-close mt-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="waitingTokenForm">
+                    <input type="number" id="editorIdForAssignToken" value="@editorId" hidden>
+                    <input type="hidden" id="waitingtokenIdForUpdate" asp-for="@watingToken">
+                    <input type="hidden" id="waitingTokenCustomerIdForAssignToken">
+                    <div class="row m-1">
+                        <div class="col-12 my-2 px-1 form-floating">
+                            <input type="Email" class="form-control custom-input" id="waitingTokenCustomerEmail"
+                                asp-for="@watingToken.Email">
+                            <label for="waitingTokenCustomerEmail" class="form-label">Email*</label>
+                            <span class="text-danger" asp-validation-for="@watingToken.Email"></span>
+                        </div>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col-12 my-2 px-1 form-floating">
+                            <input type="Email" class="form-control custom-input" id="waitingTokenCustomerName"
+                                asp-for="@watingToken.CustomerName">
+                            <label for="waitingTokenName" class="form-label">Name*</label>
+                            <span class="text-danger" asp-validation-for="@watingToken.CustomerName"></span>
+                        </div>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col-12 my-2 px-1 form-floating">
+                            <input type="text" class="form-control custom-input" id="waitingTokenCustomerPhone"
+                                asp-for="@watingToken.PhoneNumber">
+                            <label for="waitingTokenPhone" class="form-label">Mobile Number*</label>
+                            <span class="text-danger" asp-validation-for="@watingToken.PhoneNumber"></span>
+                        </div>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col-md-6 col-12 px-1">
+                            <div class="form-floating m-0">
+                                <input type="number" min="0" class="form-control custom-input" id="waitingTokenNumberOfPersons"
+                                    asp-for="@watingToken.NoOfPersons">
+                                <label for="waitingTokenNumberOfPersons" class="form-label">No of Persons*</label>
+                                <span class="text-danger" asp-validation-for="@watingToken.NoOfPersons"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12  px-1">
+                            <div class="form-floating m-0">
+                                <select asp-for="@watingToken.SectionId" class="form-control custom-select"
+                                    id="waitingtokenSectionForAddWaitingToken" disabled>
+                                    <option value="">Select Section</option>
+                                    @foreach (SectionDetails sectionDetails in Model)
+                                    {
+
+                                        <option value="@sectionDetails.SectionId">@sectionDetails.SectionName</option>
+                                    }
+                                </select>
+                                <label for="waitingtokenSectionForAddWaitingToken">Section*</label>
+                                <span class="text-danger" asp-validation-for="@watingToken.SectionId"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-lg-end">
+                    <button type="submit" class="updateBtn btn w-25" id="AddNewTokenBtn">Save</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn ms-3 cancelbtn w-25"
+                        form="waitingTokenForm">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

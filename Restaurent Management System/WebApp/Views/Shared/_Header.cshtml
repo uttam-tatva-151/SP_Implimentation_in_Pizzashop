@@ -1,0 +1,76 @@
+@{
+    string EmailId = Context.Session.GetString("Email") ?? "";
+    string UserImg = Url.Action("GetUserPhoto", "Profile", new { email = EmailId }) ?? Url.Content("~/images/user.png");
+    string UserName = Context.Session.GetString("UserName") ?? "Guest";
+}
+
+<div class="navbar navbar-expand-lg bg-body-tertiary m-0 p-0" id="navbar">
+
+    <div class="container-fluid navbar-bg">
+
+        <a class="navbar-brand invisible" id="navbarLogo">
+
+            <img src="@Url.Content("~/images/logos/pizzashop_logo.png")" alt="Logo" width="70" />
+        </a>
+
+        <a class="navbar-brand invisible" id="navbarLogo">
+
+            <img src="@Url.Content("~/images/logos/pizzashop_logo.png")" alt="Logo" width="70" />
+        </a>
+
+        <div class="btn-group ">
+            @if (User.IsInRole("account manager"))
+            {
+                <a class="navbar-brand" id="OrderAppLogo" data-role="account manager"  asp-action="TableView" asp-controller="OrderApp">
+                    <img src="@Url.Content("~/images/KOT_Nevbar/orderApp.png")" alt="Logo" width="45" height="45" />
+                </a>
+            }else if(User.IsInRole("chef")){
+                <a class="navbar-brand" id="OrderAppLogo" data-role="chef" asp-action="KOT" asp-controller="KOT">
+                    <img src="@Url.Content("~/images/KOT_Nevbar/orderApp.png")" alt="Logo" width="45" height="45" />
+                </a>
+            }
+
+            <a class="navbar-brand  text-decoration-none" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="@UserImg" alt="Logo" width="45" height="45" class="bg-light rounded-circle" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end ">
+                <li class="d-flex px-3">
+                    <img src="@UserImg" alt="Logo" width="30" height="30" class="bg-light rounded-circle" />
+                    <span class="dropdown-item-text">@UserName</span>
+                </li>
+                <li>
+                    <hr />
+                </li>
+                <li class="d-flex px-3 dropdown-item"><img src="@UserImg" alt="Logo" width="30" height="30"
+                        class="bg-light rounded-circle" />
+                    <a class="dropdown-item" asp-action="UserProfile" asp-controller="Profile">Profile page</a>
+                </li>
+                <li class="d-flex px-4 dropdown-item">
+                    <img src="@Url.Content("~/images/refresh.png")" class="mt-2" alt="Logo" width="20" height="20" />
+                    <a class="dropdown-item" asp-action="ChangePassword" asp-controller="Profile">Change password</a>
+                </li>
+
+                <li class="d-flex px-4 dropdown-item"> <img src="@Url.Content("~/images/logout.png")" class="mt-2"
+                        alt="Logo" width="20" height="20" />
+                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#LogoutModal">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="LogoutModal" tabindex="-1" aria-labelledby="LogoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content ">
+            <div class="modal-body px-3 py-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="~/images/pngegg.png" class="mb-3" width="50" alt="">
+                <span>@Constants.LOGOUT_CONFIRMATION</span>
+                <div class="d-flex col-12 mt-4 container flex-nowrap justify-content-center">
+                    <a type="button" asp-action="Logout" asp-controller="Profile" class="updateBtn btn w-25 ">Yes</a>
+                    <button type="button" class="btn ms-3 cancelbtn w-25" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

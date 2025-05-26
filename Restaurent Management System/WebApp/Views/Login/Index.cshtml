@@ -1,0 +1,42 @@
+@model PMSCore.ViewModel.LoginRequest
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div class="formBox login">
+    <h3>Welcome,</h3>
+
+    <form method="post" asp-action="Login" id="loginForm" >
+        <div class="inputBox">
+            <span class="icon">
+                <img src="@Url.Content("~/images/icons/customer.svg")" width="20" height="20">
+            </span>
+            <input type="text" asp-for="EmailId" id="loginEmail" required />
+            <label>Email</label>
+            <span class="text-danger" asp-validation-for="EmailId"></span>
+        </div>
+
+        <div class="inputBox">
+            <span class="icon">
+                <img src="@Url.Content("~/images/icons/eye.png")" onclick="showPassword('password','pImage')"
+                     id="pImage" alt="eye_button" class="mt-1" width="20" height="20">
+            </span>
+            <input type="password" asp-for="Password" class="mt-1" id="password" required />
+            <label class="mt-2">Password</label>
+            <span class="text-danger" asp-validation-for="Password"></span>
+        </div>
+
+        <div class="rememberForgot">
+            <label>
+                <input asp-for="IsRememberMe" type="checkbox" /> Remember me 
+            </label>
+            <a href="javascript:void(0);" class="btn forgotPassword-link" onclick="populateForgotPasswordLink()">
+                Forgot Password?
+            </a>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
+
+<script src="~/js/Login.js" asp-append-version="true"></script>

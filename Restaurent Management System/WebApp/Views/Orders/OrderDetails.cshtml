@@ -1,0 +1,169 @@
+@model OrderExportDetails
+
+@{
+    ViewData["Title"] = "Order Details";
+}
+
+<div class="MainContent px-3 py-3 contentScreen">
+    <div class="container">
+
+        <!-- Header Section -->
+        <div class="d-flex justify-content-between align-items-center pb-3 mb-3 ">
+            <h1 class="text-blue fw-bold">Order Details</h1>
+            <a asp-controller="Orders" asp-action="Order" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-left"></i> Back
+            </a>
+        </div>
+
+        <!-- Order Summary & Export Button -->
+        <div class="row g-3">
+
+            <div class="col">
+
+                <div class="card shadow-sm p-4">
+                    <div class="d-flex justify-content-between">
+                        <h5>Order Summary <span class="badge bg-warning text-dark">@Model.Status</span></h5>
+                        <a type="button" class="btn btn-primary" asp-controller="Orders" asp-action="DownloadInvoice" asp-route-orderId="@Model.OrderId">
+                            <i class="bi bi-folder-symlink"></i> <span class="">Export as PDF</span>
+                        </a>
+                    </div>
+                    <p><strong>Invoice No:</strong> @Model.InvoiceNo</p>
+                    <div class="d-flex flex-row ">
+
+                        <p class="px-2"><strong>Paid On:</strong> @Model.PlacedOn.ToString("dd-MM-yyyy HH:mm")</p>
+                        <p class="px-2"><strong>Placed On:</strong> @Model.PlacedOn.ToString("dd-MM-yyyy HH:mm")</p>
+                        <p class="px-2"><strong>Modified On:</strong> @Model.ModifiedOn.ToString("dd-MM-yyyy HH:mm")</p>
+                        <p class="px-2"><strong>Order Duration:</strong> @Model.OrderDuration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer & Table Details -->
+        <div class="row g-3 mt-2 d-flex justify-content-between  ps-1 pe-1">
+            <div class="col-md-6 card ">
+                <div class=" p-4">
+                    <h5><i class="bi bi-person"></i> Customer Details</h5>
+                    <p><strong>Name:</strong> @Model.CustomerInfo.CustomerName</p>
+                    <p><strong>Phone:</strong> @Model.CustomerInfo.CustomerPhone</p>
+                    <p><strong>No of Person:</strong> @Model.CustomerInfo.NoOfPerson</p>
+                    <p><strong>Email:</strong> <a
+                            href="mailto:@Model.CustomerInfo.CustomerEmail">@Model.CustomerInfo.CustomerEmail</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 card">
+                <div class=" p-4">
+                    <h5><i class="bi bi-table"></i> Table Details</h5>
+                    <p>
+                        <strong>Table:</strong>
+                        @Model.Tables
+                    </p>
+                    <p><strong>Floor:</strong> @Model.Section</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Items Table -->
+        <div class="card shadow-sm p-4 mt-3">
+            <h5><strong>Order Items</strong></h5>
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead class="text-center">
+                        <tr>
+                            <th>Sr. No</th>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-secondary">
+                        @if (Model.OrderItems != null)
+                        {
+
+                            @for (int i = 0; i < Model.OrderItems.Count; i++)
+                            {
+                                <tr>
+                                    <td class="text-center">@(i + 1)</td>
+                                    <td>
+                                        @Model.OrderItems[i].ItemName
+                                        @if (Model.OrderItems[i].Modifiers?.Count > 0)
+                                        {
+                                            <ul class="m-0 ps-3">
+                                                @foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier
+                                                                                    in Model.OrderItems[i].Modifiers ??Enumerable.Empty<OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel>())
+                                                {
+                                                    <li>@modifier.ModifierName</li>
+                                                }
+                                            </ul>
+                                        }
+                                    </td>
+                                    <td class="text-center">
+                                        @Model.OrderItems[i].Quantity
+                                        @if (Model.OrderItems[i].Modifiers?.Count > 0)
+                                        {
+                                            @foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in
+                                                                            Model.OrderItems[i].Modifiers ??Enumerable.Empty<OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel>())
+                                            {
+                                                <p>@modifier.ModiferQuantity</p>
+                                            }
+                                        }
+                                    </td>
+                                    <td class="text-end">
+                                        @Model.OrderItems[i].UnitPrice
+                                        @if (Model.OrderItems[i].Modifiers?.Count > 0)
+                                        {
+                                            @foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in
+                                                                            Model.OrderItems[i].Modifiers ??Enumerable.Empty<OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel>())
+                                            {
+                                                <p>@modifier.ModifierPrice</p>
+                                            }
+                                        }
+                                    </td>
+                                    <td class="text-end">
+                                        @Model.OrderItems[i].TotalPrice
+                                        @if (Model.OrderItems[i].Modifiers?.Count > 0)
+                                        {
+                                            @foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in
+                                                                            Model.OrderItems[i].Modifiers ??Enumerable.Empty<OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel>())
+                                            {
+                                                <p>@modifier.ModifierTotalPrice</p>
+                                            }
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td class="">NaN</td>
+                                <td>NaN</td>
+                                <td>NaN</td>
+                                <td>NaN</td>
+                                <td>NaN</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!-- Payment Summary -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Payment Information</h6>
+                    <p><strong>Payment Method:</strong> @Model.PaymentMethod</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h6>Summary</h6>
+                    <p><strong>Subtotal:</strong>₹@Model.SubTotal</p>
+                    @foreach(OrderExportDetails.TaxDetailsHelperModel tax in Model.taxDetails){
+                        <p><strong>@tax.TaxName:</strong> ₹@tax.TaxValue </p>
+                    }
+                    <p><strong>Total Amount :</strong> <span class="text-danger fw-bold">₹@Model.TotalAmountToPay</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,354 @@
+@model MenuDetails
+
+@{
+    ViewData["Title"] = "Menu Page";
+    int editorId = User.GetUserId();
+}
+
+
+<div class="bg-light contentScreen" id="mainContentOfMenu">
+    <input type="hidden" id="editorIdAtMenuPage" value="@editorId">
+    <div class="col">
+        <h2 class="mt-3 ms-3 mainHeading text-blue fw-bold">Menu</h2>
+    </div>
+    <div class="mainContent bg-light shadow-none mx-3  mb-0">
+        <!-- --------------------- Tabs for item and modifiers --------------------- -->
+        <nav class="bg-white overflow-auto">
+            <div class="nav tabAtMenuPage" id="nav-tab" role="tablist">
+                <button class="nav-link btn tab-btn active me-2" id="nav-items-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-items" type="button" role="tab" aria-controls="nav-items"
+                    aria-selected="true"><img src="~/images/icons/list-check.svg" class="me-1" height="20px"
+                        width="20px">Items</button>
+                <button class="nav-link btn tab-btn" id="nav-modifiers-tab" data-bs-toggle="tab" 
+                    data-bs-target="#nav-modifiers" type="button" role="tab" aria-controls="nav-modifiers"
+                    aria-selected="false" onclick="prepareModifierPage()">
+                    <img src="~/images/icons/ui-checks-grid.svg" class="me-1" width="15px">Modifiers
+                </button>
+            </div>
+        </nav>
+
+        <!-- ------------------------------- Tab Content ------------------------------ -->
+
+        <div class="tab-content  mt-3" id="sectionArea">
+            <!-- -------------------------- Category-Item section --------------------------- -->
+            <div class="tab-pane fade show active bg-white" id="nav-items" role="tabpanel"
+                aria-labelledby="nav-items-tab">
+                <div class="row m-0 p-0">
+
+                    <div class=" col-12 col-md-3 background-box-shade">
+                        <!-- --------------------- Heading of Category section --------------------- -->
+                        <div class="d-flex align-items-center justify-content-between mt-2 mx-3 mb-md-5">
+                            <span class="fs-4 logo-name text-blue fw-bold">Category</span>
+                            <div class="btnsAtSidePane d-flex flex-nowrap justify-content-between gap-4 align-items-center">
+
+                                <a data-bs-toggle="modal" class="crudAction"  data-action="Create-Category" data-bs-target="#addCategoryModal"><img
+                                        src="~/images/icons/plus-square.svg" height="30px"></a>
+                                <div id="categoryBtnsForMobileView" 
+                                    class="d-flex d-md-none justify-content-end align-items-center gap-2">
+
+                                    <a class="me-3 d-block d-md-none text-decoration-none crudAction" data-action="Update-Category" data-bs-target="#EditCategoryModal" data-bs-toggle="modal"
+                                        id="EditItemBtnForMobileView">
+                                        <i class="bi bi-pencil-square text-dark fs-2 fw-bold"></i>
+                                    </a>
+                                    <a class="text-danger d-block d-md-none border-0 text-dark fs-2 fw-bold text-decoration-none crudAction" data-action="Delete-Category"
+                                        id="deleteCategoryBtnForMobileView" data-bs-toggle="modal" data-bs-target="#deleteCategoryModal">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---------------------------- Category List ---------------------------- -->
+
+                        <div id="categorySection">
+                            <partial name="_partial_CategoryListGrid" model="Model.categories" />
+                        </div>
+                    </div>
+                    <!-- ---------------------------- Item section ----------------------------- -->
+                    <div class="col-md-9 col-12 item-desc overflow-auto" >
+                        <!-- ----------------------- header of item section with buttons------------------------ -->
+                        <div class="row fs-3 ms-2 mt-2 text-blue fw-bold">Items</div>
+                        <div class="row d-flex justify-content-end me-2 overflow-auto">
+                            <div class="col-sm-5 col-12 mt-2 ms-md-3">
+                                <input type="search" class="form-control custom-input me-2" maxlength="100" id="searchItem" placeholder="Search Items...">
+                            </div>
+                            <div class="col-auto mt-2">
+                                <button class="btn border-dark crudAction" data-action="Delete-Item" data-bs-toggle="modal"
+                                    data-bs-target="#deleteItemsModal"><img src="~/images/icons/trash3-fill.svg"
+                                        width="30px" height="30px"></button>
+                            </div>
+                            <div class="col-auto mt-2">
+                                <button class="btn btn-primary d-none d-md-block crudAction" style="height: 45px;" data-action="Create-Item"
+                                    data-bs-toggle="modal" data-bs-target="#AddItemModal">+ Add Items</button>
+                                <a data-bs-toggle="modal" data-bs-target="#AddItemModal" class="d-block d-md-none crudAction" data-action="Create-Item"><img
+                                        src="~/images/icons/plus-square.svg" height="45px"></a>
+                            </div>
+                        </div>
+                        <!-- ------------------------------ item list ------------------------------ -->
+                        <div id="MenuItems">
+                            <partial name="_partial_ItemListGrid" model="Model.items" />
+                        </div>
+
+                        <!-- ------------------------------- Pagination Module ---------------------------------------- -->
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div
+                                class="w-100 justify-content-end col-12 col-md-6 col-lg-4 my-2 d-flex flex-wrap align-items-center gap-2">
+                                <!-- Items per page dropdown -->
+                                <span class="paginationtext d-none d-sm-inline">Items per page</span>
+                                <select class="form-control custom-select w-auto" id="itemsPerPage">
+                                    <option value="5" selected>5</option>
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                </select>
+
+                                <!-- Pagination info -->
+                                <span class="paginationtext" id="paginationInfoForItemTable"></span>
+
+                                <!-- Previous Button -->
+                                <button class="btn border" id="prevPageForItem">&lt;</button>
+
+                                <!-- Next Button -->
+                                <button class="btn border" id="nextPageForItem">&gt;</button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- ----------------------- Modifiers-Modifiers_Group Section ------------------- -->
+            <div class="tab-pane fade bg-white" id="nav-modifiers" role="tabpanel" aria-labelledby="nav-modifiers-tab">
+                <div class="row m-0 p-0">
+                    <div class="col-12 col-md-3 background-box-shade">
+                        <!-- ------------------- Heading of Modifiers Group Section --------------------------------- -->
+
+                        <div class="d-flex align-items-center justify-content-between mt-2 mx-3 mb-md-5">
+                            <span class="fs-4 logo-name text-blue fw-bold">Modifier Group</span>
+                            
+                            <div
+                                class="btnsAtSidePane d-flex flex-nowrap justify-content-between gap-4 align-items-center">
+
+                                <a  data-bs-toggle="modal" data-bs-target="#addModifierGroupModal" class="crudAction" data-action="Create-ModifierGroup"
+                                onclick="clearListFromAddGroupSection();"><img src="~/images/icons/plus-square.svg"
+                                height="30px"></a>
+                                <div id="groupBtnsForMobileView"
+                                    class="d-flex d-md-none justify-content-end align-items-center gap-2">
+
+                                    <a class="me-3 d-block d-md-none text-decoration-none crudAction" data-action="Update-ModifierGroup"
+                                        id="EditGroupBtnForMobileView">
+                                        <i class="bi bi-pencil-square text-dark fs-2 fw-bold "></i>
+                                    </a>
+                                    <a class="text-danger d-block d-md-none border-0 text-dark fs-2 fw-bold text-decoration-none crudAction" data-action="Delete-ModifierGroup"
+                                        id="deleteGroupBtnForMobileView">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -------------------------- Modifiers Group List --------------------------------------- -->
+                        <div id="modiferGroupSection">
+                            <partial name="_partial_ModifiersGroupListGrid" model="Model.modifierGrops" />
+                        </div>
+
+                    </div>
+
+                    <!-- ---------------------------- Modifier Section ---------------------------------- -->
+                    <div class="col-md-9 col-12 modifier-desc overflow-auto">
+                        <!-- ----------------- header of modifier section with buttons ------------------------ -->
+                        <div class="row fs-3 ms-2 mt-2 text-blue fw-bold">Modifier</div>
+                        <div class="row d-flex justify-content-end me-2 overflow-auto">
+                            <div class="col-auto  mt-2 ms-3">
+                                <input type="search" class="form-control custom-input form-control custom-input-lg me-2" placeholder="Search" maxlength="100"
+                                    id="searchModifier">
+                            </div>
+                            <div class="col-auto mt-2">
+                                <button class="btn border-dark crudAction" data-bs-toggle="modal" data-action="Delete-Modifier"
+                                    data-bs-target="#deleteMultipleModifiersModal"><img
+                                        src="~/images/icons/trash3-fill.svg" width="30px" height="30px"></button>
+                            </div>
+                            <div class="col-auto mt-2"><button data-bs-toggle="modal" data-bs-target="#AddModifierModal" data-action="Create-Modifier"
+                                    class="btn btn-primary crudAction" style="height: 45px;">+
+                                    Add
+                                    Modifier</button>
+                            </div>
+                        </div>
+                        <!-- ------------------------------ modifier List ---------------------------------------- -->
+
+                        <div id="MenuModifiers">
+                            <partial name="_partial_ModifiersListGrid" model="Model.modifiers" />
+                        </div>
+                        <!-- ------------------------------- Pagination Module ---------------------------------------- -->
+                        <div class=" d-flex align-items-center justify-content-end">
+                            <div
+                                class="w-100 justify-content-end col-12 col-md-6 col-lg-4 my-2 d-flex flex-wrap align-items-center gap-2">
+                                <!-- Items per page dropdown -->
+                                <span class="paginationtext d-none d-sm-inline">Items per page</span>
+                                <select class="form-control custom-select w-auto" id="modifiersListPerPage">
+                                    <option value="5" selected>5</option>
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                </select>
+
+                                <!-- Pagination info -->
+                                <span class="paginationtext d-none d-sm-inline"
+                                    id="paginationInfoForModifierTable"></span>
+
+                                <!-- Previous Button -->
+                                <button class="btn border" id="prevPageForModifier">&lt;</button>
+
+                                <!-- Next Button -->
+                                <button class="btn border" id="nextPageForModifier">&gt;</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- --------------------- Delete model for Multiple Items -------------------- ----------------->
+<div class="modal fade " id="deleteItemsModal" tabindex="-1" aria-labelledby="deleteItemsModalLabel" aria-hidden="true"
+    role="dialog">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content ">
+            <div class="modal-body px-3 py-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="~/images/pngegg.png" class="mb-3" width="50" alt="">
+                <span>@MessageHelper.GetWarningMessageForDeleteConfirmation(Constants.ITEM_LIST)</span>
+
+                @* <form 
+                    class="d-flex col-12 mt-4 container flex-nowrap justify-content-center"> *@
+                <div class="d-flex col-12 mt-4 container flex-nowrap justify-content-center">
+                    <button type="submit" id="deleteSelectedItems" class="updateBtn btn w-25 ">Yes</button>
+                    <button type="button" class="btn ms-3 cancelbtn w-25" data-bs-dismiss="modal">No</button>
+                    @* </form> *@</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------- Updated Delete Modal for Multiple Modifiers -------------------- -->
+<div class="modal fade" id="deleteMultipleModifiersModal" tabindex="-1" aria-labelledby="deleteMultipleModifiersModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="modal-title" id="deleteMultipleModifiersModalLabel">Delete Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                </div>
+                <p class="d-flex justify-content-center">
+                    @MessageHelper.GetWarningMessageForDeleteConfirmation(Constants.MODIFIER_LIST)</p>
+
+                <div class="d-flex col-12 mt-4 justify-content-center">
+                    <button type="submit" id="deleteSelectedModifiers" class="updateBtn btn w-25">Yes</button>
+                    <button type="button" class="btn ms-3 cancelbtn w-25" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Modifier Modal -->
+<div class="modal fade" id="addModifierModal" tabindex="-1" aria-labelledby="addModifierModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+
+    </div>
+</div>
+
+
+
+<!-- ----------------------------- Add Items Modal ---------------------------- -->
+<partial name="_partial_AddItemGrid" model="(Model.modifierGrops, Model.categories)" />
+@* <partial name="_Partial_UserGrid" model="(Model.users,Model.paginationDetails)" /> *@
+
+<!-- ----------------------------- Edit Items Modal ---------------------------- -->
+@* <div id="EditItem-modal-container"></div>
+<partial name="_partial_EditItemGrid"/> *@
+<partial name="_partial_EditItemGrid" model="(Model.modifierGrops, Model.categories)" />
+
+<!-- ----------------------------- Add Modifier Modal ---------------------------- -->
+
+<partial name="_partial_Add_ModifierGrid" model="Model.modifierGrops" />
+<partial name="_partial_Edit_ModifierGrid" model="Model.modifierGrops" />
+
+
+
+@* -------------------------------------------------------------------------- */
+/*                             All Existing Model                             */
+/* -------------------------------------------------------------------------- *@
+<div id="ExsitingModifiersModal">
+    <div class="modal fade" id="AllModifiersModal" tabindex="-1" aria-labelledby="AllModifiersModalLabel"
+        >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="px-4 py-2 row">
+                        <div class="col-12">
+                            <div class="col-12 d-flex flex-column flex-md-row justify-content-between px-0 p-2">
+                                <h3 class="fw-bold text-muted">Select Existing Modifiers</h3>
+                                <div class="d-flex flex-column flex-md-row justify-content-end align-items-center mt-3 mt-md-0">
+                                    <!-- Search input -->
+                                    <input type="search" class="form-control custom-input" id="modifierSearchBox" maxlength="100"
+                                        placeholder="Search modifiers...">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                </div>
+
+                            </div>
+                            <div class="d-flex flex-column col-12 p-0 d-flex justify-content-center p-4">
+                                <div class="container-fluid my-4 px-3 row p-0">
+                                    <!-- Modifier table container -->
+                                    <div class="col-12 table-responsive px-0" style="max-height: 400px; min-height: 300px;"
+                                        id="modifiersTableBody">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ------------------------------- Pagination Module ---------------------------------------- -->
+                            <div class=" d-flex align-items-center justify-content-end">
+                                <div
+                                    class="w-100 justify-content-end col-12 col-md-6 col-lg-4 my-2 d-flex flex-wrap align-items-center gap-2">
+                                    <!-- Items per page dropdown -->
+                                    <span class="paginationtext d-none d-sm-inline">Items per page</span>
+                                    <select class="form-control custom-select w-auto" id="modifiersPerPage">
+                                        <option value="5" selected>5</option>
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                    </select>
+
+                                    <!-- Pagination info -->
+                                    <span class="paginationtext d-none d-sm-inline"
+                                        id="paginationInfoAtExistingModifierModal"></span>
+
+                                    <!-- Previous Button -->
+                                    <button class="btn border" id="prevModifierPage">&lt;</button>
+
+                                    <!-- Next Button -->
+                                    <button class="btn border" id="nextModifierPage">&gt;</button>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex justify-content-start align-items-center mt-3">
+                                <button type="button" onclick="populateModifiers()" data-bs-dismiss="modal"
+                                    class="btn btn-primary mx-3">Add</button>
+                                <button type="reset" class="btn btn-outline-primary"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/Menu.js"></script>

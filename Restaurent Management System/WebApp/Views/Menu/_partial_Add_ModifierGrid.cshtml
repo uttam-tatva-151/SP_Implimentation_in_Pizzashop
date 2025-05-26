@@ -1,0 +1,115 @@
+@model IEnumerable<ModifierGropDetails>
+
+@{
+    ModifierVM newModifier = new();
+}
+
+<div class="modal fade" id="AddModifierModal" tabindex="-1" aria-labelledby="AddModifierModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <form id="addModifierForm">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between m-3">
+                        <h5 class="modal-title">Add Menu Modifier</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <!-- Modifier Group Dropdown -->
+                        <div class="col-lg-6 col-md-12 mb-3">
+                            <div class="form-floating m-0 ">
+                                <div class="dropdown justify-content-between">
+                                    <div class=" dropdown-toggle w-100 py-3 custom-dropdown-btn px-2 d-flex align-items-center text-align-center justify-content-between" 
+                                            type="button" id="modifierGroupDropdown" data-bs-toggle="dropdown"
+                                            aria-expanded="false"><span>
+
+                                        Select Modifier Group (<span id="selectedCount">0</span> selected)
+                                            </span>
+                                    </div>
+                                    <ul class="dropdown-menu w-100 custom-dropdown-menu" id="modifierGroupList">
+                                        @foreach (ModifierGropDetails modifierGroup in Model)
+                                        {
+                                            <li class="custom-dropdown-item w-100">
+                                                <div class="form-check w-100">
+                                                    <input 
+                                                        class="form-check-input modifier-group-checkbox custom-checkbox" 
+                                                        type="checkbox" id="modifierGroup_@modifierGroup.id"
+                                                        value="@modifierGroup.id" name="ModifierGroupId">
+                                                    <label 
+                                                        class="form-check-label custom-checkbox-label " 
+                                                        for="modifierGroup_@modifierGroup.id">
+                                                        @modifierGroup.modifierGroupName
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                                <!-- Hidden Field to Store Selected Group IDs -->
+                                <input type="text" class="form-control custom-input modifierGroupsField"
+                                    asp-for="@newModifier.ModifierGroupId" id="ModifierGroupHiddenField"/>
+                                <span asp-validation-for="@newModifier.ModifierGroupId" class="text-danger "></span>
+                            </div>
+                        </div>
+
+                        <!-- Name Field -->
+                        <div class="col-lg-6 col-md-12 mb-3">
+                            <div class="form-floating m-0">
+                                <input type="text" asp-for="@newModifier.ModifierName" class="form-control custom-input"
+                                    id="newModifierName" placeholder="">
+                                <label for="newModifierName">Name*</label>
+                                <span asp-validation-for="@newModifier.ModifierName" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Rate, Quantity, and Unit Fields -->
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <div class="form-floating m-0">
+                                <input type="number" asp-for="@newModifier.UnitPrice" class="form-control custom-input"
+                                    id="newModifierRate" placeholder="">
+                                <label for="newModifierRate">Rate*</label>
+                                <span asp-validation-for="@newModifier.UnitPrice" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <div class="form-floating m-0">
+                                <input type="number" asp-for="@newModifier.Quantity" class="form-control custom-input"
+                                    id="newModifierQuantity">
+                                <label for="newModifierQuantity">Quantity*</label>
+                                <span asp-validation-for="@newModifier.Quantity" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <div class="form-floating m-0">
+                                <select asp-for="@newModifier.UnitType" class="form-control custom-select" id="newModifierUnitType">
+                                    <option value="">-- Select Unit Type --</option>
+                                    @foreach (UnitType unit in Enum.GetValues(typeof(UnitType)).Cast<UnitType>())
+                                    {
+                                        <option value="@unit">@unit.GetDisplayName()</option>
+                                    }
+                                </select>
+                                <label for="newModifierUnitType">Unit*</label>
+                                <span asp-validation-for="@newModifier.UnitType" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Description Field -->
+                        <div class="col-12 mb-3">
+                            <div class="form-floating m-0">
+                                <textarea id="newModifierDescription" asp-for="@newModifier.Description"
+                                    class="form-control custom-input h-100" rows="3" placeholder=""></textarea>
+                                <label for="newModifierDescription">Description</label>
+                                <span asp-validation-for="@newModifier.Description" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary mx-3" id="modifierSaveBtn">Save</button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

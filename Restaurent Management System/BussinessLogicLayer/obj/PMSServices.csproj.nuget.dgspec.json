@@ -1,0 +1,272 @@
+{
+  "format": 1,
+  "restore": {
+    "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj": {}
+  },
+  "projects": {
+    "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj",
+        "projectName": "PMSServices",
+        "projectPath": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj",
+        "packagesPath": "C:\\Users\\pci151\\.nuget\\packages\\",
+        "outputPath": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\BussinessLogicLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pci151\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj": {
+                "projectPath": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj"
+              },
+              "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
+                "projectPath": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "JWT": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "JWTDecoder": {
+              "target": "Package",
+              "version": "[0.9.2, )"
+            },
+            "JwtCore": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Select.HtmlToPdf": {
+              "target": "Package",
+              "version": "[24.1.0, )"
+            },
+            "Select.HtmlToPdf.NetCore": {
+              "target": "Package",
+              "version": "[24.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj",
+        "projectName": "PMSCore",
+        "projectPath": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj",
+        "packagesPath": "C:\\Users\\pci151\\.nuget\\packages\\",
+        "outputPath": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pci151\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "EntityFrameworkCore.SqlServer.HierarchyId": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj",
+        "projectName": "PMSData",
+        "projectPath": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj",
+        "packagesPath": "C:\\Users\\pci151\\.nuget\\packages\\",
+        "outputPath": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pci151\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj": {
+                "projectPath": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

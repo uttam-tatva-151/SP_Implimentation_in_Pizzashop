@@ -1,0 +1,177 @@
+@model (List<ModifierGropDetails> modifierGrops, List<CategoryDetails> categories)
+
+@{
+    AddItem editItem = new AddItem();
+    int editorId = User.GetUserId();
+}
+
+
+
+<div class="modal fade" id="EditItemModal" tabindex="-1" aria-labelledby="EditItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <form id="editItemForm"  enctype="multipart/form-data">
+                <input type="hidden" id="editorIdForEdit" value="@editorId" asp-for="@editItem.EditorId" />
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between m-3">
+                        <h5 class="modal-title">Update Menu Item</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <input type="hidden" id="ItemIdForEdit" asp-for="@editItem.itemID" />
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-control custom-select" asp-for="@editItem.CategoryId"
+                                            id="UpdateCategoryForEdit">
+                                            <option value="" disabled selected>Select Category</option>
+                                            @foreach (CategoryDetails category in Model.categories)
+                                            {
+                                                <option value="@category.id">@category.categoryName</option>
+                                            }
+                                        </select>
+                                        <label for="UpdateCategoryForEdit">Category*</label>
+                                        <span asp-validation-for="@editItem.CategoryId" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" asp-for="@editItem.Name" class="form-control custom-input"
+                                            id="ItemNameForEdit" placeholder="">
+                                        <label for="ItemNameForEdit">Item Name*</label>
+                                        <span asp-validation-for="@editItem.Name" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <select class="form-control custom-select" asp-for="@editItem.ItemType" id="Item-TypeForEdit">
+                                            <option value="" disabled selected>Select Type</option>
+                                            <option value="Veg">Vegetarian</option>
+                                            <option value="Non-Veg">Non Vegetarian</option>
+                                            <option value="Vegan">Vegan</option>
+                                            <option value="Egg">Egg</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <label for="Item-TypeForEdit">Item Type*</label>
+                                        <span asp-validation-for="@editItem.ItemType" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control custom-input" asp-for="@editItem.UnitPrice"
+                                            id="PriceRateForEdit" placeholder="">
+                                        <label for="EditRate">Rate*</label>
+                                        <span asp-validation-for="@editItem.UnitPrice" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control custom-input" asp-for="@editItem.quantity"
+                                            id="ItemQuantityForEdit" placeholder="">
+                                        <label for="ItemQuantityForEdit">Quantity*</label>
+                                        <span asp-validation-for="@editItem.quantity" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-control custom-select" asp-for="@editItem.UnitType" id="UpdateUnitForEdit">
+                                            <option value="" disabled selected>Select Unit</option>
+                                            <option value="pcs">Pieces</option>
+                                            <option value="kg">Kilogram</option>
+                                            <option value="liters">Liters</option>
+                                            <option value="units">Units</option>
+                                        </select>
+                                        <label for="EditUnit">Unit*</label>
+                                        <span asp-validation-for="@editItem.UnitType" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="mb-3 col-lg-3 col-md-6 d-flex align-items-center">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" asp-for="@editItem.IsAvailable" type="checkbox"
+                                            id="AvailableForEdit" checked>
+                                        <label class="form-check-label ms-2" for="AvailableForEdit">Available</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-lg-3 col-md-6 d-flex align-items-center">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" asp-for="@editItem.DefaultTax"
+                                            id="DefaultTaxForEdit" checked>
+                                        <label class="form-check-label ms-2" for="DefaultTaxForEdit">Default Tax</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control custom-input" asp-for="@editItem.TaxPercentage"
+                                            id="ItemTaxPercentageForEdit" placeholder="">
+                                        <label for="ItemTaxPercentageForEdit">Tax Percentage</label>
+                                        <span asp-validation-for="@editItem.TaxPercentage" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control custom-input" asp-for="@editItem.ShortCode"
+                                            id="ShortCdeForEdit" placeholder="">
+                                        <label for="EditShortCode">Short Code</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control custom-input h-100" id="descriptionForEdit"
+                                    asp-for="@editItem.Description" rows="3" placeholder=""></textarea>
+                                <label for="EditDescription">Description</label>
+                            </div>
+
+                            <div id="dropzone"
+                                class="dropzone w-100 d-flex flex-column justify-content-center align-items-center">
+                                <i class="bi bi-cloud-arrow-up z-2 fs-4 "></i>
+                                <h6 class="colour-styling d-flex justify-content-center">Browse File</h6>
+                                <input asp-for="@editItem.Photo" id="fileInputAtEditItem" class="upload-input" accept="image/*" />
+                                <div id="fileDetailsAtEditItem" class="mt-2 d-none">
+                                    <p id="fileNameAtEditItem" class="mb-1"></p>
+                                    <img id="imagePreviewAtEditItem" src="#" alt="Image Preview" class="img-thumbnail mb-1 rounded"
+                                        style="max-width: 200px; max-height: 200px; display: none;" />
+                                    <button type="button" id="removeImageButtonAtEditItem" class="btn btn-danger">Remove
+                                        Image</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 p-2 modifierside">
+                            <div class="row p-2 px-4 mb-1">
+                                <div class="col-12">
+                                    <select class="form-control custom-select border rounded" id="attachModifierGroupforEditItem">
+                                        <option value="" disabled selected>Select Modifier Group</option>
+                                        @foreach (ModifierGropDetails modifierGroup in Model.modifierGrops)
+                                        {
+                                            <option value="@modifierGroup.id">@modifierGroup.modifierGroupName</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <input type="hidden" id="ItemModifierRelationForEdit" asp-for="@editItem.IMDetails" />
+                            <div id="SelectedModifierGroups" class="overflow-auto"
+                                style="height: 400px;">
+                                <!-- Selected modifiers will be shown here -->
+                            </div>
+                        </div>
+
+                        <div class="col-11 my-2 d-flex justify-content-end">
+                            <button type="button" id="updateItemBtn" class="btn btn-primary mx-3">Save</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal"
+                                >Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

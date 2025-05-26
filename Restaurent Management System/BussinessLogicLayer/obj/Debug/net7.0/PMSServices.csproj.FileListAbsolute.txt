@@ -1,0 +1,265 @@
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+D:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+D:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+D:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+D:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+D:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+D:\Assignments\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CopyComplete
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServi.326DEFF1.Up2Date
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.sourcelink.json
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServi.326DEFF1.Up2Date
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CopyComplete
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CopyComplete
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServi.326DEFF1.Up2Date
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+F:\.net\.A Today\A\New folder\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CopyComplete
+D:\dotnet\Today\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.sourcelink.json
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServi.326DEFF1.Up2Date
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+d:\dotnet\A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+d:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CopyComplete
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+D:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+d:\dotnet\A\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\Select.Html.dep
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServi.326DEFF1.Up2Date
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.sourcelink.json
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\Select.Html.dep
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.sourcelink.json
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServi.326DEFF1.Up2Date
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\Select.Html.dep
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServi.326DEFF1.Up2Date
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+F:\.net\A_21_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\Select.Html.dep
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServi.326DEFF1.Up2Date
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+F:\.net\A_23_04\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\Select.Html.dep
+d:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+d:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CopyComplete
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+d:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\Select.Html.dep
+D:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.deps.json
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSServices.pdb
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSCore.pdb
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\bin\Debug\net7.0\PMSData.pdb
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.AssemblyReference.cache
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.GeneratedMSBuildEditorConfig.editorconfig
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfoInputs.cache
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.AssemblyInfo.cs
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CoreCompileInputs.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.csproj.CopyComplete
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\refint\PMSServices.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\PMSServices.pdb
+D:\Assignments\N_T_A_PMS\Restaurent Management System\BussinessLogicLayer\obj\Debug\net7.0\ref\PMSServices.dll

@@ -1,0 +1,215 @@
+@model (List<TaxDetails> taxList,PaginationDetails paginationDetails)
+
+@{
+    int editor = User.GetUserId();
+    TaxDetails tax = new TaxDetails();
+}
+
+<div class="bg-light" id="mainContent">
+    <input type="hidden" id="editorIdAtTaxPage" value="@editor">
+    <div id="usersPageHeader" class="d-flex flex-nowrap justify-content-between">
+        <div class="me-auto d-flex align-items-center">
+            <span class="mainHeading fw-bold fs-2 text-blue">Taxes / Fees</span>
+        </div>
+        <div class="ms-auto d-flex align-items-center">
+            <div class="d-flex">
+                <div class="input-group mt-2">
+                    <input type="text" class="form-control custom-input " maxlength="50" placeholder="Search" id="SearchTax" aria-label="Search"
+                        name="searchQuery">
+                </div>
+                <a class="nav-link link-dark crudAction" data-bs-toggle="modal" data-bs-target="#AddTaxModal" data-action="Create-Tax">
+                    <button type="button" class="addBtn ms-2 rounded-1 border-0 " >+ New Tax</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="totalRecordsForTaxPage" value="@Model.paginationDetails.TotalRecords" />
+    <div class="mainContent my-4 ms-2 mr-5">
+        <div id="taxesList">
+            <partial name="_partial_TaxList" model="Model.taxList">
+
+        </div>
+        <!------------------------------------------ Pagination -------------------------------------------->
+        <div class="d-flex align-items-center justify-content-end">
+            <div
+                class="w-100 justify-content-end col-12 col-md-6 col-lg-4 my-2 d-flex flex-wrap align-items-center gap-2">
+                <!-- Items per page dropdown -->
+                <span class="paginationtext d-none d-sm-inline">Items per page</span>
+                <select class="form-control custom-select w-auto" id="TaxesPerPage">
+                    <option value="5" selected>5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                </select>
+
+                <!-- Pagination info -->
+                <span class="paginationtext d-none d-sm-inline" id="paginationInfoForTaxesPage"></span>
+
+                <!-- Previous Button -->
+                <button class="btn border" id="prevPageForTaxes">&lt;</button>
+
+                <!-- Next Button -->
+                <button class="btn border" id="nextPageForTaxes">&gt;</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--------------------------------------------- Add Modal for Taxes ---------------------------------------------->
+
+    <div class="modal fade" id="AddTaxModal" tabindex="-1" aria-labelledby="AddTaxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between m-3">
+                        <h5 class="modal-title">Add New Tax</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form id="AddNewTaxForm" class="row d-flex justify-content-center">
+                        <div class="row mb-3">
+                            <div class="col-12 ">
+                                <div class="form-floating m-0 ">
+                                    <input type="text" class="form-control custom-input"asp-for="@tax.TaxName" id="newTaxName" placeholder="">
+                                    <label for="newTaxName">Name*</label>
+                                    <span class="text-danger" asp-validation-for="@tax.TaxName"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating m-0">
+                                    <select class="form-control custom-select" asp-for="@tax.TaxType" id="newTaxType">
+                                        <option value="">Taxes Type*</option>
+                                        <option value="Percentage">Percentage</option>
+                                        <option value="Flat Amount">Flat Amount</option>
+                                    </select>
+                                    <label for="newTaxType">Type*</label>
+                                    <span class="text-danger" asp-validation-for="@tax.TaxType"></span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="form-floating m-0 ">
+                                    <input type="number" class="form-control custom-input" asp-for="@tax.TaxValue" id="newTaxRate" placeholder="">
+                                    <label for="newTaxRate">Taxes Amount*</label>
+                                    <span class="text-danger" asp-validation-for="@tax.TaxValue"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check form-switch custom-check-input">
+                                    <input class="form-check-input" id="checkBoxForIsEnabledForNewTax" asp-for="@tax.Isenabled" type="checkbox">
+                                    <label for="checkBoxForIsEnabledForNewTax">IsEnabled</label>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check form-switch custom-check-input">
+                                    <input class="form-check-input" id="checkBoxForDefaultNewTax" asp-for="@tax.Isdefault" type="checkbox">
+                                    <label for="checkBoxForDefaultNewTax">Default</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-11 m-0 p-0 my-2 d-flex justify-content-end">
+                            <button type="submit" id="saveNewTaxes" form="AddNewTaxForm" class="updateBtn btn mx-2 my-3">Save</button>
+                            <button type="reset" class="cancelbtn btn w-25 my-3">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------- Edit Modal form Taxes --------------------------------------------->
+    <div class="modal fade" id="EditTaxModal" tabindex="-1" aria-labelledby="EditTaxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between m-3">
+                        <h5 class="modal-title" id="EditTaxModalLabel">Edit Tax</h5>
+                        <input type="hidden" id="editorIdForEditTax" value="@editor">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                        <form id="EditTaxForm" class="row d-flex justify-content-center">
+                        <div class="row">
+                            <input type="hidden" id="taxIdForEdit" asp-for="@tax.TaxId">
+                            <div class="col-12">
+                                <div class="form-floating m-0 mb-3">
+                                    <input type="text" class="form-control custom-input" id="UpdateTaxNameForEdit" asp-for="@tax.TaxName">
+                                    <label for="UpdateTaxNameForEdit">Name*</label>
+                                    <span class="text-danger" asp-validation-for="@tax.TaxName"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating m-0">
+                                    <select class="form-control custom-select" id="UpdateTaxTypeForEdit" asp-for="@tax.TaxType">
+                                        <option value="">Taxes Type*</option>
+                                        <option value="Percentage">Percentage</option>
+                                        <option value="Flat Amount">Flat Amount</option>
+                                    </select>
+                                    <label for="UpdateTaxTypeForEdit">Type*</label>
+                                    <span class="text-danger" asp-validation-for="@tax.TaxType"></span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating m-0 mb-3">
+                                    <input type="text" class="form-control custom-input" id="RateForEdit" asp-for="@tax.TaxValue">
+                                    <label for="RateForEdit">Taxes Amount*</label>
+                                    <span class="text-danger" asp-validation-for="@tax.TaxValue"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check form-switch custom-check-input">
+                                    <input class="form-check-input" id="checkBoxForIsEnabledTaxForEdit" asp-for="@tax.Isenabled" type="checkbox">
+                                    <label for="checkBoxForIsEnabledTaxForEdit">IsEnabled</label>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check form-switch custom-check-input">
+                                    <input class="form-check-input" id="checkBoxForDefaultTaxForEdit" asp-for="@tax.Isdefault" type="checkbox">
+                                    <label for="checkBoxForDefaultTaxForEdit">Default</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-11 m-0 p-0 my-2 d-flex justify-content-end">
+                            <button type="submit" id="updateTaxesBtn" form="EditTaxForm" class="updateBtn btn mx-2 my-3">Save</button>
+                            <button type="reset" class="cancelbtn btn w-25 my-3">Cancel</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------- Delete Modal ------------------------------------------------->
+    <div class="modal fade" id="DeleteModalForTax" tabindex="-1" aria-labelledby="DeleteModalForTaxLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+
+                    <img src="~/images/pngegg.png" class="mb-3" width="50" alt="Warning">
+                    <span>@MessageHelper.GetWarningMessageForDeleteConfirmation(Constants.TAXES)</span>
+                    <div
+                        class="d-flex col-12 mt-4 container flex-nowrap justify-content-center">
+                        <input type="hidden" id="taxIdForDelete" name="taxId">
+                        <button type="submit" id="deleteTaxBtn" class="updateBtn btn w-25 ">Yes</button>
+                        <button type="button" class="btn ms-3 cancelbtn w-25" data-bs-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/js/Taxes.js"></script>

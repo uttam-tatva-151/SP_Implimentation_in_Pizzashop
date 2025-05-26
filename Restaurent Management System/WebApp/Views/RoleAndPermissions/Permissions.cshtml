@@ -1,0 +1,100 @@
+@model List<PermissionDetails>
+
+@{
+    ViewData["Title"] = "Permissions Page";
+}
+
+<div class="bg-light">
+ 
+        <div id="PermissionPageHeader" class="d-flex flex-nowrap mx-3 justify-content-between">
+            <h2 class="pt-1 ps-1 text-blue col-sm-6  col-8  fw-bold">Permissions</h2>
+            <button type="button" class="mt-2 backbtn col-sm-3 col-md-2 col-lg-1 col-6"
+                onclick="location.href='@Url.Action("Role", "RoleAndPermissions")'">
+                &lt; Back
+            </button>
+        </div>
+        <div class="rap_box mainContent bg-white permissions">
+            <div class="roleSection col-12 col-sm-4 col-md-3 ms-3">
+                <div class="form-floating">
+                    <input type="text" id="RoleOfUser" class="form-control custom-input" value="@ViewBag.RoleName" disabled />
+                    <label for="RoleOfUser" class="fs-6 fw-light">Role</label>
+                </div>
+            </div>
+            <form asp-action="UpdatePermissions" method="post">
+                <input type="hidden" name="RoleId" value="@ViewBag.RoleId" />
+
+                <div id="PermissionPageBody" class="per-package table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="selectAll">
+                                        <label class="form-check-label" for="selectAll">
+                                            Permission
+                                        </label>
+                                    </div>
+                                </th>
+                                <th scope="col">Can View</th>
+                                <th scope="col">Can Add/Edit</th>
+                                <th scope="col">Can Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.Count; i++)
+                            {
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" value="true" checked hidden asp-for="@Model[i].IsGranted">
+                                        <input type="text" value="@Model[i].PermissionId" hidden
+                                            asp-for="@Model[i].PermissionId">
+                                        @* <input type="text"> *@
+                                        <div class="form-check">
+                                            <input class="form-check-input row-selectorforpermission" type="checkbox"
+                                                data-row-id="@Model[i].PermissionId">
+                                            <label class="form-check-label">@Model[i].ModuleName</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input asp-for="@Model[i].CanView"
+                                                class="form-check-input row-checkboxforpermission can-view" type="checkbox"
+                                                disabled />
+                                            <input type="hidden" asp-for="@Model[i].CanView" value="false" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input asp-for="@Model[i].CanCreateandedit"
+                                                class="form-check-input row-checkboxforpermission can-edit" type="checkbox"
+                                                disabled />
+                                            <input type="hidden" asp-for="@Model[i].CanCreateandedit" value="false" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input asp-for="@Model[i].CanDelete"
+                                                class="form-check-input row-checkboxforpermission can-delete"
+                                                type="checkbox" disabled />
+                                            <input type="hidden" asp-for="@Model[i].CanDelete" value="false" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                    <div class="permissionBoxFooter d-flex justify-content-end">
+                        <div class="d-flex w-25 justify-content-end">
+                            <button class="btn updateBtn w-50 mx-3 crudAction" data-action="Update-Permissions" type="submit">Update</button>
+                            <button class="btn w-50 me-4 cancelbtn" type="reset">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+</div>
+
+
+ <script src="~/js/RoleAndPermissions.js"></script>

@@ -1,0 +1,224 @@
+@model (DashboardVM analysisDetails, PaginationDetails paginationDetails)
+
+<link rel="stylesheet" href="~/css/Dashboard.css">
+<div class="container-fluid py-3">
+    <!-- Dashboard Metrics -->
+    <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="dashboardCard">
+                <div>
+                    <span class="responsiveNumber" id="totalSales">₹@Model.analysisDetails.TotalSales</span><br>
+                    <span class="responsiveLabel ellipsis-text">Total Sales</span>
+                </div>
+                <div class="icon-bubble enhanced-circle">
+                    <img src="~/images/icons/total-sales.svg" alt="Total Sales Icon">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="dashboardCard">
+                <div>
+                    <span class="responsiveNumber" id="totalOrders">@Model.analysisDetails.TotalOrders</span><br>
+                    <span class="responsiveLabel ellipsis-text">Total Orders</span>
+                </div>
+                <div class="icon-bubble">
+                    <img src="~/images/icons/total-orders.svg" alt="Total Orders Icon">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="dashboardCard">
+                <div>
+                    <span class="responsiveNumber" id="avgOrderValue">₹@Model.analysisDetails.AvgOrderValue</span><br>
+                    <span class="responsiveLabel ellipsis-text">Avg. Order Value</span>
+                </div>
+                <div class="icon-bubble">
+                    <img src="~/images/icons/order-value.svg" alt="Order Value Icon">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="dashboardCard">
+                <div>
+                    <span class="responsiveNumber"
+                        id="avgWaitingTime">@((int)Model.analysisDetails.AvgWaitingTime.TotalMinutes) mins</span><br>
+                    <span class="responsiveLabel ellipsis-text">Avg. Waiting Time</span>
+                </div>
+                <div class="icon-bubble">
+                    <img src="~/images/icons/waiting-time.svg" alt="Waiting Time Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-3 mt-3">
+        <!-- Revenue Chart -->
+        <div class="col-12 col-lg-6">
+            <div class="dashboardCard d-flex flex-wrap" style="height: 350px;">
+                 <div class="cardHeading d-flex flex-nowrap w-100 justify-content-between">
+                    <h5 >
+                        <i class="bi bi-globe-central-south-asia"></i> Revenue
+                    </h5>
+                    <div class="chartTypeSelector">
+
+                        <input type="radio" id="revenueChartHist" name="revenueChartType" value="bar">
+                        <label for="revenueChartHist" title="Histogram">
+                            <i class="fas fa-chart-bar"></i>
+                        </label>
+
+                        <input type="radio" id="revenueChartNormal" name="revenueChartType" value="line" checked>
+                        <label for="revenueChartNormal" title="Normal/Line Chart">
+                            <i class="fas fa-chart-line"></i>
+                        </label>
+                    </div>
+                </div>
+                <canvas id="revenueChart"
+                    data-chart-details='@Html.Raw(Json.Serialize(Model.analysisDetails.RevenueData))'
+                    class="py-3"></canvas>
+            </div>
+        </div>
+
+        <!-- Customer Growth Chart -->
+        <div class="col-12 col-lg-6">
+            <div class="dashboardCard d-flex flex-wrap" style="height: 350px;">
+                <div class="cardHeading d-flex flex-nowrap w-100 justify-content-between">
+                    <h5 >
+                        <i class="fas fa-user-plus"></i> Customer Growth
+                    </h5>
+                    <div class="chartTypeSelector">
+                        <input type="radio" id="customerGrowthChartHist" name="customerGrowthChartType" value="bar">
+                        <label for="customerGrowthChartHist" title="Histogram">
+                            <i class="fas fa-chart-bar"></i>
+                        </label>
+
+                        <input type="radio" id="customerGrowthChartNormal" name="customerGrowthChartType" value="line" checked>
+                        <label for="customerGrowthChartNormal" title="Normal/Line Chart">
+                            <i class="fas fa-chart-line"></i>
+                        </label>
+                    </div>
+                </div>
+                <canvas id="customerChart"
+                    data-chart-details='@Html.Raw(Json.Serialize(Model.analysisDetails.CustomerGrowthData))'></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Selling Items Section -->
+    <div class="row g-3 mt-3">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="dashboardTable shadow rounded bg-white" style="height: 170px;">
+                <h4 class="ellipsis-text">Top Selling Items</h4>
+                <table class="table">
+                    <tbody>
+                        @if (Model.analysisDetails.TopSellingItem.Any())
+                        {
+                            @foreach (ItemDetails item in Model.analysisDetails.TopSellingItem)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="itemInformation">
+                                            @if (item.photo == null)
+                                            {
+                                                <img src="~/images/top_sells.png" alt="@item.itemName">
+                                            }
+                                            else
+                                            {
+                                                <img src="~@item.photo" alt="@item.itemName">
+                                            }
+                                            <div>
+                                                <span class="ellipsis-text">@item.itemName</span>
+                                                <span class="quantity">@item.quantity orders</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td>
+                                    <div class="no-items-container w-100 d-flex flex-nowrap">
+                                        <img src="~/images/Animatation/empty-box.gif" alt="No KOTS Found"
+                                            class="animated-empty-box" />
+                                        <p class="mt-3">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ITEM)</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 ">
+            <div class="dashboardTable shadow rounded bg-white" style="height: 170px;">
+                <h4>Least Selling Items</h4>
+                <table class="table">
+                    <tbody>
+                        @if (Model.analysisDetails.LeastSellingItem.Any())
+                        {
+                            foreach (ItemDetails item in Model.analysisDetails.LeastSellingItem)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="itemInformation">
+                                            @if (item.photo == null)
+                                            {
+                                                <img src="~/images/low_sells.png" alt="@item.itemName">
+                                            }
+                                            else
+                                            {
+                                                <img src="~@item.photo" alt="@item.itemName">
+                                            }
+                                            <div>
+                                                <span class="ellipsis-text">@item.itemName</span>
+                                                <span class="quantity">@item.quantity orders</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td>
+                                    <div class="no-items-container w-100 d-flex flex-nowrap">
+                                        <img src="~/images/Animatation/empty-box.gif" alt="No KOTS Found"
+                                            class="animated-empty-box" />
+                                        <p class="mt-3">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ITEM)</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="dashboardCard big">
+                <div>
+                    <span class="responsiveNumber"
+                        id="waitingListCount">@Model.analysisDetails.WaitingCustomerCount</span><br>
+                    <span class="responsiveLabel ellipsis-text">Waiting Customer Count</span>
+                </div>
+                <div class="icon-bubble">
+                    <img src="~/images/icons/waiting-list.svg" alt="Waiting List Icon">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="dashboardCard big">
+                <div>
+                    <span class="responsiveNumber"
+                        id="newCustomersCount">@Model.analysisDetails.NewCustomerCount</span><br>
+                    <span class="responsiveLabel ellipsis-text">New Customer Count</span>
+                </div>
+                <div class="icon-bubble">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

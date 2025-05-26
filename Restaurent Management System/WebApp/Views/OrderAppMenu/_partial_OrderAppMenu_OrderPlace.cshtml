@@ -1,0 +1,187 @@
+@model OrderExportDetails
+
+<div class="order-details rounded">
+    <div class="p-2  flex-column order-details-card">
+
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="~/images/sidebar_icons/dinner-table.png" height="28">
+                    <div class="px-1">
+                        <div class="text-muted small">@Model.Section</div>
+                        <h6 class="mb-0 fw-bold">@Model.Tables</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="order-details-btns">
+                <button type="button" class="btn btn-outline-primary btn-show" id="QRBtn" data-bs-toggle="modal"
+                    data-bs-target="#qrModal" data-status="@Model.Status">
+                    <i class="bi bi-qr-code-scan"></i>
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="EditCustomerModalBtn"
+                    data-customer-info='@Html.Raw(Json.Serialize(Model.CustomerInfo))' data-bs-toggle="modal"
+                    data-bs-target="#EditCustomerModal">
+                    <i class="bi bi-person-lines-fill"></i>
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="OrderCommentBtn" data-bs-toggle="modal"
+                    data-bs-target="#commentModal">
+                    <img src="~/images/comment.png" alt="Comment" style="width: 1em; height: 1em;">
+                </button>
+                <input type="hidden" id="orderWiseComment" maxlength="500" />
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr class="fw-bold text-muted">
+                        <th class="col-8">Item</th>
+                        <th class="col-auto text-center">Quantity</th>
+                        <th class="col-auto text-end">Amount</th>
+                        <th class="col-auto text-center"></th>
+                    </tr>
+                </thead>
+                <tbody id="orderListSectionInOrderApp">
+                    @if(Model.OrderItems.Any()){
+                    @foreach (OrderExportDetails.OrderItemHelperModel item in Model.OrderItems)
+                    {
+                    <tr class="itemInList" data-item-id="@item.ItemId"
+                        data-item-details='@Html.Raw(Json.Serialize(item))'>
+                        <td>
+                            <button class="btn btn-sm p-0 me-2 " data-bs-toggle="collapse"
+                                data-bs-target="#itemAtOrderList-@item.ItemId">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <span class="orderItemAtOrderApp savedItem" data-item-id="@item.ItemId">@item.ItemName
+                                <span class="tooltip-container"> <img src="~/images/list.png"
+                                        class="taxPerItemImage ms-2 mb-1" alt="Tax per Item"
+                                        style="cursor: pointer; width: 1.1em; height: 1em;">
+                                    <p class="tooltip-text ">Tax on this item : @item.TaxPerItem% </p>
+                                </span></span>
+                            @if(item.Modifiers != null){
+                            <div class="collapse mt-1" id="itemAtOrderList-@item.ItemId">
+                                @foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in
+                                item.Modifiers)
+                                {
+                                    @if(modifier.ModifierId != 0){
+                                <div class="text-muted small ms-4" data-modifier-name="@modifier.ModifierName">•
+                                    @modifier.ModifierName <span class="float-end"
+                                        data-modifier-unitprice="@modifier.ModifierPrice">₹@modifier.ModifierPrice</span>
+                                </div>
+                                }
+                                }
+                            </div>
+                            }
+                        </td>
+                        <td class="text-center">
+                            <div class="input-group input-group-sm justify-content-center inputbtns"
+                                style="width: 100px;">
+                                <button class="btn btn-outline-secondary btn-sm decrement-quantity"
+                                    data-item-id="@item.ItemId">-</button>
+                                <input type="number" class="form-control custom-input text-center quantity-input"
+                                    value="@item.Quantity" min="@item.PreparedItems" data-item-id="@item.ItemId"
+                                    data-item-base-price="@item.UnitPrice">
+                                <button class="btn btn-outline-secondary btn-sm increment-quantity"
+                                    data-item-id="@item.ItemId">+</button>
+                            </div>
+                        </td>
+
+                        <td class="text-end  totalPrice" data-item-id="@item.ItemId">
+                            <div class="d-flex flex-column">
+                                <span class="fw-bold"> ₹@(((item.UnitPrice +
+                                    item.Modifiers?.Sum(s=>s.ModifierPrice)??0M)*item.Quantity))</span>
+                                <span class="text-muted">₹@(item.Modifiers?.Sum(s=>s.ModifierPrice)?? 0M)</span>
+                            </div>
+                        </td>
+                        <td class="text-center ">
+                            <div class="d-flex">
+
+                                <button class="btn btn-sm remove-item" data-item-id="@item.ItemId">
+                                    <i class="bi bi-trash3 text-black"></i>
+                                </button>
+                                <button class="btn btn-sm specialInstructions" data-item-id="@item.ItemId"
+                                    data-bs-toggle="modal" data-bs-target="#commentModal">
+                                    <img src="~/images/chat.png" alt="Special-Instructions"
+                                        style="width: 1.2em; height: 1.3em;">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    }
+                    }
+                    else{
+                    <tr>
+                        <td colspan="4" class="text-center text-muted">
+                            <div class="no-items-container">
+                                <img src="~/images/Animatation/empty-box.gif" alt="No items"
+                                    class="animated-empty-box" />
+                                <p class="mt-3">@Constants.NO_ITEM_IN_BILL</p>
+
+                            </div>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+            <!-- Totals -->
+            <div class="mb-3 border-top pt-3 priceSection" data-order-id="@Model.OrderId">
+                <div class="d-flex justify-content-between" id="subTotal-@Model.OrderId"
+                    data-sub-total="@Model.SubTotal"><span>SubTotal</span><span>₹@Model.SubTotal</span></div>
+                @foreach (OrderExportDetails.TaxDetailsHelperModel tax in Model.taxDetails)
+                {
+                if (tax.TaxType == "Percentage")
+                {
+                <div class="d-flex justify-content-between taxisAtOrderAppMenu" data-tax-value="@tax.TaxValue"
+                    data-tax-type="@tax.TaxType"><span>@tax.TaxName <span class="text-muted">(@tax.TaxValue
+                            %)</span></span><span>₹@((Model.SubTotal *
+                        tax.TaxValue/100).ToString("F2"))</span></div>
+                }
+                else
+                {
+                <div class="d-flex justify-content-between taxisAtOrderAppMenu" data-tax-value="@tax.TaxValue"
+                    data-tax-type="@tax.TaxType"><span>@tax.TaxName</span><span>₹@tax.TaxValue</span></div>
+                }
+                }
+                <div class="d-flex justify-content-between fw-bold" id="totalAmount-@Model.OrderId"
+                    data-total-amount="@Model.TotalAmountToPay">
+                    <span>Total</span><span>₹@((Model.TotalAmountToPay).ToString("F2"))</span>
+                </div>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="mb-3 d-flex justify-content-between flex-nowrap">
+                <label class="form-label">Payment Method</label>
+                <div class="d-flex gap-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="paymentCash" checked>
+                        <label class="form-check-label" for="paymentCash">Cash</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="paymentCard">
+                        <label class="form-check-label" for="paymentCard">Card</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="paymentUPI">
+                        <label class="form-check-label" for="paymentUPI">UPI</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="d-flex flex-column gap-2 justify-content-end">
+                <div class="d-flex gap-2 justify-content-end btnsAtBillSection">
+                    <button class="btn btn-primary" id="saveBtnForPlacedOrder" data-status="@Model.Status">Save</button>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#completeConfirmationModal">Complete</button>
+                    <button class="btn btn-outline-primary btn-show" id="generateInvoiceBtn">Generate Invoice</button>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-secondary" data-bs-toggle="modal"
+                        data-bs-target="#CancelConfirmationModal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

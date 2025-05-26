@@ -1,0 +1,737 @@
+
+/* ------------------------- To hide scrollbar line ------------------------- */
+.scrollbar-none {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+/* --------------------------- Bootstrap OverRide --------------------------- */
+
+#sidebar li a {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+}
+#sidebarBackdrop {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.4);
+  z-index: 1040; /* Lower than sidebar overlay */
+}
+
+#sidebarBackdrop.active {
+  display: block;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  width: 280px;
+  background: #fff;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  z-index: 1100; /* Higher than backdrop */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.sidebar-overlay.active {
+  transform: translateX(0);
+}
+.activepage {
+  font-weight: bold;
+  background-color: #49494925 !important ;
+  color: #0066a7 !important;
+}
+
+/* -------------------------------- Side Bar -------------------------------- */
+#sidebar a[data-title] {
+  position: relative;
+}
+
+#sidebar a[data-title]::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 100%; /* Position above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #094f96;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip arrow */
+#sidebar a[data-title]::before {
+  content: "";
+  position: absolute;
+  top: 70%; 
+  left: 50%;
+  transform: translateX(150%);
+  transform: translateY(10%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #094f96 transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
+  z-index: 9;
+}
+
+#sidebar a[data-title]:hover::after,
+#sidebar a[data-title]:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.hover-scale-transition {
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.custom-check-input {
+  top: 0.9rem;
+  scale: 1.2;
+  margin-left: 1.3rem;
+}
+.hover-scale-transition:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+}
+
+.rightBox {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.category-box-shadow {
+  width: 280px;
+  height: 700px;
+  background: linear-gradient(to right, white, rgb(225, 224, 224));
+}
+.addBtn {
+  width: 120px;
+  height: 38px;
+  color: white;
+  border-color: #0066a7;
+  background-color: #0066a7;
+}
+
+.paginationBtn {
+  height: 30px;
+  color: black;
+  border-color: black;
+  background-color: white;
+}
+
+.paginationText {
+  font-size: 12px;
+}
+#UserTable {
+  font-size: 0.9rem;
+}
+/* ----------------------------- Profile section ---------------------------- */
+/* for upload btn */
+.uploadSection {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  /* border: 2px dashed #000; */
+}
+.uploadSection input {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  width: 100%;
+}
+
+.form-floating .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.1em;
+  line-height: 40px;
+}
+
+.dropzone {
+  border: 1px dashed #0066a7;
+  border-radius: 3px;
+  text-align: center;
+  z-index: 0;
+  position: relative;
+}
+
+.upload-input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.background-box-shade {
+  /* width: 210px; */
+  border-right: 1px solid #0066a7;
+  height: 610px;
+  background: linear-gradient(to right, white, rgb(225, 224, 224));
+}
+
+#ChangePasswordVMBox{
+  width: 500px;
+  padding-left: 20px;
+  margin-top: 50px;
+  max-margin-left: 25%;
+}
+
+.cancelbtn{
+  width: 100px;
+  color: #0066a7;
+  margin-left: 5px;
+}
+
+.profile-box {
+  padding: 0;
+  /* display: flex; */
+  flex-direction: column;
+  /* justify-content: center; */
+  align-content: center;
+  overflow: hidden;
+}
+
+.background-box img {
+  width: 100%;
+  height: 40px;
+}
+.ProfilePhoto{
+  border-radius: 50%;
+}
+.Profilecover{
+  background-image: url("../images/profile_div_bg.jpg");
+  height: 50px;
+  background-size: cover;
+  /* background-color:  #0066a7; */
+}
+.profile-box-body{
+  padding: 10px;
+  /* margin-top: 20px; */
+}
+.profile-box-footer{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+}
+.file-details-container {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  padding: 16px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  max-width: 300px; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.file-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+
+.image-preview-wrapper {
+  margin-bottom: 16px; 
+}
+
+.image-preview {
+  max-width: 100%; 
+  max-height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px; 
+  display: none; 
+}
+
+#removeImageButton {
+  font-size: 14px;
+  padding: 8px 16px; /* Button padding */
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+#removeImageButton:hover {
+  background-color: #dc3545; /* Darker red on hover */
+  color: #fff; /* White text */
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3); /* Button shadow */
+}
+/* .profile-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 100px; 
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.camera-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  padding: 0px 5px 0px 5px;
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+.camera-icon input{
+opacity: 0;
+width: 30px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer; 
+  bottom: 5px; 
+  right: 5px;
+}
+.camera-icon:hover {
+  transform: scale(1.1);
+}
+
+
+
+/*-------------------- Category Section ------------------------*/
+.category-item {
+  cursor: pointer;
+}
+
+.category-link {
+  cursor: pointer;
+}
+.active-category {
+  background-color: #f0f0f0; /* Light grey highlight */
+  border-radius: 5px;
+}
+
+/*-------------------- Item Section ------------------------*/
+
+.modifierside {
+  background-color: #fff9db; /* Light yellow shade */
+}
+.modifierGroupBox {
+  border-bottom: 1px solid #ddd; /* Slight line after each appended child */
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.tabAtMenuPage button {
+  box-shadow: none;
+  text-decoration: none;
+  color: #0066a7;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.tabAtMenuPage button:hover {
+  box-shadow: none;
+  text-decoration: none;
+  color: #0066a7;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.tabAtMenuPage button:focus {
+  text-decoration: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #0066a7;
+}
+
+/* --------------------- Badges at Modifier Modal -------------------- */
+
+.custom-badge {
+  background-color: #007bff; /* Primary Blue */
+  color: white;
+  padding: 0.5rem 0.75rem; /* Adjust padding for better spacing */
+  border-radius: 20px; /* Rounded edges */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem; /* Slightly smaller text for elegance */
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.custom-badge:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  cursor: pointer;
+}
+
+/* Close Button Styling */
+.custom-badge .btn-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Close Button */
+.custom-badge .btn-close:hover {
+  opacity: 1;
+  transform: scale(1.2); /* Slightly enlarge on hover */
+  cursor: pointer;
+}
+
+/* Multi select Dropdown */
+.custom-dropdown-container {
+  margin-bottom: 20px;
+}
+
+.custom-dropdown-btn {
+  border: 1px solid #ced4da; /* Matches other input fields */
+  background-color: #f8f9fa;
+  font-size: 16px;
+  text-align: left;
+}
+
+.custom-dropdown-menu {
+  max-height: 200px;
+  overflow-y: auto; /* Enables scrolling for long lists */
+  border: 1px solid #ced4da; /* Matches input field borders */
+}
+
+.custom-dropdown-item {
+  padding: 5px 10px;
+}
+
+.custom-checkbox {
+  margin-right: 10px;
+}
+
+.custom-checkbox-label {
+  font-size: 14px;
+  width: 95%;
+}
+
+.custom-hidden-field {
+  display: none; /* Ensures the hidden field is not visible */
+}
+.modifierGroupsField{
+  opacity: 0; 
+  position: absolute; 
+  height: 0; 
+  width: 0;
+   pointer-events: none;
+}
+.assignTableField{
+  opacity: 0; 
+  position: absolute; 
+  height: 0; 
+  width: 0;
+   pointer-events: none;
+}
+.custom-validation-error {
+  font-size: 12px;
+  color: #dc3545; /* Matches the red error color */
+}
+.contentScreen{
+  height: 91vh;
+}
+.customerDetailsRow{
+  cursor: pointer;
+}
+/* --------------------- For Every Tables in Project -------------------- */
+.mainContent {
+  min-height: 30vh;
+  /* height: 91vh;   */
+  padding: 20px;
+  background-color: #fff;
+  /* padding: 20px; */
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.374);
+}
+.table-responsive {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.section-fixed{
+  height: 50vh;
+  
+  overflow-x: auto;
+}
+
+.section-fixed ul li{
+  display: flex;
+  justify-content: space-between;
+} 
+.table-fixed {
+  height: 40vh;
+}
+.table-responsive table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: black;
+}
+
+
+
+
+@media screen and (max-width: 1129px) {
+  .table-responsive table{
+    zoom: 80%;
+  }
+  .backbtn {
+    border-radius: 10px;
+    border: 2px solid #0066a7;
+    /* width: 100%; */
+    width: 100px;
+    height: 38px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+ 
+  .addBtn {
+    width: 100px;
+    height: 38px;
+    color: white;
+    font-size: medium;
+    border-color: #0066a7;
+    background-color: #0066a7;
+  }
+  img {
+    zoom: 90%;
+  }
+  .background-box-shade{
+    zoom: 80%;
+    height: inherit;
+  }
+  .section-fixed{
+    height: inherit;
+  }
+}
+
+
+/* ---------------------------- Category Section ---------------------------- */
+
+.custom-tab-section ul{
+  display: flex;
+  flex-direction: column;
+}
+
+/*--------------------------------Media Query----------------------------------*/
+@media screen and (max-width: 767.69px) {
+  h1 {
+    zoom: 80%;
+  }
+  h2 {
+    zoom: 80%;
+  }
+  h3 {
+    zoom: 80%;
+  }
+  label {
+    zoom: 80%;
+  }
+  img {
+    zoom: 70%;
+  }
+  .fs-3 {
+    zoom: 80%;
+  }
+  .fs-5 {
+    zoom: 80%;
+  }
+  .addBtn {
+    width: 80px;
+    height: 38px;
+    color: white;
+    font-size: x-small;
+    border-color: #0066a7;
+    background-color: #0066a7;
+  }
+
+
+  .background-box-shade{
+    border-right: 1px solid #0066a7;
+  height: 17.5vh;
+  width: 100%;
+  background: whitesmoke;
+  overflow: auto;
+  }
+
+
+  .responsive-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.responsive-table td{
+    display: block;
+    text-align: left;
+    padding: 0.5rem 0;
+    border-bottom: none;
+}
+.responsive-table tr[data-bs-toggle="collapse"] {
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+.accordion-collapse {
+    font-size: 0.9rem;
+}
+
+.accordion-collapse p {
+    margin: 4px 0;
+}
+
+.accordion-collapse div {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+.searchSectionAtMenuPage{
+  height: 33px; 
+  font-size: 0.9rem;
+}
+
+/* General Global Styles */
+.list-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.list-container::-webkit-scrollbar {
+  height: 3px;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background-color: #0066a7;
+  border-radius: 3px;
+}
+
+.list-item {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1px 10px !important;
+  border-radius: 20px !important;
+  background-color: #e6f0fa !important;
+  color: #0066a7 !important;
+  font-weight: 300 !important;
+  min-width: 100px !important;
+  max-width: 150px !important;
+  height: 50px !important;
+  white-space: nowrap !important;
+  box-shadow: 0 2px 5px rgb(0 102 167 / 0.3);
+  cursor: pointer !important;
+  gap: 5px !important;
+}
+
+/* Hide the right buttons (edit/delete) on small screens */
+.list-item .action-buttons {
+  display: none !important;
+}
+
+/* Adjust icon and text alignment inside links */
+.list-link {
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+}
+
+.list-link img {
+  height: 20px !important;
+}
+
+.list-link div {
+  max-width: none !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.active-item {
+  background-color: #ffffff !important; /* Light grey highlight */
+  border-radius: 5px !important;
+}
+
+.section-fixed {
+  height: 60px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  overflow-x: auto;
+}
+}
+
+@media screen and (max-width: 975px) And (min-width: 769px) {
+  .updateBtn {
+    border-radius: 10px;
+    width: 100px;
+    height: 45px;
+    /* color: rgb(255, 0, 0); */
+    font-size: small;
+    background-color: #0066a7;
+    overflow: none;
+  }
+  table thead tr th{
+    font-size: 0.9em;
+  }
+  .addBtn {
+    width: 90px;
+    height: 38px;
+    font-size: small;
+    color: white;
+    border-color: #0066a7;
+    background-color: #0066a7;
+  }
+  img {
+    zoom: 80%;
+  }
+  .background-box-shade{
+    zoom: 65%;
+    height: inherit;
+  }
+  .section-fixed{
+    height: inherit;
+  }
+  .item-desc{
+    /* font-size: 0.8em; */
+    zoom: 80%;
+  }
+}

@@ -1,0 +1,52 @@
+
+@model CustomerDetails
+<!-- Modal -->
+<div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="customerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="customerModalLabel">Customer Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modal Body  -->
+      <div class="modal-body">
+        <form asp-action="SaveCustomer" method="post">
+          <input type="hidden" id="TotalCapacity" value="">
+          <div class="form-floating mb-3">
+            <input asp-for="@Model.CustomerName" class="form-control custom-input" id="CustomerName" placeholder="Name*" />
+            <label for="CustomerName">Name*</label>
+            <span asp-validation-for="CustomerName" class="text-danger"></span>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <div class="form-floating">
+                <input asp-for="@Model.CustomerPhone" class="form-control custom-input" id="CustomerPhone" placeholder="Mobile Number*" />
+                <label for="CustomerPhone">Mobile Number*</label>
+                <span asp-validation-for="CustomerPhone" class="text-danger"></span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating">
+                <input asp-for="@Model.NoOfPerson" class="form-control custom-input" id="Noofperson" type="number" placeholder="No of Person(s)*" />
+                <label for="Noofperson">No of Person(s)*</label>
+                <span asp-validation-for="NoOfPerson" class="text-danger"></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input asp-for="@Model.CustomerEmail" class="form-control custom-input" id="CustomerEmail" placeholder="Email*" />
+            <label for="CustomerEmail">Email*</label>
+            <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+          </div>
+          <div class="d-flex justify-content-end gap-2">
+            <button type="submit" class="btn btn-primary CustomerDetailSaveOAMenu">Save</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+

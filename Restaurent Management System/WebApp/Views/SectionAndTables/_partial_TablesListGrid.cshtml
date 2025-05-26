@@ -1,0 +1,113 @@
+@model IEnumerable<TableDetails>
+
+@{
+    int editorId = User.GetUserId();
+}
+ 
+<!-- Table Container -->
+<div class="row table-responsive table-fixed overflow-auto mt-5 mx-3 selectable-table d-none d-md-block">
+    <table class="table table-hover ">
+        <thead class="bg-white">
+            <tr>
+                <th class="text-secondary">
+                    <div class="form-check">
+                        <input class="form-check-input select-all-checkbox" type="checkbox" id="selectAll">
+                        Table Name
+                    </div>
+                </th>
+                <th class="text-center text-secondary">Capacity</th>
+                <th class="text-center text-secondary">Status</th>
+                <th class="text-secondary">Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            @if (Model.Any())
+            {
+                @foreach (TableDetails table in Model)
+                {
+                    <tr class="data-row selectable-row">
+                        <td>
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input row-checkbox" data-table-id="@table.TableId" type="checkbox">
+                                @table.TableName
+                            </div>
+                        </td>
+                        <td class="text-center">@table.Capacity</td>
+                        <td class="text-center">
+                            <span
+                                class="px-3 py-2 text-white rounded-pill 
+                                                    @(table.Status == "Booked" ? "bg-danger" :
+                                                    table.Status == "Occupied" ? "bg-secondary" : "bg-success")">
+                                                    @table.Status
+                            </span>
+                        </td>
+                        <td>
+                            <a class="me-3 text-decoration-none viewTableDetails editTableBtn crudAction" data-table-id="@table.TableId"
+                                data-bs-toggle="modal" data-action="Update-Table"  data-bs-target="#editTableModal">
+                                <i class="bi bi-pencil-square text-dark"></i>
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#deleteTableModal" data-action="Delete-Table"   data-table-id="@table.TableId"
+                                class="deleteTableBtn text-danger crudAction">
+                                <i class="bi bi-trash-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }else
+            {
+                 <tr>
+                    <td colspan="4" class="text-center text-muted">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.TABLE)</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+<div class="d-md-none mt-4 ms-3 me-3">
+    @if (Model.Any())
+    {
+        @foreach (TableDetails table in Model)
+        {
+            <div class="accordion-item border rounded mb-3 p-3 shadow-sm">
+                <!-- Accordion Header -->
+                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapse-@table.TableId" aria-expanded="false" aria-controls="collapse-@table.TableId" style="cursor:pointer;">
+                    <div class="d-flex align-items-center flex-wrap">
+                        <input class="form-check-input me-2 row-checkbox" type="checkbox" data-itemid="@table.TableId">
+                        <span class="text-truncate text-wrap">@table.TableName</span>
+                    </div>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+
+                <!-- Accordion Content -->
+                <div id="collapse-@table.TableId" class="accordion-collapse collapse mt-3">
+                    <div class="d-flex flex-column">
+                        <p class="mb-1 text-truncate text-wrap"><strong>Table Name : </strong>@table.TableName</p>
+                        <p class="mb-1"><strong>Table Capacity:</strong> @table.Capacity</p>
+                        <p class="mb-1"><strong>Status:</strong> <span
+                                class="px-3 py-2 text-white rounded-pill 
+                                                    @(table.Status == "Booked" ? "bg-danger" :
+                                                    table.Status == "Occupied" ? "bg-secondary" : "bg-success")">
+                                                    @table.Status
+                            </span></p>
+                        <div class="d-flex justify-content-start flex-wrap gap-2 mt-2">
+                            <a data-table-id="@table.TableId"
+                                data-bs-toggle="modal" data-action="Update-Table"  data-bs-target="#editTableModal" class="btn btn-sm btn-primary viewTableDetails editTableBtn crudAction" >Edit</a>
+                            <button class="btn btn-sm btn-danger crudAction deleteTableBtn" data-bs-toggle="modal" data-action="Delete-Table" data-bs-target="#deleteTableModal">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="text-center text-muted">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ITEM)</div>
+    }
+</div>
+
+
+<script type="application/json" id="tableDataScript">
+  @Html.Raw(Json.Serialize(Model))
+</script>
+

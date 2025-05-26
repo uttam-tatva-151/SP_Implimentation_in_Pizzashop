@@ -1,0 +1,53 @@
+
+1.) Alternative of "get_kot_data(@status, @categoryId)" 
+
+:-> In orderRepo.cs
+public async Task<List<Order>> GetOrdersByCategoryId(string status, int categoryId)
+        {
+            try
+            {
+                IQueryable<Order> query = _appDbContext.Orders.AsNoTracking()
+                    .Include(o => o.OrderDetails)
+
+                    .Include(o => o.InvoiceItemModifierMappings)
+                        .ThenInclude(i => i.Item)
+                            .ThenInclude(i => i.Category)
+                    .Include(o => o.InvoiceItemModifierMappings)
+                        .ThenInclude(m => m.Modifier)
+                    .Where(o => o.Status == "InProgress" || o.Status == "OnHold" || o.Status == "Pending");
+                return await query
+               .Select(o => new Order
+               {
+                   OrderId = o.OrderId,
+                   CustomerId = o.CustomerId,
+                   Status = o.Status,
+                   Createat = o.Createat,
+                   Modifyat = o.Modifyat,
+                   OrderDetails = o.OrderDetails,
+                   InvoiceItemModifierMappings = (status == "Ready" && categoryId != 0)
+                       ? o.InvoiceItemModifierMappings
+                           .Where(m => m.Item.CategoryId == categoryId && m.PreparedItems == m.ItemQuantity)
+                           .ToList()
+                       : (status == "Ready" && categoryId == 0)
+                       ? o.InvoiceItemModifierMappings
+                           .Where(m => m.PreparedItems <= m.ItemQuantity)
+                           .ToList()
+                       : (status == "InProgress" && categoryId != 0)
+                       ? o.InvoiceItemModifierMappings
+                           .Where(m => m.Item.CategoryId == categoryId && m.PreparedItems < m.ItemQuantity)
+                           .ToList()
+                       : o.InvoiceItemModifierMappings
+                           .Where(m => m.PreparedItems < m.ItemQuantity)
+                           .ToList()
+               })
+               .Where(o => o.InvoiceItemModifierMappings.Any()) // Only include orders with matching items
+               .ToListAsync();
+
+
+
+            }
+            catch
+            {
+                throw;
+            }
+        }

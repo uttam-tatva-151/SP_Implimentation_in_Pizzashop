@@ -1,0 +1,72 @@
+@model ItemModifierGroupRelationVM
+
+<!-- Modal -->
+<div class="modal fade" id="ItemModifierRelationModal" tabindex="-1" aria-labelledby="ItemModifierRelationModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <!--  Item Name -->
+        <h5 class="modal-title" id="ItemModifierRelationModalLabel" data-item-name='@Model.ItemName'
+          data-item-id='@Model.ItemId' data-item-price='@Model.ItemPrice'>@Model.ItemName</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Loop through Modifier Groups -->
+        @if (Model.Groups == null || !Model.Groups.Any())
+        {
+          <p class="text-muted" id="emptyModal">No options available</p>
+        }
+        else
+        {
+          @foreach (ItemModifierGroupRelationVM.ModifierGroupHelper group in Model.Groups)
+          {
+            <div class="modifierGroupContainer " data-modifier-group-id="@group.ModifierGroupId"
+              data-min-required="@group.MinRequired" data-max-required="@group.MaxRequired"
+              data-modifier-group-name="@group.ModifierGroupName">
+              <h6>@group.ModifierGroupName
+                <small class="text-muted">(You can choose Minimum: @group.MinRequired, Maximum: @group.MaxRequired
+                  options)</small>
+              </h6>
+
+              @if (group.Modifiers.Any())
+              {
+                <div class="d-flex flex-wrap ">
+                  @foreach (ItemModifierGroupRelationVM.ModifierGroupHelper.ModifiersHelper modifier in group.Modifiers)
+                  {
+                    <div class="d-flex option-button modifierContainer shadow-sm w-20 cursor-pointer m-2 p-0 m-0"
+                      data-modifier-id="@modifier.ModifierId" data-modifier-name="@modifier.ModifierName"
+                      data-modifier-price="@modifier.UnitPrice">
+
+                      <div class="w-100 d-flex flex-column justify-content-start p-1 ms-2 position-relative">
+                        <div class="covercolor modifierColor"></div>
+                        <span class="modifierName">@modifier.ModifierName</span>
+                        <div class="d-flex justify-content-between">
+                          <span class="modifier-price">₹<span>@modifier.UnitPrice</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  }
+                </div>
+              }
+              else
+              {
+                <p class="text-muted">No options available</p>
+              }
+
+              <hr>
+            </div>
+          }
+        }
+      </div>
+
+      <div class="modal-footer" id="modalFooterForMapping">
+        <button type="button" class="btn updateBtn" id="addToLocalListBtn">Add</button>
+        <button type="button" class="btn cancelbtn" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+@model List<SectionDetails>
+
+<div class="row overflow-auto section-fixed">
+    <ul class="nav nav-pills d-flex flex-md-column flex-nowrap list-container" id="sectionList">
+        @if (Model.Any())
+        {
+            @foreach (SectionDetails sections in Model)
+            {
+
+                <li class="nav-link d-flex justify-content-between align-items-center list-item section-area transition-all hover-scale-transition"
+                    id="section-@sections.SectionId" data-section-id="@sections.SectionId"
+                    onclick="getTablesbySectionId(@sections.SectionId)">
+
+                    <!-- Left: Icon + Name -->
+                    <div class="d-flex align-items-center flex-grow-1 flex-wrap ">
+                        <a class="d-flex flex-nowrap text-decoration-none category-link align-items-center">
+                            <img src="~/images/icons/dots-6-vertical.svg" height="30px">
+                            <div class="text-wrap text-black ms-2 fw-bold" style="min-width: 0; max-width: 150px;">
+                                @sections.SectionName
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Right: Edit/Delete buttons -->
+                    <div class="d-flex align-items-center showBtnsAtSections action-buttons" id="sectionBtns-@sections.SectionId"
+                        style="gap: 10px;">
+                        <a data-bs-toggle="modal" data-bs-target="#EditSectionModal" class="editSectionBtn crudAction" data-action="Update-Section" 
+                            data-section-id="@sections.SectionId">
+                            <img src="~/images/icons/pen.svg">
+                        </a>
+                        <a data-bs-toggle="modal" data-bs-target="#deleteSectionModal" data-action="Delete-Section"  data-section-id="@sections.SectionId"
+                            class="border-0 deleteSectionBtn crudAction">
+                            <img src="~/images/icons/trash3-fill.svg" alt="">
+                        </a>
+                    </div>
+                </li>
+            }
+        }
+        else
+        {
+            <li class="nav-link d-flex justify-content-between align-items-center section-area flex-wrap" id="section-0"
+                style="gap: 10px;">
+                <div class="text-wrap text-black ms-2 fw-bold" style="min-width: 0; max-width: 150px;">
+                    @MessageHelper.GetInfoMessageForNoRecordsFound(Constants.SECTION)
+                </div>
+            </li>
+        }
+    </ul>
+</div>
+<script type="application/json" id="sectionDataScript">
+  @Html.Raw(Json.Serialize(Model))
+</script>

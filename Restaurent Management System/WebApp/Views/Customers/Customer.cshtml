@@ -1,0 +1,190 @@
+@model (IEnumerable<CustomerDetails> customers, PaginationDetails paginationDetails)
+
+@{
+    ViewData["Title"] = "Customers";
+    List<SelectListItem> timePeriodList = Model.paginationDetails.DateRange.ToSelectList();
+}
+<script src="~/js/Customer.js"></script>
+
+<div class="px-4 py-2" id="customerView">
+    <div class="row px-3">
+        <div class="col-12 container">
+            <form method="GET" asp-action="ExportData" class="col-12" asp-controller="Customers"
+                onkeydown="if(event.key==='Enter'){event.preventDefault();}" id="exportDataForm">
+                <input type="hidden" value="@Model.paginationDetails.TotalRecords" id="TotalRecordsForCustomerPage"
+                    name="TotalRecords" />
+                <input type="hidden" value="@Model.paginationDetails.FromDate" name="FromDate"
+                    id="fromDateForCustomerPageHiddenValue" />
+                <input type="hidden" value="@Model.paginationDetails.ToDate" name="toDate"
+                    id="toDateForCustomerPageHiddenValue" />
+                <div class="col-12 d-flex flex-column flex-md-row justify-content-between px-0 p-2">
+                    <h2 class="fw-bold mainHeading text-blue">Customers</h2>
+                    <div
+                        class="col-md-8 col-12 d-flex flex-column flex-md-row justify-content-end align-items-center mt-3 mt-md-0 gap-2">
+                        <!-- Search input -->
+                        <div class="d-flex align-items-center position-relative w-100 w-md-auto">
+                            <input type="search" class="form-control custom-input" id="SearchCustomer" maxlength="100"
+                                name="customerSearch" placeholder="Search">
+                        </div>
+                        <!-- Date range select -->
+                        <div class="d-flex align-items-center position-relative w-100 w-md-auto">
+                            <select id="dateRangeForCustomerPage" name="dateRange" class="form-control custom-select">
+                                @foreach (SelectListItem timePeriod in timePeriodList)
+                                {
+                                    if (timePeriod.Value == Model.paginationDetails.DateRange.ToString())
+                                    {
+                                        <option value="@timePeriod.Value" selected>@timePeriod.Text</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@timePeriod.Value">@timePeriod.Text</option>
+                                    }
+                                }
+                                <option value="CustomRange">Custom Range</option>
+                            </select>
+                        </div>
+                        <button id="customDateRangeBtnForCustomerPage"
+                            class="btn btn-outline-secondary p-2 d-none d-flex align-items-center opacity-50 pe-none justify-content-center w-100" title="Select Custom Date Range" disabled>
+                            <i class="fa-solid fa-calendar-days me-2"></i>
+                            <span class="d-inline d-md-none">Custom Date Range</span>
+                        </button>
+                        <!-- Export button -->
+                        <div class="d-flex flex-column flex-md-row align-items-center w-100 w-md-auto">
+                            <button type="submit" form="exportDataForm" class="btn btn-primary w-100 w-md-auto">
+                                <a class="text-decoration-none text-white">
+                                    <i class="bi bi-send-arrow-down p-1"></i>
+                                    <span class="d-inline">Export</span>
+                                </a>
+                            </button>
+                            <!-- Mobile Filters Accordion -->
+                            <div class="d-block d-md-none mt-2 w-100">
+                                <div class="mb-3">
+                                    <h3 class="mb-3">Filters:</h3>
+                                    <div class="d-flex flex-column gap-2">
+                                        <!-- Sorting Dropdown -->
+                                        <div class="d-flex flex-nowrap align-items-center">
+                                            <label for="sortAccordion" class="form-label w-25 fw-bold me-2 mb-0">Sort
+                                                By:</label>
+                                            <select id="sortAccordionForCustomerPage" class="form-control custom-select">
+                                                <option value="name">Name</option>
+                                                <option value="date">Date</option>
+                                                <option value="TotalOrder">Total Order</option>
+                                            </select>
+                                        </div>
+                                        <!-- Ascending/Descending Toggle -->
+                                        <div class="d-flex align-items-center">
+                                            <label class="form-label me-2 fw-bold w-25 mb-0">Sort Order:</label>
+                                            <div class="btn-group toggle-switch" role="group" aria-label="Sort Order">
+                                                <input type="radio" class="btn-check btn-checkForCustomerOrder"
+                                                    name="sortOrderForCustomerPage" id="sortAsc" value="asc" autocomplete="off"
+                                                    checked>
+                                                <label class="btn btn-primary px-4 py-2" for="sortAsc">
+                                                    <i class="bi bi-arrow-up"></i> Asc
+                                                </label>
+                                                <input type="radio" class="btn-check btn-checkForCustomerOrder"
+                                                    name="sortOrderForCustomerPage" id="sortDesc" value="desc" autocomplete="off">
+                                                <label class="btn btn-primary px-4 py-2" for="sortDesc">
+                                                    <i class="bi bi-arrow-down"></i> Desc
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="d-flex flex-column col-12 p-0 bg-white d-flex justify-content-center bg-white shadow p-4">
+
+            <div class="container-fluid my-4 px-3 row p-0">
+                <div class="col-12 table-responsive px-0" id="customerList">
+                    <partial name="_partial_CustomerTableGrid" model="Model.customers" />
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-end">
+                <div
+                    class="w-100 justify-content-md-end justify-content-center col-12 col-md-6 col-lg-4 my-2 d-flex flex-wrap align-items-center gap-4 gap-md-2">
+                    <div class="d-flex flex-nowrap m-1 align-items-center gap-2">
+
+                    <span class="paginationtext">Items per page</span>
+                    <select class="form-control custom-select w-auto" id="CustomerPerPage">
+                        <option value="5" selected>5</option>
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                    </select>
+                    </div>
+
+                    <span class="paginationtext" id="paginationInfoForCustomerPage"></span>
+
+                    <div class="m-1">
+
+                    <!-- Previous Button -->
+                    <button class="btn border" id="prevPageForCustomerPage">&lt;</button>
+
+                    <!-- Next Button -->
+                    <button class="btn border" id="nextPageForCustomerPage">&gt;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- -------------------------- Custom dateRange Range Modal   ------------------------- -->
+
+<div class="modal fade" id="customDateRangeModal" tabindex="-1" aria-labelledby="customDateRangeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="mb-3 d-flex flex-nowrap justify-content-between">
+                    <h5 class="modal-title mt-1" id="customDateRangeModalLabel">Select Date Range</h5>
+                    <button type="button" class="btn-close mt-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="row m-3 ">
+                    <div class="col-md-6 form-floating col-12 px-1">
+                        <input type="date" class="form-control custom-input" id="fromDateForCustomerPage"
+                            name="fromDate">
+                        <label for="fromDateForCustomerPage" class="form-label">Start Date</label>
+                    </div>
+                    <div class="col-md-6 form-floating col-12 px-1">
+                        <input type="date" class="form-control custom-input" id="toDateForCustomerPage" name="toDate">
+                        <label for="toDateForCustomerPage" class="form-label">End Date</label>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-lg-end">
+
+                    <button type="submit" class="updateBtn btn w-25 " id="searchDateRangeForCustomerPage">Save</button>
+                    <button type="reset" class="btn ms-3 cancelbtn w-25"
+                        id="clearDateRangeForCustomerPage">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="CustomerHistoryModal" tabindex="-1" aria-labelledby="CustomerHistoryModalLabel"
+    aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="modal-title" id="CustomerHistoryModalLabel">Customer History</h5>
+                        <button type="button" class="btn-close resetDateRange" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="col-12" id="showCustomerHistory">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

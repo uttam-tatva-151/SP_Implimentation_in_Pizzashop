@@ -1,0 +1,69 @@
+@model List<TableViewOrderAppVM>
+
+
+@if (Model.Any())
+{
+    @foreach (TableViewOrderAppVM tableView in Model)
+    {
+
+        @if (tableView.Status == "Running")
+        {
+            <div class=" card custom-width-15 m-1 w-50 customBgInfo runningOrder interactiveCard" data-order-id="@tableView.OrderId">
+                <div class="card-body row">
+                    <div class="col-12 col-md-6 d-flex flex-column text-center text-md-start">
+                        <h5 class="card-title my-2">@tableView.TableName</h5>
+                        <i class="fa-solid fa-users my-2 icon-interactive" data-bs-toggle="tooltip" title="Capacity"></i>
+                        <span class="my-2">@tableView.Capacity</span>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-center text-center">
+                        <span class="my-2">$@tableView.OrderAmount</span>
+                        <i class="fa-regular fa-clock my-2 icon-interactive"></i>
+                        <span class="my-2 live-timer"
+                            data-order-time="@tableView.TableAssign.ToString("yyyy-MM-ddTHH:mm:ss")"></span>
+                    </div>
+                </div>
+            </div>
+        }
+        else if (tableView.Status == "Assigned")
+        {
+            <div class="card customBgSuccess m-1 w-50 custom-width-15 runningOrder interactiveCard" data-order-id="@tableView.OrderId">
+                <div class="card-body row">
+                    <div class="col-12 col-md-6 d-flex flex-column text-center text-md-start">
+                        <h5 class="card-title my-2">@tableView.TableName</h5>
+                        <i class="fa-solid fa-users my-2 icon-interactive" data-bs-toggle="tooltip" title="Capacity"></i>
+                        <span class="my-2">@tableView.Capacity</span>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-center text-center">
+                        <span class="my-2">$@tableView.OrderAmount</span>
+                        <i class="fa-regular fa-clock my-2 icon-interactive"></i>
+                        <span class="my-2 live-timer"
+                            data-order-time="@tableView.TableAssign.ToString("yyyy-MM-ddTHH:mm:ss")"></span>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="card customBgLight m-1 w-50 custom-width-15 assignTable interactiveCard"
+                data-table-details='@Html.Raw(Json.Serialize(tableView))'>
+                <input type="checkbox" class="tableCheckBox" hidden>
+                <div class="card-body row">
+                    <div class="col-md-6 col-12 d-flex flex-column text-center text-md-start text-black">
+                        <h5 class="card-title my-2">@tableView.TableName</h5>
+                        <i class="fa-solid fa-users my-2 icon-interactive" data-bs-toggle="tooltip" title="Capacity"></i>
+                        <span class="my-2">@tableView.Capacity</span>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex flex-column text-center text-md-start text-black align-items-center">
+                        <span class="my-2">$0</span>
+                        <i class="fa-regular fa-clock my-2 icon-interactive"></i>
+                        <span class="my-2">0 min</span>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+}
+else
+{
+    <h3 class="text-center w-100">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.TABLE)</h3>
+}

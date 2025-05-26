@@ -1,0 +1,199 @@
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+d:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+D:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+D:\Assignments\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+F:\.net\N_T_A\N_Tier_Project_Repo\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.sourcelink.json
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\A\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+C:\Users\pci151\Downloads\N_T_A\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+D:\dotnet\New folder (2)\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\A\New folder\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+D:\dotnet\Today\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+D:\dotnet\Today\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+D:\dotnet\Today\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+D:\dotnet\Today\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.sourcelink.json
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+F:\.net\.A Today\Today - 1403\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+D:\dotnet\A\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+D:\dotnet\A\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+D:\dotnet\A\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+D:\dotnet\A\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+F:\.net\A_11_04\Assignments-main\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.sourcelink.json
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.sourcelink.json
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+F:\.net\A_16_04\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+F:\.net\A_21_04\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+F:\.net\A_21_04\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+F:\.net\A_21_04\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+F:\.net\A_21_04\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+F:\.net\A_23_04\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+F:\.net\A_23_04\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+F:\.net\A_23_04\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+F:\.net\A_23_04\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+D:\dotnet\A\N_T_A_PMS-main\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll

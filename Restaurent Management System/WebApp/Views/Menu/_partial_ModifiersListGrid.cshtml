@@ -1,0 +1,104 @@
+@model IEnumerable<ModifierDetails>
+
+@{
+    int editorId = User.GetUserId();
+    PaginationDetails paginationDetails = ViewBag.paginationDetails as PaginationDetails ?? new();
+}
+<input type="hidden" id="paginationDetailsForModifiersPage" data-page-size="@paginationDetails.PageSize"
+    data-page-number="@paginationDetails.PageNumber" data-sort-column="@paginationDetails.SortColumn"
+    data-sort-order="@paginationDetails.SortOrder" data-search-query="@paginationDetails.SearchQuery"
+    data-from-date="@paginationDetails.FromDate" data-to-date="@paginationDetails.ToDate"
+    data-total-records="@paginationDetails.TotalRecords" />
+<div class="table-responsive table-fixed mt-5 ms-3 me-3  selectable-table">
+    <table class="table  col-12 border-none px-0">
+        <thead class="bg-white">
+            <tr>
+                <th class="text-secondary">
+                    <div class="form-check">
+                        <input class="form-check-input select-all-checkbox " type="checkbox" value=""
+                            id="selectAllModifiers">
+                        <span class="ms-2">Name</span>
+                    </div>
+                </th>
+                <th class="text-center text-secondary">
+                    <span class="sort text-decoration-none">Unit</span>
+                </th>
+                <th class="text-center text-secondary">
+                    <span class="sort text-decoration-none">Rate</i></span>
+                </th>
+                <th class="text-center text-secondary">
+                    <span class="sort text-decoration-none">Quantity</i></span>
+                </th>
+                <th class="text-secondary">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (ModifierDetails modifier in Model)
+                {
+                    <tr class="selectable-row">
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input row-checkbox" data-modifier-id="@modifier.id" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ms-2" for="flexCheckDefault">
+                                    @Html.DisplayFor(modelItem => modifier.modifierName)
+                                </label>
+                            </div>
+                        </td>
+                        <td class="text-center">@modifier.unitType</td>
+                        <td class="text-center">@modifier.unitPrice</td>
+                        <td class="text-center">@modifier.quantity</td>
+                        <td >
+                            <a id="EditModifierBtn" class="EditModifierBtn crudAction text-dark text-decoration-none" data-action="Update-ModifierGroup"
+                                data-modifier-id="@modifier.id" >
+                                <i class="bi bi-pencil-square text-primary"></i>
+                            </a>
+
+                            <a data-bs-toggle="modal" data-bs-target="#DeleteModifierModal" data-action="Delete-Modifier" data-modifier-id="@modifier.id"
+                                class="border-0 ms-3 text-decoration-none modifierDeleteBtn crudAction">
+                                <i class="bi bi-trash-fill text-danger"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">
+                        <div class="no-items-container flex-column w-100 d-flex">
+                            <img src="~/images/Animatation/empty-box.gif" alt="No KOTS Found" class="animated-empty-box" />
+                            <p class="mt-3 text-blue">
+                                @MessageHelper.GetInfoMessageForNoRecordsFound(Constants.MODIFIER_LIST)</p>
+                        </div></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<!--Modifier delete modal -->
+<div class="modal fade" id="DeleteModifierModal" tabindex="-1" aria-labelledby="DeleteModifierModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="modal-title" id="deleteModaliLabel">Delete Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <i class="bi bi-exclamation-triangle-fill "></i>
+                </div>
+                <p class="d-flex justify-content-center">
+                    @MessageHelper.GetWarningMessageForDeleteConfirmation(Constants.MODIFIER)</p>
+
+                    <input type="number" id="modifierIdForDelete" name="modifierId" hidden>
+                    <button type="submit" class="updateBtn btn w-25" id="deleteModiferBtn">Yes</button>
+                    <button type="button" class="btn ms-3 cancelbtn w-25" data-bs-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>

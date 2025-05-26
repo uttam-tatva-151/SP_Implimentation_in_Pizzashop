@@ -1,0 +1,92 @@
+@model IEnumerable<CustomerDetails>
+
+<div class="d-none d-md-block table-responsive">
+    <table class="table justify-content-center table-hover table-border col-12 border-none px-0">
+        <thead class="bg-white">
+            <tr>
+                <th><span class="sortForCustomerList text-decoration-none" data-sortby="name">Name <i
+                            class="bi bi-arrow-down-up"></i></span></th>
+                <th><span class="text-decoration-none">Email </span></th>
+                <th><span class="text-decoration-none">Phone Number</span></th>
+                <th><span class="sortForCustomerList text-decoration-none" data-sortby="date">Date <i
+                            class="bi bi-arrow-down-up"></i></span></th>
+                <th><span class="sortForCustomerList text-decoration-none" data-sortby="TotalOrder">Total Order <i
+                            class="bi bi-arrow-down-up"></i></span></th>
+            </tr>
+        </thead>
+        <tbody id="itemsList">
+            @if (Model.Any())
+            {
+                @foreach (CustomerDetails customer in Model)
+                {
+                    <tr class="customerDetailsRow " data-customer-id="@customer.CustomerId">
+                        <td>@customer.CustomerName</td>
+                        <td>@customer.CustomerEmail</td>
+                        <td>@customer.CustomerPhone</td>
+                        <td>@customer.LastOrder</td>
+                        <td>@customer.TotalOrders</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted ">
+                        <div class="no-items-container w-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="~/images/Animatation/empty-box.gif" alt="No Customers Found" class="animated-empty-box" />
+                            <p class="mt-3 text-blue">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.CUSTOMER)</p>
+                        </div>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="d-block d-md-none">
+    @if (Model.Any())
+    {
+        <div class="accordion" id="customersAccordion">
+            @foreach (CustomerDetails customer in Model)
+            {
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="heading-@customer.CustomerId">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-@customer.CustomerId" aria-expanded="false"
+                            aria-controls="collapse-@customer.CustomerId">
+                            <strong>@customer.CustomerName</strong>
+                        </button>
+                    </h2>
+                    <div id="collapse-@customer.CustomerId" class="accordion-collapse collapse"
+                        aria-labelledby="heading-@customer.CustomerId" data-bs-parent="#customersAccordion">
+                        <div class="accordion-body d-flex flex-column">
+                            <div class="mb-2 customTooltip" data-title="@customer.CustomerEmail"><strong
+                                    class="fs-5">Email:</strong> <span
+                                    class="text-dark fs-5 text-ellipsis w-100">@customer.CustomerEmail</span></div>
+                            <div class="mb-2"><strong class="fs-5">Phone:</strong> <span
+                                    class="text-dark fs-5">@customer.CustomerPhone</span></div>
+                            <div class="mb-2"><strong class="fs-5">Date:</strong> <span
+                                    class="text-dark fs-5">@customer.LastOrder</span></div>
+                            <div class="mb-2"><strong class="fs-5">Total Orders:</strong> <span
+                                    class="text-dark fs-5">@customer.TotalOrders</span></div>
+                            <div class="mt-3 text-end">
+                                <button class="btn btn-sm btn-primary customerDetailsRow"
+                                    data-customer-id="@customer.CustomerId">
+                                    <i class="bi bi-clock-history"></i><span class="ms-2 fs-5">History</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="no-items-container w-100 d-flex justify-content-center align-items-center">
+            <img src="~/images/Animatation/empty-box.gif" alt="No Customer Found" class="animated-empty-box" />
+            <p class="mt-3 text-blue">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.CUSTOMER)</p>
+        </div>
+    }
+</div>
+
+

@@ -1,0 +1,17 @@
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\bin\x64\Debug\net7.0\PMSData.deps.json
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\bin\x64\Debug\net7.0\PMSData.runtimeconfig.json
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\bin\x64\Debug\net7.0\PMSData.dll
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\bin\x64\Debug\net7.0\PMSData.pdb
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\bin\x64\Debug\net7.0\PMSCore.dll
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\bin\x64\Debug\net7.0\PMSCore.pdb
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.csproj.AssemblyReference.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.AssemblyInfoInputs.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.AssemblyInfo.cs
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.csproj.CoreCompileInputs.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.csproj.CopyComplete
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.dll
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\refint\PMSData.dll
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.pdb
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\PMSData.genruntimeconfig.cache
+D:\Assignments\N_T_A_PMS\Restaurent Management System\DataAccessLayer\obj\x64\Debug\net7.0\ref\PMSData.dll

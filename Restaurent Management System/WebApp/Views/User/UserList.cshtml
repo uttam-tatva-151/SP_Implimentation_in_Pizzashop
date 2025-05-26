@@ -1,0 +1,103 @@
+@model (IEnumerable<User> users, PaginationDetails paginationDetails)
+
+@{
+    ViewData["Title"] = "User Page";
+
+}
+<script src="~/js/Users.js"></script>
+<div class="bg-light" id="mainContent">
+    <div id="usersPageHeader" class="row d-flex justify-content-between">
+        <div class="d-flex align-items-center col-12 col-md-3">
+            <span class="text-blue fw-bold fs-2">Users</span>
+        </div>
+        <div class="col-12 col-md-9 d-flex">
+            <div class="row col-12 d-flex align-items-center justify-content-end">
+                <input type="hidden" value="@Model.paginationDetails.TotalRecords" maxlength="100" id="totalRecordsForUserPage"
+                    name="totalRecords" />
+                <div class="mt-2 col-12 col-sm-6">
+                    <input type="search" class="form-control custom-input" maxlength="100" placeholder="Search" id="searchUser"
+                        name="searchQuery">
+                </div>
+                <a class="mt-2 col-12 col-sm-2 crudAction" data-action="Create-User" asp-action="AddUser"
+                    asp-controller="User">
+                    <button type="button" class="addBtn w-100 rounded-1 border-0">+ Add User</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------- User List Table ---------------------- -->
+
+    <div class="mainContent my-4 ms-2 mr-5">
+        <div class="table-responsive ">
+            <div class="d-block d-md-none">
+                <div class="mb-3 d-flex flex-nowrap flex-column ">
+                    <!-- Sorting Dropdown -->
+                    <h3>Filters:</h3>
+                    <div class="row col-12 d-flex  justify-content-between ">
+                        <div class="d-flex flex-nowrap align-items-center col-sm-6 col-12">
+                            <label for="sortAccordion" class="form-label col-4 d-flex justify-content-end pe-2">Sort
+                                By:</label>
+                            <select id="sortAccordion" class="form-control custom-select">
+                                <option value="Name">Name</option>
+                                <option value="Role">Role</option>
+                            </select>
+                        </div>
+
+                        <!-- Ascending/Descending Toggle -->
+                        <div class="d-flex align-items-center col-sm-6 col-12 my-3 justify-content-end">
+                            <label class="form-label me-2 fw-bold">Sort Order:</label>
+                            <div class="btn-group toggle-switch" role="group" aria-label="Sort Order">
+                                <input type="radio" class="btn-check btn-checkForUserOrder" name="sortOrder"
+                                    id="sortAsc" value="asc" autocomplete="off" checked>
+                                <label class="btn btn-primary px-4 py-2" for="sortAsc">
+                                    <i class="bi bi-arrow-up"></i> Asc
+                                </label>
+
+                                <input type="radio" class="btn-check btn-checkForUserOrder" name="sortOrder"
+                                    id="sortDesc" value="desc" autocomplete="off">
+                                <label class="btn btn-primary px-4 py-2" for="sortDesc">
+                                    <i class="bi bi-arrow-down"></i> Desc
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="userListContainer">
+                <partial name="_Partial_UserGrid" model="Model.users" />
+            </div>
+        </div>
+        <div class="tableFooter">
+
+            <div class="footerContent text-center">
+                <!-- Pagination -->
+                <div class="d-flex align-items-center justify-content-end">
+                    <div
+                        class="w-100 justify-content-end col-12 col-md-6 col-lg-4 my-2 d-flex flex-wrap align-items-center gap-2">
+                        <!-- Items per page dropdown -->
+                        <span class="paginationtext d-none d-sm-inline">Items per page</span>
+                        <select class="form-control custom-select w-auto" id="UserPerPage">
+                            <option value="5" selected>5</option>
+                            <option value="10">10</option>
+                            <option value="15">25</option>
+                        </select>
+
+                        <!-- Pagination info -->
+                        <span class="paginationtext " id="paginationInfoForUserPage"></span>
+
+                        <!-- Previous Button -->
+                        <button class=" ms-2 btn border" id="prevPageForUsersPage">&lt;</button>
+
+                        <!-- Next Button -->
+                        <button class="btn border" id="nextPageForUsersPage">&gt;</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

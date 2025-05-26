@@ -1,0 +1,157 @@
+@model CustomerHistory
+
+
+<!-- -----------------------------Customer History modal --------------------------->
+
+<div class="row bg-light">
+    <input type="hidden" id="customerIdAtCustomerHistory" value="@Model.CustomerId" />
+    <div class="col-12 mt-0">
+        <div class="row  d-flex justify-content-center align-items-center my-3 mx-1">
+            <div class="col-md-6 col-12  py-1">
+                <div class="col-12 w-100">
+                    <p class="border border-1 p-2 d-flex justify-content-between my-2 rounded"><span>Name</span><span
+                            id="customerName" class="fw-bold">@Model.CustomerName</span></p>
+                </div>
+                <div class="col-12 w-100">
+                    <p class="border border-1 p-2 d-flex justify-content-between my-2 rounded"><span>Mobile
+                            Number</span><span id="customerPhoneNo" class="fw-bold">@Model.CustomerPhone</span></p>
+                </div>
+                <div class="col-12 w-100">
+                    <p class="border border-1 p-2 d-flex justify-content-between my-2 rounded"><span>Max
+                            Order</span><span id="customerMaxBill" class="fw-bold">@Model.MaxBill</span></p>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12  py-1">
+                <div class="col-12 w-100 ">
+                    <p class="border border-1 p-2 d-flex justify-content-between my-2 rounded"><span>Average
+                            Bill</span><span id="averageBill" class="fw-bold">@Model.AvgBill</span></p>
+                </div>
+                <div class="col-12 w-100 ">
+                    <p class="border border-1 p-2 d-flex justify-content-between my-2 rounded"><span>Coming
+                            Since</span><span id="comingSince" class="fw-bold">@Model.FirstVisit</span></p>
+                </div>
+                <div class="col-12 w-100">
+                    <p class="border border-1 p-2 d-flex justify-content-between my-2 rounded"><span>Visits</span><span
+                            id="visits" class="fw-bold">@Model.Visits</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 d-none d-lg-block table-responsive">
+        <table class="table">
+            <thead>
+                <tr class="fs-5 text-center">
+                    <th scope="col" class="bg-light">Order Date</th>
+                    <th scope="col" class="bg-light">Order Type</th>
+                    <th scope="col" class="bg-light">Order Status</th>
+                    <th scope="col" class="bg-light">Payment</th>
+                    <th scope="col" class="bg-light">Items</th>
+                    <th scope="col" class="bg-light">Amount</th>
+                </tr>
+            </thead>
+            <tbody id="orderHistory">
+                @if (Model.Orders.Any())
+                {
+                    @foreach (CustomerHistory.OrderViewModel order in Model.Orders)
+                    {
+                        <tr scope="row" class="text-center">
+                            <input type="hidden" id="orderIdAtCustomerHistory" value="@order.OrderId" />
+                            <td class="bg-light">@order.OrderDate.ToString("dd/MM/yyyy")</td>
+                            <td class="bg-light">@order.OrderType</td>
+                            @if (order.OrderStatus == Constants.ORDER_CANCELLED)
+                            {
+                                <td class="bg-light">
+                                    <span class="badge bg-danger fw-light fs-6">@order.OrderStatus</span>
+                                </td>
+                            }
+                            else if (order.OrderStatus == Constants.ORDER_COMPLETED)
+                            {
+                                <td class="bg-light">
+                                    <span class="badge bg-success fw-light fs-6">@order.OrderStatus</span>
+                                </td>
+                            }
+                            else
+                            {
+                                <td class="bg-light">
+                                    <span class="badge bg-warning fw-light text-dark fs-6">@order.OrderStatus</span>
+                                </td>
+                            }
+                            <td class="bg-light">@order.PaymentStatus</td>
+                            <td class="bg-light">@order.NumberOfItems</td>
+                            <td class="bg-light">@order.Amount</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr scope="row" class="text-center">
+                        <div class="no-items-container flex-column w-100 d-flex">
+                            <img src="~/images/Animatation/empty-box.gif" alt="No Customer History Found"
+                                class="animated-empty-box" />
+                            <p class="mt-3 text-blue">
+                                @MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ORDER)</p>
+                        </div>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-12 d-block d-lg-none">
+        <div class="accordion" id="orderHistoryAccordion">
+            @if (Model.Orders.Any())
+            {
+                foreach (CustomerHistory.OrderViewModel order in Model.Orders)
+                {
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-@order.OrderId">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-@order.OrderId" aria-expanded="false" aria-controls="collapse-@order.OrderId">
+                                @order.OrderDate.ToString("dd/MM/yyyy") - @order.OrderType - @order.OrderStatus
+                            </button>
+                        </h2>
+                        <div id="collapse-@order.OrderId" class="accordion-collapse collapse" aria-labelledby="heading-@order.OrderId"
+                            data-bs-parent="#orderHistoryAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><strong>Order Date:</strong>
+                                        @order.OrderDate.ToString("dd/MM/yyyy")</li>
+                                    <li class="list-group-item"><strong>Order Type:</strong> @order.OrderType</li>
+                                    <li class="list-group-item">
+                                        <strong>Order Status:</strong>
+                                        @if (order.OrderStatus == Constants.ORDER_CANCELLED)
+                                        {
+                                            <span class="badge bg-danger fw-light fs-6">@order.OrderStatus</span>
+                                        }
+                                        else if (order.OrderStatus == Constants.ORDER_COMPLETED)
+                                        {
+                                            <span class="badge bg-success fw-light fs-6">@order.OrderStatus</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-warning fw-light text-dark fs-6">@order.OrderStatus</span>
+                                        }
+                                    </li>
+                                    <li class="list-group-item"><strong>Payment:</strong> @order.PaymentStatus</li>
+                                    <li class="list-group-item"><strong>Items:</strong> @order.NumberOfItems</li>
+                                    <li class="list-group-item"><strong>Amount:</strong> @order.Amount</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="no-items-container flex-column w-100 d-flex align-items-center">
+                    <img src="~/images/Animatation/empty-box.gif" alt="No Customer History Found"
+                        class="animated-empty-box" />
+                    <p class="mt-3 text-blue">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ORDER)</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

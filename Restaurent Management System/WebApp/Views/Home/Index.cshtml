@@ -1,0 +1,80 @@
+﻿@model (DashboardVM analysisDetails, PaginationDetails paginationDetails)
+@{
+    ViewData["Title"] = "Home Page";
+    List<SelectListItem> timePeriodList = Model.paginationDetails.DateRange.ToSelectList();
+}
+
+<div class="container-fluid col-12">
+    <div class="row container-fluid ">
+        <div class="col-12 mb-3">
+            <div class="row d-flex justify-content-between">
+                <div class="col-6">
+                    <span class="text-decoration-none fs-2 fw-bolder text-blue">Dashboard</span>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="d-flex flex-column flex-sm-row align-items-stretch gap-2">
+                        <!-- Custom Date Button -->
+                        <button id="customRangeBtn"
+                            class="btn btn-outline-secondary d-none d-flex align-items-center opacity-50 pe-none justify-content-center w-25"
+                            style="cursor: not-allowed;" title="Select Custom Date Range" disabled>
+                            <i class="fa-solid fa-calendar-days me-2"></i>
+                        </button>
+
+
+                        <!-- Dashboard Filter Dropdown -->
+                        <select id="dashboardFilter" class="form-select w-100"
+                            data-pagination='@Html.Raw(Json.Serialize(Model.paginationDetails))'>
+                            @foreach (SelectListItem item in Model.paginationDetails.DateRange.ToSelectList())
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                            <option value="CustomRange" id="customDateRangeBtn">Custom Range</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="dashboardPartialSection">
+            <partial name="@Constants.PARTIAL_DASHBOARD_GRID" model="@Model" />
+        </div>
+    </div>
+</div>
+<!-- Search by Custom Date modal -->
+<div class="modal fade" id="customDateRangeModal" tabindex="-1" aria-labelledby="customDateRangeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="mb-3 d-flex flex-nowrap justify-content-between">
+                    <h5 class="modal-title mt-1" id="customDateRangeModalLabel">Select Date Range
+                    </h5>
+                    <button type="button" class="btn-close mt-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="row m-3">
+                    <div class="col-md-6 form-floating col-12 px-1">
+                        <input type="date" class="form-control custom-input" id="fromDateForDashboardPage"
+                            name="fromDate">
+                        <label for="fromDateForDashboardPage" class="form-label">Start Date</label>
+                            <span class="text-danger" id="fromDateValidation"></span>
+                    </div>
+                    <div class="col-md-6 form-floating col-12 px-1">
+                        <input type="date" class="form-control custom-input" id="toDateForDashboardPage" name="toDate">
+                        <label for="toDateForDashboardPage" class="form-label">End Date</label>
+                        <span class="text-danger" id="toDateValidation"></span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-lg-end m-3">
+
+                    <button type="submit" class="updateBtn btn w-25 " id="searchDateRangeForDashboardPage">Save</button>
+                    <button type="button" class="btn ms-3 cancelbtn w-25"
+                        id="clearDateRangeForDashboardPage">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="~/js/Dashboard.js"></script>

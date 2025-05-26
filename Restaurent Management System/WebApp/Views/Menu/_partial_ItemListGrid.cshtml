@@ -1,0 +1,148 @@
+@model IEnumerable<ItemDetails>
+ 
+@{
+    PaginationDetails paginationDetails = ViewBag.paginationDetails as PaginationDetails ?? new PaginationDetails();
+    int editorId = User.GetUserId();
+}
+        <input type="hidden" id="paginationDetailsForItemsPage" data-page-size="@paginationDetails.PageSize"
+            data-page-number="@paginationDetails.PageNumber" data-sort-column="@paginationDetails.SortColumn"
+            data-sort-order="@paginationDetails.SortOrder" data-search-query="@paginationDetails.SearchQuery"
+            data-from-date="@paginationDetails.FromDate" data-to-date="@paginationDetails.ToDate"
+            data-total-records="@paginationDetails.TotalRecords" />
+<!-- ✅ TABLE: Visible from md and above -->
+<div class="row table-responsive table-fixed overflow-auto mt-5 mx-3 selectable-table d-none d-md-block">
+    <table class="table table-hover">
+        <thead class="bg-white">
+            <tr>
+                <th class="text-secondary">
+                    <div class="form-check">
+                        <input class="form-check-input select-all-checkbox" type="checkbox">
+                        <span class="ms-2 text-secondary">Item Name</span>
+                    </div>
+                </th>
+                <th class="text-center text-secondary">Item Type</th>
+                <th class="text-center text-secondary">Unit Price</th>
+                <th class="text-center text-secondary">Quantity</th>
+                <th class="text-secondary">Available</th>
+                <th class="text-secondary">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (ItemDetails item in Model)
+                {
+                    <tr class="selectable-row">
+                        <td>
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input row-checkbox" data-itemid="@item.id" type="checkbox">
+                                @if(string.IsNullOrEmpty(item.photo))
+                                    {
+                                        <img src="~/images/dining-menu.png" width="25" height="25" class="ms-2" />
+                                    }
+                                    else
+                                    {
+                                        <img src="@item.photo" width="25" height="25" class="ms-2" />
+
+                                    }
+                                <span class="ms-2">@item.itemName</span>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <img src="~/images/icons/@(item.itemType.ToLower().Replace("-", "").Replace(" ", ""))@(item.itemType == "Egg" ? ".png" : "-icon.svg")" width="30px">
+                        </td>
+                        <td class="text-center">@item.unitPrice</td>
+                        <td class="text-center">@item.quantity</td>
+                        <td>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" @(item.isAvailable ? "checked" : "") disabled>
+                            </div>
+                        </td>
+                        <td>
+                            <a class="me-3  text-decoration-none crudAction" onclick="openEditModal(@item.id)" data-action="Update-Item">
+                                <i class="bi bi-pencil-square text-dark"></i>
+                            </a>
+                            <a class="text-danger crudAction" data-bs-toggle="modal" data-action="Delete-Item" data-bs-target="#deleteItemModal" onclick="AssignValue(@item.id)">
+                                <i class="bi bi-trash-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ITEM)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- ACCORDION: Visible below md -->
+<div class="d-md-none mt-4 ms-3 me-3">
+    @if (Model.Any())
+    {
+        @foreach (ItemDetails item in Model)
+        {
+            <div class="accordion-item border rounded mb-3 p-3 shadow-sm">
+                <!-- Accordion Header -->
+                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapse-@item.id" aria-expanded="false" aria-controls="collapse-@item.id" style="cursor:pointer;">
+                    <div class="d-flex align-items-center flex-wrap">
+                        <input class="form-check-input me-2 row-checkbox" type="checkbox" data-itemid="@item.id">
+                        @if(string.IsNullOrEmpty(item.photo))
+                        {
+                            <img src="~/images/dining-menu.png" class="ms-2 img-fluid" style="max-width: 25px; height: auto;" alt="Item Image" />
+                        }
+                        else
+                        {
+                            <img src="@item.photo" class="ms-2 img-fluid" style="max-width: 25px; height: auto;" alt="Item Image" />
+                        }
+                        <span class="text-truncate text-wrap">@item.itemName</span>
+                    </div>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+
+                <!-- Accordion Content -->
+                <div id="collapse-@item.id" class="accordion-collapse collapse mt-3">
+                    <div class="d-flex flex-column">
+                        <p class="mb-1"><strong>Item Type:</strong> @item.itemType</p>
+                        <p class="mb-1"><strong>Unit Price:</strong> @item.unitPrice</p>
+                        <p class="mb-1"><strong>Quantity:</strong> @item.quantity</p>
+                        <p class="mb-1"><strong>Available:</strong> @(item.isAvailable ? "Yes" : "No")</p>
+                        <div class="d-flex justify-content-start flex-wrap gap-2 mt-2">
+                            <a onclick="openEditModal(@item.id)" class="btn btn-sm btn-primary crudAction" data-action="Update-Item">Edit</a>
+                            <button class="btn btn-sm btn-danger crudAction" data-bs-toggle="modal" data-action="Delete-Item" data-bs-target="#deleteItemModal" onclick="AssignValue(@item.id)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="text-center text-muted">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ITEM)</div>
+    }
+</div>
+
+
+<!-- ------------------------- Delete Modal For Item ------------------------- ------------------------->
+<div class="modal fade " id="deleteItemModal" tabindex="-1" aria-labelledby="deleteItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content ">
+            <div class="modal-body px-3 py-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="~/images/pngegg.png" class="mb-3" width="50" alt="Warning">
+                <span>@MessageHelper.GetWarningMessageForDeleteConfirmation(Constants.ITEM)</span>
+
+                <form asp-action="DeleteItemById" asp-controller="Menu" id="DeleteFormForItem"
+                    class="d-flex col-12 mt-4 container flex-nowrap justify-content-center">
+                    <input type="number" id="itemIdForDelete" name="itemId" hidden>
+                    <input type="number" id="editorIdForItemDelete" name="editorId" value="@editorId" hidden>
+                    <button type="submit" class="updateBtn btn w-25 " form="DeleteFormForItem">Yes</button>
+                    <button type="button" class="btn ms-3 cancelbtn w-25" data-bs-dismiss="modal">No</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

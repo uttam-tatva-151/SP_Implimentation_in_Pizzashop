@@ -1,0 +1,71 @@
+@model IEnumerable<OrderDetailsVM>
+
+<div class="table-responsive">
+    <table class="table justify-content-center table-fixed table-hover col-12 border-none px-0">
+        <thead class="bg-white">
+            <tr>
+                <th class="text-center"><span class="sort text-decoration-none" data-sortby="id">#Order <i class="bi bi-arrow-down-up"></i></span></th>
+                <th class="text-center"><span class="sort text-decoration-none" data-sortby="date">Date <i class="bi bi-arrow-down-up"></i></span></th>
+                <th class="text-center"><span class="sort text-decoration-none" data-sortby="customer">Customer <i class="bi bi-arrow-down-up"></i></span></th>
+                <th class="text-center"><span class="sort text-decoration-none" data-sortby="status">Status <i class="bi bi-arrow-down-up"></i></span></th>
+                <th class="text-center"><span class="sort text-decoration-none" data-sortby="paymetMethod">Payment Mode <i class="bi bi-arrow-down-up"></i></span></th>
+                <th class="text-center">Rating</th>
+                <th class="text-center"><span class="sort text-decoration-none" data-sortby="totalAmount">Total Amount <i class="bi bi-arrow-down-up"></i></span></th>
+                <th class="text-center">Action</th>
+            </tr>
+        </thead>
+        <tbody id="itemsList">
+            @if (Model.Any())
+            {
+                @foreach (OrderDetailsVM order in Model)
+                {
+                    <tr class="items" data-order-id="@order.OrderId">
+                        <td class="fw-bold text-center">#@order.OrderId</td>
+                        <td class="text-center" >@order.OrderDate</td>
+                        <td class="text-center"><span class="text-ellipsis w-75">@order.CustomerName</span></td>
+                        <td class="text-center">@order.OrderStatus</td>
+                        <td class="text-center">@order.PaymentType</td>
+                        <td class="text-center">
+                            <div class="star-rating">
+                                @for (short i = 1; i <= 5; i++)
+                                {
+                                    if(order.Rating >= i){
+                                        <i class="fa-solid text-warning fa-star"></i>
+                                   
+                                    }
+                                    else{
+                                        <i class="fa-regular text-warning fa-star"></i>
+                                    }
+                                    
+                                }
+                            </div>
+                        </td>
+                        <td class="text-center">$ @order.TotalAmount </td>
+                        <td class="text-center">
+                            <a class="text-decoration-none" asp-controller="Orders" asp-action="DownloadInvoice" asp-route-orderId="@order.OrderId">
+                                <i class="bi bi-file-earmark-arrow-down-fill p-1"></i>
+                            </a>
+                            <a asp-controller="Orders" asp-action="OrderDetails" asp-route-orderId="@order.OrderId">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                 <tr>
+                        <td colspan="8" class="text-center text-muted">
+                            <div class="no-items-container">
+                                <img src="~/images/Animatation/empty-box.gif" alt="No items"
+                                    class="animated-empty-box" />
+                                <p class="mt-3 text-blue">@MessageHelper.GetInfoMessageForNoRecordsFound(Constants.ORDER)</p>
+
+                            </div>
+                        </td>
+                    </tr>
+                
+            }
+        </tbody>
+    </table>
+</div>
