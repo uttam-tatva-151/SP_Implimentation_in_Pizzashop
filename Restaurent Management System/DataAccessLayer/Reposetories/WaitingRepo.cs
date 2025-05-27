@@ -1,5 +1,8 @@
+using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using PMSCore.Beans;
+using PMSCore.DTOs;
 using PMSData.Interfaces;
 
 namespace PMSData.Reposetories
@@ -14,12 +17,24 @@ namespace PMSData.Reposetories
         }
 
         readonly ResponseResult result = new();
-        public async Task<ResponseResult> AddWaitingTokenAsync(WaitingList token)
+        public async Task<ResponseResult> AddWaitingTokenAsync(WaitingTokenDTO token)
         {
             try
             {
-                _appDbContext.WaitingLists.Add(token);
-                await _appDbContext.SaveChangesAsync();
+                DbConnection connection = _appDbContext.Database.GetDbConnection();
+                if (connection.State != System.Data.ConnectionState.Open)
+                    await connection.OpenAsync();
+
+                NpgsqlConnection npgsqlConn = (NpgsqlConnection)connection;
+
+                // the command
+                using var query = new NpgsqlCommand("CALL public.add_waiting_token(@token)", npgsqlConn);
+
+                // the parameter of DTO
+                query.Parameters.AddWithValue("token", token);
+
+                // Execute the command
+                await query.ExecuteNonQueryAsync();
                 result.Message = MessageHelper.GetSuccessMessageForAddOperation(Constants.WAITING_TOKEN);
                 result.Status = ResponseStatus.Success;
             }
@@ -31,46 +46,49 @@ namespace PMSData.Reposetories
             return result;
         }
 
-        public async Task<List<WaitingList>> GetWaitingTokensBySectionAsync(int sectionId)
+        public async Task<List<WaitingTokenDTO>> GetWaitingTokensBySectionAsync(int sectionId)
         {
-            IQueryable<WaitingList> query = _appDbContext.WaitingLists
-                                            .Include(w => w.Customer).AsNoTracking().OrderBy(w => w.Createat);
-            if (sectionId == 0)
-            {
-                query = query.Where(w => w.Isactive == true);
-            }
-            else
-            {
-                query = query.Where(w => w.SectionId == sectionId && w.Isactive == true);
-            }
+            DbConnection connection = _appDbContext.Database.GetDbConnection();
+            if (connection.State != System.Data.ConnectionState.Open)
+                connection.Open();
 
-            return await query.ToListAsync();
+            string sql = "SELECT * FROM get_waiting_token_dto_by_section(@sectionId)";
+            IEnumerable<WaitingTokenDTO> result = await Dapper.SqlMapper.QueryAsync<WaitingTokenDTO>(
+                connection, sql, new { sectionId });
+
+            return result.ToList();
         }
-         public async Task<List<WaitingList>> GetAllWaitingTokensAsync(int sectionId)
+        public async Task<WaitingTokenDTO?> GetWaitingTokenByIdAsync(int tokenId)
         {
-            IQueryable<WaitingList> query = _appDbContext.WaitingLists.AsNoTracking().OrderBy(w => w.Createat);
-            if (sectionId != 0)
-            {
-                query = query.Where(w => w.SectionId == sectionId);
-            }
+             DbConnection connection = _appDbContext.Database.GetDbConnection();
+            if (connection.State != System.Data.ConnectionState.Open)
+                connection.Open();
 
-            return await query.ToListAsync();
-        }
+            string sql = "SELECT * FROM get_waiting_token_dto_by_tokenid(@tokenId)";
+            IEnumerable<WaitingTokenDTO> result = await Dapper.SqlMapper.QueryAsync<WaitingTokenDTO>(
+                connection, sql, new { tokenId });
 
-        public async Task<WaitingList?> GetWaitingTokenByIdAsync(int tokenId)
-        {
-            return await _appDbContext.WaitingLists
-                                            .Include(w => w.Customer)
-                                            .Where(w => w.TokenId == tokenId && w.Isactive == true)
-                                            .FirstOrDefaultAsync();
+            return result.FirstOrDefault();
         }
 
-        public async Task<ResponseResult> UpdateWaitingToken(WaitingList waitingToken)
+        public async Task<ResponseResult> UpdateWaitingToken(WaitingTokenDTO waitingToken)
         {
             try
             {
-                _appDbContext.WaitingLists.Update(waitingToken);
-                await _appDbContext.SaveChangesAsync();
+                DbConnection connection = _appDbContext.Database.GetDbConnection();
+                if (connection.State != System.Data.ConnectionState.Open)
+                    await connection.OpenAsync();
+
+                NpgsqlConnection npgsqlConn = (NpgsqlConnection)connection;
+
+                // the command
+                using var query = new NpgsqlCommand("CALL public.update_waiting_token(@waiting_token)", npgsqlConn);
+
+                // the parameter of DTO
+                query.Parameters.AddWithValue("waiting_token", waitingToken);
+
+                // Execute the command
+                await query.ExecuteNonQueryAsync();
                 result.Message = MessageHelper.GetSuccessMessageForUpdateOperation(Constants.WAITING_TOKEN);
                 result.Status = ResponseStatus.Success;
             }

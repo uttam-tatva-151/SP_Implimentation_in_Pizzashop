@@ -59,7 +59,8 @@ namespace PMSWebApp.Controllers
 
             try
             {
-                result = await _orderAppMenuService.GetMenuItems(favoritesItem, categoryId, searchQuery);
+                int userId =  User.GetUserId();
+                result = await _orderAppMenuService.GetMenuItems(favoritesItem, categoryId, searchQuery, userId);
                 List<ItemDetails> itemList = (List<ItemDetails>)result.Data;
                 string partialView = await this.RenderPartialViewToString(Constants.PARTIAL_ORDER_APP_MENU_ITEM_LIST_GRID, itemList);
                 return Json(new { partialView = partialView, message = result.Message, status = result.Status });

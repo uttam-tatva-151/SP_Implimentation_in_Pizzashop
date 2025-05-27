@@ -1,8 +1,10 @@
 using PMSCore.Beans;
+using PMSCore.DTOs;
 using PMSCore.ViewModel;
 using PMSData;
 using PMSData.Interfaces;
 using PMSServices.Interfaces;
+using PMSServices.Utilities.Mappers;
 
 namespace PMSServices.Services
 {
@@ -31,8 +33,6 @@ namespace PMSServices.Services
             _feedbackRepo = feedbackRepo;
             _categoryRepo = categoryRepo;
             _invoiceItemMapping = invoiceItemMapping;
-
-
         }
 
         ResponseResult result = new();
@@ -89,30 +89,16 @@ namespace PMSServices.Services
             return result;
         }
 
-        public async Task<ResponseResult> GetMenuItems(bool favoritesItem, int categoryId, string searchQuery)
+        public async Task<ResponseResult> GetMenuItems(bool favoritesItem, int categoryId, string searchQuery, int userId)
         {
             try
             {
-                List<Item> items = new();
-                List<ItemDetails> itemList = new();
-                PaginationDetails paginationDetails = new()
-                {
-                    PageSize = 0,
-                    SearchQuery = searchQuery
-                };
-                if (favoritesItem == false)
-                {
-                    items = await _itemRepo.GetItemsByCategoryId(categoryId, paginationDetails);
-                }
-                else
-                {
-                    List<FavoritesItem> favoritesItems = await _favoriteItemRepo.GetFavoriteItems(searchQuery);
-                    items = ConvertFavoriteItemToItemDetailsViewModel(favoritesItems);
-                }
+                List<ItemDetailsDTO> items = new();
+                items = await _itemRepo.GetItemDetailsForOrderMenuAppAsync(categoryId, searchQuery, userId, favoritesItem);
+
                 if (items != null)
                 {
-                    itemList = ConvertItemToItemDetailsViewModel(items);
-                    result.Data = itemList;
+                    result.Data = ItemDetailsMapper.ItemDetailsDTOListToViewModelList(items);
                     result.Message = MessageHelper.GetSuccessMessageForReadOperation(Constants.ITEM_LIST);
                     result.Status = ResponseStatus.Success;
                 }
@@ -196,7 +182,7 @@ namespace PMSServices.Services
                 }
 
                 int invoiceId = existingOrder.Order.Invoices.First().InvoiceId;
-                order.EditorId = 9;
+                order.EditorId = 4;
                 result = await UpdateItemListToOrder(
                     order.OrderItems,
                     existingOrder.Order.InvoiceItemModifierMappings,
@@ -314,11 +300,11 @@ namespace PMSServices.Services
             decimal subtotal = 0;
             decimal totalTaxAmount = 0;
             decimal itemTax = 0;
-            decimal ItemPrice=0;
-            decimal modifierPrice=0;
+            decimal ItemPrice = 0;
+            decimal modifierPrice = 0;
             // Get item and modifier mappings
             List<InvoiceItemModifierMapping> itemMappings = await _invoiceItemMapping.GetItemsForInvoiceAsync(orderId);
-            int quantity = itemMappings.FirstOrDefault()?.ItemQuantity??0;
+            int quantity = itemMappings.FirstOrDefault()?.ItemQuantity ?? 0;
             foreach (InvoiceItemModifierMapping mapping in itemMappings)
             {
                 ItemPrice = mapping.ItemPrice;
@@ -326,7 +312,7 @@ namespace PMSServices.Services
                 subtotal += (ItemPrice + modifierPrice) * mapping.ItemQuantity;
                 itemTax += (ItemPrice * mapping.ItemTaxPercentage / 100) ?? 0M;
             }
-            subtotal -= (itemMappings.Count - 1)*ItemPrice*quantity;
+            subtotal -= (itemMappings.Count - 1) * ItemPrice * quantity;
             // Get tax mappings and calculate tax on subtotal
             List<InvoiceTaxesMapping> taxMappings = await _taxRepo.GetTaxMappingsByInvoiceIdAsync(invoiceId);
 
@@ -466,9 +452,51 @@ namespace PMSServices.Services
             return result;
         }
 
+        // private async Task<ResponseResult> AddMappingsWithModifiers(OrderExportDetails.OrderItemHelperModel orderItem, int orderId, int userId, int invoiceId)
+        // {
+        //     if (orderItem.Modifiers != null)
+        //         foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in orderItem.Modifiers)
+        //         {
+        //             Modifier? modifierEntity = await _modifierRepo.GetModifierByNameAsync(modifier.ModifierName);
+        //             if (modifierEntity == null)
+        //             {
+        //                 result.Status = ResponseStatus.NotFound;
+        //                 result.Message = MessageHelper.GetNotFoundMessage(Constants.MODIFIER);
+        //                 return result;
+        //             }
+        //             string UniqueGroupId = GenerateUniqueKey(orderItem);
+        //             InvoiceItemModifierMapping newMapping = new()
+        //             {
+        //                 OrderId = orderId,
+        //                 InvoiceId = invoiceId,
+        //                 ItemId = orderItem.ItemId,
+        //                 GroupListId = UniqueGroupId,
+        //                 ModifierId = modifierEntity.MId,
+        //                 ItemQuantity = orderItem.Quantity,
+        //                 ItemPrice = orderItem.UnitPrice,
+        //                 ModifiersQuantity = 1,
+        //                 ModifierPrice = modifierEntity.UnitPrice,
+        //                 Createby = userId,
+        //                 Createat = DateTime.Now
+        //             };
+
+        //             result = await _invoiceItemMapping.AddMappingAsync(newMapping);
+        //             if (result.Status != ResponseStatus.Success)
+        //             {
+        //                 return result;
+        //             }
+        //         }
+
+        //     result.Status = ResponseStatus.Success;
+        //     return result;
+        // }
+
         private async Task<ResponseResult> AddMappingsWithModifiers(OrderExportDetails.OrderItemHelperModel orderItem, int orderId, int userId, int invoiceId)
         {
+            List<AddInvoiceItemModifierMappingInputDTO> mappingDTOs = new();
+
             if (orderItem.Modifiers != null)
+            {
                 foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in orderItem.Modifiers)
                 {
                     Modifier? modifierEntity = await _modifierRepo.GetModifierByNameAsync(modifier.ModifierName);
@@ -479,7 +507,8 @@ namespace PMSServices.Services
                         return result;
                     }
                     string UniqueGroupId = GenerateUniqueKey(orderItem);
-                    InvoiceItemModifierMapping newMapping = new()
+
+                    AddInvoiceItemModifierMappingInputDTO mappingDTO = new()
                     {
                         OrderId = orderId,
                         InvoiceId = invoiceId,
@@ -489,17 +518,18 @@ namespace PMSServices.Services
                         ItemQuantity = orderItem.Quantity,
                         ItemPrice = orderItem.UnitPrice,
                         ModifiersQuantity = 1,
-                        ModifierPrice = modifierEntity.UnitPrice,
-                        Createby = userId,
-                        Createat = DateTime.Now
+                        ModifierPrice = modifierEntity.UnitPrice
                     };
 
-                    result = await _invoiceItemMapping.AddMappingAsync(newMapping);
-                    if (result.Status != ResponseStatus.Success)
-                    {
-                        return result;
-                    }
+                    mappingDTOs.Add(mappingDTO);
                 }
+
+                // Send the list to the repo for bulk add
+                result = await _invoiceItemMapping.AddInvoiceItemModifierMappingsAsync(mappingDTOs);
+
+                // You might want to check if result.Status != Success and handle accordingly
+                return result;
+            }
 
             result.Status = ResponseStatus.Success;
             return result;

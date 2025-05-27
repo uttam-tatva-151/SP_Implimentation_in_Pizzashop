@@ -1,5 +1,7 @@
+using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 using PMSCore.Beans;
+using PMSCore.DTOs;
 using PMSData.Interfaces;
 
 namespace PMSData.Reposetories
@@ -18,7 +20,7 @@ namespace PMSData.Reposetories
 
         public async Task<List<Item>> GetItemsByCategoryId(int id, PaginationDetails paginationDetails)
         {
-            IQueryable<Item> query = _appDbContext.Items.Include(i=>i.FavoritesItems).AsNoTracking().Where(a => a.Isactive == true);
+            IQueryable<Item> query = _appDbContext.Items.Include(i => i.FavoritesItems).AsNoTracking().Where(a => a.Isactive == true);
             if (id > 0)
             {
                 query = query.Where(a => a.CategoryId == id);
@@ -35,6 +37,18 @@ namespace PMSData.Reposetories
                         .ToListAsync();
 
         }
+        public async Task<List<ItemDetailsDTO>> GetItemDetailsForOrderMenuAppAsync(int categoryId, string searchQuery, int userId, bool favoritesItem)
+        {
+            DbConnection connection = _appDbContext.Database.GetDbConnection();
+            if (connection.State != System.Data.ConnectionState.Open)
+                connection.Open();
+
+            string sql = "SELECT * FROM get_item_details_for_order_menu_app(@p_category_id, @p_search_query, @p_user_id, @p_favorite_items)";
+            IEnumerable<ItemDetailsDTO> result = await Dapper.SqlMapper.QueryAsync<ItemDetailsDTO>(
+                connection, sql, new { p_category_id = categoryId, p_search_query = searchQuery, p_user_id = userId , p_favorite_items = favoritesItem});
+
+            return result.ToList();
+        }
 
         public async Task<ResponseResult> AddItemAsync(Item newItem)
         {
@@ -43,7 +57,7 @@ namespace PMSData.Reposetories
                 _appDbContext.Items.Add(newItem);
                 await _appDbContext.SaveChangesAsync();
                 result.Data = newItem.ItemId;
-                result.Message =MessageHelper.GetSuccessMessageForUpdateOperation(Constants.ITEM);
+                result.Message = MessageHelper.GetSuccessMessageForUpdateOperation(Constants.ITEM);
                 result.Status = ResponseStatus.Success;
             }
             catch (Exception ex)
@@ -60,7 +74,7 @@ namespace PMSData.Reposetories
             {
                 _appDbContext.Items.Update(updateItem);
                 await _appDbContext.SaveChangesAsync();
-                result.Message =MessageHelper.GetSuccessMessageForUpdateOperation(Constants.ITEM);
+                result.Message = MessageHelper.GetSuccessMessageForUpdateOperation(Constants.ITEM);
                 result.Status = ResponseStatus.Success;
             }
             catch (Exception ex)
@@ -79,7 +93,7 @@ namespace PMSData.Reposetories
                     _appDbContext.Items.Update(item);
                 }
                 await _appDbContext.SaveChangesAsync();
-                result.Message =MessageHelper.GetSuccessMessageForUpdateOperation(Constants.ITEM_LIST);
+                result.Message = MessageHelper.GetSuccessMessageForUpdateOperation(Constants.ITEM_LIST);
                 result.Status = ResponseStatus.Success;
             }
             catch (Exception ex)
@@ -102,7 +116,7 @@ namespace PMSData.Reposetories
             Item? item = await _appDbContext.Items.FirstOrDefaultAsync(i => i.ItemId == itemId);
             if (item == null)
             {
-                result.Message =MessageHelper.GetWarningMessageForInvalidInput(Constants.ITEM);
+                result.Message = MessageHelper.GetWarningMessageForInvalidInput(Constants.ITEM);
                 result.Status = ResponseStatus.NotFound;
                 return result;
             }
@@ -154,8 +168,8 @@ namespace PMSData.Reposetories
                                         .ThenInclude(mapping => mapping.Mg) // Include Modifier Group details
                                             .ThenInclude(group => group.ModifierModifierGroupRelations) // Include Modifier Group details
                                                 .ThenInclude(modifier => modifier.Modifier) // Include Modifier details
-                                    .FirstOrDefaultAsync();     
-                return item;
+                                    .FirstOrDefaultAsync();
+            return item;
         }
         public async Task<List<Item>> GetItemListByIds(int[] itemIds)
         {
@@ -164,15 +178,15 @@ namespace PMSData.Reposetories
         }
 
         public async Task<Dictionary<int, decimal>> GetDefaultTaxesForItemsAsync(List<int> itemIds)
-    {
-        return await _appDbContext.Items.AsNoTracking()
-            .Where(item => itemIds.Contains(item.ItemId))
-            .ToDictionaryAsync(item => item.ItemId, item => item.TaxPercentage ?? 0);
-    }
+        {
+            return await _appDbContext.Items.AsNoTracking()
+                .Where(item => itemIds.Contains(item.ItemId))
+                .ToDictionaryAsync(item => item.ItemId, item => item.TaxPercentage ?? 0);
+        }
 
         public async Task<List<Item>> GetAllItemsAsync()
         {
-            return await _appDbContext.Items.Include(i=>i.FavoritesItems).Where(i=>i.Isactive == true).ToListAsync();
+            return await _appDbContext.Items.Include(i => i.FavoritesItems).Where(i => i.Isactive == true).ToListAsync();
         }
     }
 

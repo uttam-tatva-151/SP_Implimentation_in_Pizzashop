@@ -1,8 +1,10 @@
 using PMSCore.Beans;
+using PMSCore.DTOs;
 using PMSCore.ViewModel;
 using PMSData;
 using PMSData.Interfaces;
 using PMSServices.Interfaces;
+using PMSServices.Utilities.Mappers;
 
 namespace PMSServices.Services
 {
@@ -72,13 +74,11 @@ namespace PMSServices.Services
             {
                 if (token.CustomerId == 0)
                 {
-                    Customer newCustomer = new()
+                    CustomerDTO newCustomer = new()
                     {
                         CustName = token.CustomerName,
                         PhoneNumber = token.PhoneNumber,
-                        EmailId = token.Email,
-                        Createat = DateTime.Now,
-                        Iscontinued = true
+                        EmailId = token.Email
                     };
 
                     result = await _customerRepo.AddNewCustomerAsync(newCustomer);
@@ -87,21 +87,14 @@ namespace PMSServices.Services
                         return result;
                     }
                 }
-                WaitingList newToken = new()
-                {
-                    NoOfPerson = token.NoOfPersons,
-                    CustomerId = token.CustomerId,
-                    Createat = DateTime.Now,
-                    SectionId = token.SectionId,
-                    Createby = token.EditorId
-                };
-                result = await _waitingRepo.AddWaitingTokenAsync(newToken);
+                WaitingTokenDTO waitingToken = WaitingTokenMapper.WaitingTokenViewModelToDTO(token);
+                result = await _waitingRepo.AddWaitingTokenAsync(waitingToken);
                 if (result.Status == ResponseStatus.Success)
                 {
-                    List<WaitingList> waitingTokens = await _waitingRepo.GetWaitingTokensBySectionAsync(token.SectionId);
+                    List<WaitingTokenDTO> waitingTokens = await _waitingRepo.GetWaitingTokensBySectionAsync(token.SectionId);
                     if (waitingTokens != null)
                     {
-                        List<waitingTokenVM> waitingTokenVMs = ConvertWaitingTokensToWaitingTokenVMs(waitingTokens);
+                        List<waitingTokenVM> waitingTokenVMs = WaitingTokenMapper.WaitingTokensDTOListToViewModelList(waitingTokens);
                         result.Data = waitingTokenVMs;
                     }
                     else
@@ -127,7 +120,7 @@ namespace PMSServices.Services
                 if (result.Status == ResponseStatus.Success)
                 {
 
-                    WaitingList? existingToken = await _waitingRepo.GetWaitingTokenByIdAsync(token.TokenId);
+                    WaitingTokenDTO? existingToken = await _waitingRepo.GetWaitingTokenByIdAsync(token.TokenId);
                     if(existingToken != null){
                     existingToken.NoOfPerson = token.NoOfPersons;
                     existingToken.CustomerId = token.CustomerId;
@@ -140,10 +133,10 @@ namespace PMSServices.Services
                         result.Status= ResponseStatus.NotFound;
                     }
                 }
-                List<WaitingList> waitingTokens = await _waitingRepo.GetWaitingTokensBySectionAsync(token.SectionId);
+                List<WaitingTokenDTO> waitingTokens = await _waitingRepo.GetWaitingTokensBySectionAsync(token.SectionId);
                 if (waitingTokens != null)
                 {
-                    List<waitingTokenVM> waitingTokenVMs = ConvertWaitingTokensToWaitingTokenVMs(waitingTokens);
+                    List<waitingTokenVM> waitingTokenVMs = WaitingTokenMapper.WaitingTokensDTOListToViewModelList(waitingTokens);
                     result.Data = waitingTokenVMs;
                 }
                 else
@@ -201,7 +194,7 @@ namespace PMSServices.Services
             List<waitingTokenVM> waitingTokenVMs = new();
             try
             {
-                List<WaitingList> waitingTokens = await _waitingRepo.GetWaitingTokensBySectionAsync(sectionId);
+                List<WaitingTokenDTO> waitingTokens = await _waitingRepo.GetWaitingTokensBySectionAsync(sectionId);
                 if (waitingTokens == null)
                 {
                     result.Message = MessageHelper.GetInfoMessageForNoRecordsFound(Constants.WAITING_TOKEN);
@@ -209,7 +202,7 @@ namespace PMSServices.Services
                 }
                 else
                 {
-                    waitingTokenVMs = ConvertWaitingTokensToWaitingTokenVMs(waitingTokens);
+                    waitingTokenVMs = WaitingTokenMapper.WaitingTokensDTOListToViewModelList(waitingTokens);
                     result.Message = MessageHelper.GetSuccessMessageForReadOperation(Constants.WAITING_TOKEN);
                     result.Status = ResponseStatus.Success;
                 }
@@ -224,36 +217,14 @@ namespace PMSServices.Services
             return result;
         }
 
-        private static List<waitingTokenVM> ConvertWaitingTokensToWaitingTokenVMs(List<WaitingList> waitingTokens)
-        {
-            List<waitingTokenVM> waitingTokenVMs = new();
-            foreach (WaitingList waitingToken in waitingTokens)
-            {
-                waitingTokenVM temp = new()
-                {
-                    TokenId = waitingToken.TokenId,
-                    CustomerId = waitingToken.CustomerId,
-                    CustomerName = waitingToken.Customer.CustName,
-                    Email = waitingToken.Customer.EmailId,
-                    PhoneNumber = waitingToken.Customer.PhoneNumber,
-                    NoOfPersons = waitingToken.NoOfPerson,
-                    SectionId = waitingToken.SectionId,
-                    CreateAt = waitingToken.Createat
-                };
-
-                waitingTokenVMs.Add(temp);
-            }
-            return waitingTokenVMs;
-        }
-
         public async Task<ResponseResult> RemoveWaitingToken(waitingTokenVM tokenDetails)
         {
             try
             {
-                WaitingList? waitingToken = await _waitingRepo.GetWaitingTokenByIdAsync(tokenDetails.TokenId);
+                WaitingTokenDTO? waitingToken = await _waitingRepo.GetWaitingTokenByIdAsync(tokenDetails.TokenId);
                 if (waitingToken != null)
                 {
-                    waitingToken.Isactive = false;
+                    waitingToken.IsActive = false;
                     waitingToken.Modifyat = DateTime.Now;
                     waitingToken.Modifyby = tokenDetails.EditorId;
                     result = await _waitingRepo.UpdateWaitingToken(waitingToken);
@@ -342,20 +313,5 @@ namespace PMSServices.Services
             }
             return result;
         }
-
-        public Task<ResponseResult> GetWaitingList()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<ResponseResult> AssignTable(waitingTokenVM tokenDetails)
-        {
-            throw new NotImplementedException();
-        }
-
-        // public async Task<ResponseResult> AssignTable(waitingTokenVM tokenDetails)
-        // {
-        //     return await _orderAppService.AssignTable(tokenDetails);
-        // }
     }
 }

@@ -6,6 +6,7 @@ namespace PMSData.Interfaces
     public interface IInvoiceItemMappingRepo
     {
         Task<ResponseResult> AddMappingAsync(InvoiceItemModifierMapping newItemMapping);
+        Task<ResponseResult> AddInvoiceItemModifierMappingsAsync(List<AddInvoiceItemModifierMappingInputDTO> mappings);
         Task<ResponseResult> DeleteMappingsAsync(List<InvoiceItemModifierMapping> mappingsToDelete);
         Task<List<InvoiceItemModifierMapping>> GetItemsForInvoiceAsync(int orderId);
         Task<List<InvoiceItemModifierMapping>> GetItemsForKOTAsync(int orderId);

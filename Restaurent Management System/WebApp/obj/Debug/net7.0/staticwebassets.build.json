@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NNIbIZZbvNo7aD4pEW1mWpiUSQHUPWuISlijKH07NW0=",
+  "Hash": "KYWEjUzzv7uoze3aqxGL3Cw8jOrOLTCWCERS6SOE5AU=",
   "Source": "PMSWebApp",
   "BasePath": "_content/PMSWebApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PMSWebApp\\wwwroot",
       "Source": "PMSWebApp",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\css\\Dashboard.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\Dashboard.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "css/Dashboard.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Dashboard.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\css\\Global.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\Global.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "css/Global.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Global.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\css\\loginLayout.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\loginLayout.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "css/loginLayout.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\loginLayout.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\css\\mainLayout.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\mainLayout.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "css/mainLayout.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\mainLayout.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\css\\OrderAppLayout.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\OrderAppLayout.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "css/OrderAppLayout.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\OrderAppLayout.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\css\\ProfileSection.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\ProfileSection.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "css/ProfileSection.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ProfileSection.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\favicon.ico",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\favicon.ico",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\Animatation\\empty-box.gif",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\Animatation\\empty-box.gif",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/Animatation/empty-box.gif",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Animatation\\empty-box.gif"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\assign_table.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\assign_table.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/assign_table.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\assign_table.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\camera.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\camera.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/camera.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\camera.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\category-sidebar.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\category-sidebar.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/category-sidebar.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\category-sidebar.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\chat.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\chat.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/chat.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\chat.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\chicken-pizza-with-bell-pepper-olives.jpg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\chicken-pizza-with-bell-pepper-olives.jpg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/chicken-pizza-with-bell-pepper-olives.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\chicken-pizza-with-bell-pepper-olives.jpg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\cloud-upload-icon.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\cloud-upload-icon.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/cloud-upload-icon.svg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cloud-upload-icon.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\comment.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\comment.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/comment.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\comment.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\comments.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\comments.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/comments.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\comments.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\cowboy-vector.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\cowboy-vector.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/cowboy-vector.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cowboy-vector.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\Default_pfp.svg.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\Default_pfp.svg.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/Default_pfp.svg.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Default_pfp.svg.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\delete.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\delete.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/delete.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\delete.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\dining-menu.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dining-menu.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/dining-menu.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dining-menu.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\dish.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dish.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/dish.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dish.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\dominos_background.jpg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dominos_background.jpg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/dominos_background.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dominos_background.jpg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\edit.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\edit.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/edit.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\edit.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\heros-image.avif",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\heros-image.avif",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/heros-image.avif",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\heros-image.avif"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\customer.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\customer.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/customer.svg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\customer.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dashboard-active.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dashboard-active.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/dashboard-active.svg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\dashboard-active.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dashboard-default.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dashboard-default.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/dashboard-default.svg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\dashboard-default.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dinner-table.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dinner-table.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/dinner-table.svg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\dinner-table.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dots-6-vertical.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dots-6-vertical.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/dots-6-vertical.svg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\dots-6-vertical.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\Egg.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\Egg.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/Egg.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\Egg.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\exclamation-triangle-fill.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\exclamation-triangle-fill.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/exclamation-triangle-fill.svg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\exclamation-triangle-fill.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\eye.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\eye.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/eye.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\eye.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\list-check.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\list-check.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/list-check.svg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\list-check.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\non-veg-icon.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\non-veg-icon.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/non-veg-icon.svg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\non-veg-icon.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\order-value.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\order-value.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/order-value.svg",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\order-value.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\pen.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\pen.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/pen.svg",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\pen.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\plus-square.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\plus-square.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/plus-square.svg",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\plus-square.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\shared-vision.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\shared-vision.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/shared-vision.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\shared-vision.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\total-orders.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\total-orders.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/total-orders.svg",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\total-orders.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\total-sales.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\total-sales.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/total-sales.svg",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\total-sales.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\trash3-fill.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\trash3-fill.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/trash3-fill.svg",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\trash3-fill.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\ui-checks-grid.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\ui-checks-grid.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/ui-checks-grid.svg",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\ui-checks-grid.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\user-active.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\user-active.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/user-active.svg",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\user-active.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\user-default.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\user-default.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/user-default.svg",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\user-default.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\veg-icon.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\veg-icon.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/veg-icon.svg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\veg-icon.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\vegan-icon.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\vegan-icon.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/vegan-icon.svg",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\vegan-icon.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\waiting-list.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\waiting-list.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/waiting-list.svg",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\waiting-list.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\waiting-time.svg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\waiting-time.svg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/icons/waiting-time.svg",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\waiting-time.svg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\idea_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\idea_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/idea_active.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\images\\idea_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\idea_default.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\idea_default.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/idea_default.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\images\\idea_default.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\key.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\key.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/key.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\images\\key.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\back-in-time.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\back-in-time.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/KOT_Nevbar/back-in-time.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\images\\KOT_Nevbar\\back-in-time.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\box.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\box.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/KOT_Nevbar/box.png",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\images\\KOT_Nevbar\\box.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\orderApp.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\orderApp.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/KOT_Nevbar/orderApp.png",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\images\\KOT_Nevbar\\orderApp.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\reception-bell.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\reception-bell.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/KOT_Nevbar/reception-bell.png",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\images\\KOT_Nevbar\\reception-bell.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\smartphone.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\smartphone.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/KOT_Nevbar/smartphone.png",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\images\\KOT_Nevbar\\smartphone.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\task.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\task.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/KOT_Nevbar/task.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\KOT_Nevbar\\task.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\list.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\list.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/list.png",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\images\\list.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-facebook-48.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-facebook-48.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/logos/icons8-facebook-48.png",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logos\\icons8-facebook-48.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-github-48.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-github-48.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/logos/icons8-github-48.png",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logos\\icons8-github-48.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-google-48.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-google-48.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/logos/icons8-google-48.png",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logos\\icons8-google-48.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\pizzashop_logo.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\pizzashop_logo.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/logos/pizzashop_logo.png",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logos\\pizzashop_logo.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\logout.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logout.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/logout.png",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logout.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\low_sells.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\low_sells.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/low_sells.png",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\images\\low_sells.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\navbar_menu.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\navbar_menu.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/navbar_menu.png",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\images\\navbar_menu.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\pen.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\pen.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/pen.png",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pen.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\pngegg.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\pngegg.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/pngegg.png",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pngegg.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\profile_div_bg.jpg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\profile_div_bg.jpg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/profile_div_bg.jpg",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile_div_bg.jpg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\qr-code.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\qr-code.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/qr-code.png",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\images\\qr-code.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\QR.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\QR.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/QR.png",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\QR.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\refresh.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\refresh.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/refresh.png",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\images\\refresh.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\client_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\client_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/client_active.png",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\client_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\client.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\client.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/client.png",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\client.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\clipboard_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\clipboard_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/clipboard_active.png",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\clipboard_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\clipboard.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\clipboard.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/clipboard.png",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\clipboard.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dashboard_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dashboard_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/dashboard_active.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\dashboard_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dashboard.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dashboard.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/dashboard.png",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\dashboard.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dinner-table_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dinner-table_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/dinner-table_active.png",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\dinner-table_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dinner-table.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dinner-table.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/dinner-table.png",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\dinner-table.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\menu_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\menu_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/menu_active.png",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\menu_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\menu.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\menu.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/menu.png",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\menu.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\money-bag_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\money-bag_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/money-bag_active.png",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\money-bag_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\money-bag.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\money-bag.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/money-bag.png",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\money-bag.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\roles-permissions_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\roles-permissions_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/roles-permissions_active.png",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\roles-permissions_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\roles-permissions.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\roles-permissions.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/roles-permissions.png",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\roles-permissions.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\users_active.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\users_active.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/users_active.png",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\users_active.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\users.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\users.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sidebar_icons/users.png",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sidebar_icons\\users.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sorting arrows",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sorting arrows",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sorting arrows",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sorting arrows"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\sorting arrows.jpg",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sorting arrows.jpg",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/sorting arrows.jpg",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sorting arrows.jpg"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\top_sells.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\top_sells.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/top_sells.png",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\images\\top_sells.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\toppng.com-warning-icon-2400x2400.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\toppng.com-warning-icon-2400x2400.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/toppng.com-warning-icon-2400x2400.png",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\images\\toppng.com-warning-icon-2400x2400.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\images\\transperent-pizza.png",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\transperent-pizza.png",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "images/transperent-pizza.png",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\images\\transperent-pizza.png"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Area.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Area.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Area.js",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Area.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Customer.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Customer.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Customer.js",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Customer.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Dashboard.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Dashboard.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Dashboard.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Dashboard.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Global.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Global.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Global.js",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Global.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Home.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Home.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Home.js",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Home.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\kotLogic.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\kotLogic.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/kotLogic.js",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\js\\kotLogic.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Login.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Login.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Login.js",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Login.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Menu.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Menu.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Menu.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Menu.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\OrderApp.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\OrderApp.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/OrderApp.js",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\js\\OrderApp.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\OrderAppMenu.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\OrderAppMenu.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/OrderAppMenu.js",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\js\\OrderAppMenu.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Orders.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Orders.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Orders.js",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Orders.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Profile.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Profile.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Profile.js",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Profile.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\RoleAndPermissions.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\RoleAndPermissions.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/RoleAndPermissions.js",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\js\\RoleAndPermissions.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\site.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\site.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Taxes.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Taxes.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Taxes.js",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Taxes.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\Users.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Users.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/Users.js",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Users.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\js\\WaitingList.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\WaitingList.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "js/WaitingList.js",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\js\\WaitingList.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2652,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2669,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2686,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2703,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2720,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2737,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2754,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2771,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2788,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2805,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2822,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2839,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\AccountLoginDetailsFormat.html",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\AccountLoginDetailsFormat.html",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "Templates/AccountLoginDetailsFormat.html",
       "AssetKind": "All",
@@ -2856,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\Templates\\AccountLoginDetailsFormat.html"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\Customer_Details_Data_Format.xlsx",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\Customer_Details_Data_Format.xlsx",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "Templates/Customer_Details_Data_Format.xlsx",
       "AssetKind": "All",
@@ -2873,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\Templates\\Customer_Details_Data_Format.xlsx"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\ForgotPasswordFormat.html",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\ForgotPasswordFormat.html",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "Templates/ForgotPasswordFormat.html",
       "AssetKind": "All",
@@ -2890,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\Templates\\ForgotPasswordFormat.html"
     },
     {
-      "Identity": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\Order_Sales_Data_Format.xlsx",
+      "Identity": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\Order_Sales_Data_Format.xlsx",
       "SourceId": "PMSWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\",
       "BasePath": "_content/PMSWebApp",
       "RelativePath": "Templates/Order_Sales_Data_Format.xlsx",
       "AssetKind": "All",

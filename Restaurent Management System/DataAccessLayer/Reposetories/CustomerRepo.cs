@@ -1,8 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using PMSCore.Beans;
 using PMSCore.Beans.ENUM;
+using PMSCore.DTOs;
 using PMSCore.ViewModel;
 using PMSData.Interfaces;
+using PMSData.Utilities.Mappers;
 
 namespace PMSData.Reposetories
 {
@@ -131,13 +133,14 @@ namespace PMSData.Reposetories
             }
         }
 
-        public async Task<ResponseResult> AddNewCustomerAsync(Customer newCustomer)
+        public async Task<ResponseResult> AddNewCustomerAsync(CustomerDTO newCustomer)
         {
             try
             {
-                _appDbContext.Customers.Add(newCustomer);
+                Customer customer = CustomerMapper.DTOToEntity(newCustomer);
+                _appDbContext.Customers.Add(customer);
                 await _appDbContext.SaveChangesAsync();
-                result.Data = newCustomer.CustId;
+                result.Data = customer.CustId;
                 result.Message = MessageHelper.GetSuccessMessageForAddOperation(Constants.CUSTOMER);
                 result.Status = ResponseStatus.Success;
             }

@@ -10,7 +10,7 @@ namespace PMSServices.Interfaces
         Task<ResponseResult> GetCategoryList();
         Task<ResponseResult> GetDefaultMenu();
         Task<ResponseResult> GetMenuItemMapping(int itemId);
-        Task<ResponseResult> GetMenuItems(bool favoritesItem, int categoryId, string searchQuery);
+        Task<ResponseResult> GetMenuItems(bool favoritesItem, int categoryId, string searchQuery, int userId);
         Task<ResponseResult> GetOrderDetailsAsync(int orderId);
         Task<ResponseResult> RemoveFromFavorites(int itemId, int editorId);
         Task<ResponseResult> UpdateOrder(OrderExportDetails order);

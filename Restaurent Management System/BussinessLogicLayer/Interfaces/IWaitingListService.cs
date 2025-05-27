@@ -6,12 +6,10 @@ namespace PMSServices.Interfaces
     public interface IWaitingListService
     {
          Task<ResponseResult> AddWaitingToken(waitingTokenVM token);
-        Task<ResponseResult> AssignTable(waitingTokenVM tokenDetails);
         Task<ResponseResult> DeleteWaitingToken(int tokenId, int editorId);
         Task<ResponseResult> EditWaitingToken(waitingTokenVM token);
         Task<ResponseResult> GetCustomerDetails(string emailId);
         Task<ResponseResult> GetSectionList();
-        Task<ResponseResult> GetWaitingList();
         Task<ResponseResult> GetWaitingListBySectionId(int sectionId);
         Task<ResponseResult> RemoveWaitingToken(waitingTokenVM tokenDetails);
     }

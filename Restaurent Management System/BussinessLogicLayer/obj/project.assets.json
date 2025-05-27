@@ -9248,11 +9248,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj",
+      "projectUniqueName": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj",
       "projectName": "PMSServices",
-      "projectPath": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj",
+      "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj",
       "packagesPath": "C:\\Users\\pci151\\.nuget\\packages\\",
-      "outputPath": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\BussinessLogicLayer\\obj\\",
+      "outputPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\BussinessLogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pci151\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -9267,11 +9267,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj": {
-              "projectPath": "D:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\Core\\PMSCore.csproj"
+            "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
+              "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
             },
-            "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
-              "projectPath": "d:\\Assignments\\N_T_A_PMS\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj"
+            "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
+              "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj"
             }
           }
         }

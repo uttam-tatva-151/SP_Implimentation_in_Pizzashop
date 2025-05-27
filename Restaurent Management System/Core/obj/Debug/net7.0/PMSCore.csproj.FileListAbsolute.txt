@@ -197,3 +197,16 @@ d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSC
 d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
 d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
 d:\Assignments\N_T_A_PMS\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.deps.json
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.dll
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\bin\Debug\net7.0\PMSCore.pdb
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.AssemblyReference.cache
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfoInputs.cache
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.AssemblyInfo.cs
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.csproj.CoreCompileInputs.cache
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\EFCoreSqlServerHierarchyId.cs
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.dll
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\refint\PMSCore.dll
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\PMSCore.pdb
+D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\Core\obj\Debug\net7.0\ref\PMSCore.dll

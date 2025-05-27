@@ -1,5 +1,6 @@
 using PMSCore.Beans;
 using PMSCore.Beans.ENUM;
+using PMSCore.DTOs;
 using PMSCore.ViewModel;
 using PMSData;
 using PMSData.Interfaces;
@@ -25,7 +26,7 @@ namespace PMSServices.Services
                 DashboardVM dashboardView = new();
                 paginationDetails.SortColumn = Constants.SORT_BY_DATE;
                 List<Order> orderList = await _orderRepo.GetOrdersAsync(paginationDetails);
-                List<WaitingList> waitingList = await _waitingRepo.GetAllWaitingTokensAsync(0);
+                List<WaitingTokenDTO> waitingList = await _waitingRepo.GetWaitingTokensBySectionAsync(0);
 
                 dashboardView.TotalSales = CalculateTotalSales(orderList);
                 dashboardView.TotalOrders = orderList.Count;
@@ -33,7 +34,7 @@ namespace PMSServices.Services
                 dashboardView.AvgWaitingTime = CalculateAvgWaitingTime(waitingList);
                 dashboardView.TopSellingItem = CalculateTopSellingItem(orderList);
                 dashboardView.LeastSellingItem = CalculateLeastSellingItem(orderList);
-                dashboardView.WaitingCustomerCount = waitingList.Count(w => w.Isactive ?? true);
+                dashboardView.WaitingCustomerCount = waitingList.Count(w => w.IsActive);
                 dashboardView.NewCustomerCount = CalculateNewCustomerCount(orderList);
 
                 dashboardView.RevenueData = CalculateRevenueData(orderList, paginationDetails);
@@ -325,7 +326,7 @@ namespace PMSServices.Services
 
             return allItemMappings;
         }
-        private static TimeSpan CalculateAvgWaitingTime(List<WaitingList> orderList)
+        private static TimeSpan CalculateAvgWaitingTime(List<WaitingTokenDTO> orderList)
         {
             if (orderList == null || orderList.Count == 0)
                 return TimeSpan.Zero;
@@ -333,7 +334,7 @@ namespace PMSServices.Services
             TimeSpan totalWaitingTime = TimeSpan.Zero;
             int count = 0;
 
-            foreach (WaitingList waitingToken in orderList)
+            foreach (WaitingTokenDTO waitingToken in orderList)
             {
 
                 TimeSpan waitingTime = (waitingToken.Modifyat ?? waitingToken.Createat) - waitingToken.Createat;

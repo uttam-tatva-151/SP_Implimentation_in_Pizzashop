@@ -1,13 +1,12 @@
 using PMSCore.Beans;
+using PMSCore.DTOs;
 namespace PMSData.Interfaces
 {
     public interface IWaitingRepo
     {
-        Task<ResponseResult> AddWaitingTokenAsync(WaitingList token);
-        Task<List<WaitingList>> GetAllWaitingTokensAsync(int v);
-        Task<WaitingList?> GetWaitingTokenByIdAsync(int tokenId);
-
-        Task<List<WaitingList>> GetWaitingTokensBySectionAsync(int sectionId);
-        Task<ResponseResult> UpdateWaitingToken(WaitingList waitingToken);
+        Task<ResponseResult> AddWaitingTokenAsync(WaitingTokenDTO token);
+        Task<WaitingTokenDTO?> GetWaitingTokenByIdAsync(int tokenId);
+        Task<List<WaitingTokenDTO>> GetWaitingTokensBySectionAsync(int sectionId);
+        Task<ResponseResult> UpdateWaitingToken(WaitingTokenDTO waitingToken);
     }
 }

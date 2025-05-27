@@ -51,3 +51,23 @@ public async Task<List<Order>> GetOrdersByCategoryId(string status, int category
                 throw;
             }
         }
+
+2.) Alternative of "get_waiting_token_dto_by_section(@sectionId)" 
+:-> In Wating Repo.cs
+public async Task<List<WaitingList>> GetWaitingTokensBySectionAsync(int sectionId)
+{
+    IQueryable<WaitingList> query = _appDbContext.WaitingLists
+                                    .Include(w => w.Customer)
+                                    .AsNoTracking()
+                                    .OrderBy(w => w.Createat);
+    if (sectionId == 0)
+    {
+        query = query.Where(w => w.Isactive == true);
+    }
+    else
+    {
+        query = query.Where(w => w.SectionId == sectionId && w.Isactive == true);
+    }
+
+    return await query.ToListAsync();
+}

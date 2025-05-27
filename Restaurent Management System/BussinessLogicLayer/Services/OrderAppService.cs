@@ -1,5 +1,6 @@
 using System.Data;
 using PMSCore.Beans;
+using PMSCore.DTOs;
 using PMSCore.ViewModel;
 using PMSData;
 using PMSData.Interfaces;
@@ -313,13 +314,11 @@ namespace PMSServices.Services
                 result.Status = ResponseStatus.NotFound;
                 return result;
             }
-            Customer newCustomer = new()
+            CustomerDTO newCustomer = new()
             {
                 CustName = tokenDetails.CustomerName,
                 PhoneNumber = tokenDetails.PhoneNumber,
-                EmailId = tokenDetails.Email,
-                Createat = DateTime.Now,
-                Iscontinued = true
+                EmailId = tokenDetails.Email
             };
             return await _customerRepo.AddNewCustomerAsync(newCustomer);
         }

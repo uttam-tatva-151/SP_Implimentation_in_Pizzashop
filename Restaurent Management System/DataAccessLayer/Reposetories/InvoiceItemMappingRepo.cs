@@ -102,6 +102,36 @@ namespace PMSData.Reposetories
             }
             return result;
         }
+        
+         public async Task<ResponseResult> AddInvoiceItemModifierMappingsAsync(List<AddInvoiceItemModifierMappingInputDTO> mappings)
+        {
+            try
+            {
+                DbConnection connection = _appDbContext.Database.GetDbConnection();
+                if (connection.State != System.Data.ConnectionState.Open)
+                    await connection.OpenAsync();
+
+                NpgsqlConnection npgsqlConn = (NpgsqlConnection)connection;
+
+                // the command
+                using NpgsqlCommand query = new("CALL public.add_invoice_item_modifier_mappings(@updates)", npgsqlConn);
+
+                // the parameter as an array of DTOs
+                query.Parameters.AddWithValue("updates", mappings.ToArray());
+
+                // Execute the command
+                await query.ExecuteNonQueryAsync();
+                result.Message = MessageHelper.GetSuccessMessageForAddOperation(Constants.MAPPING_RELATIONS);
+                result.Status = ResponseStatus.Success;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                result.Status = ResponseStatus.Error;
+            }
+            return result;
+        }
+        
         public async Task<ResponseResult> DeleteMappingsAsync(List<InvoiceItemModifierMapping> mappingsToDelete)
         {
             try
