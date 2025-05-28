@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j7lICgYwv+YQC06W+dlBmqimLqH2imihsNYA0oRdVg7OhMHYap4q9D1vFewdHrHhCPMoWtEIBekyK0Ie9z9cZA==",
+  "dgSpecHash": "mwt4ic1X9YLgfK4lIgtOSL1BG5x0vPNjl6OkzDXhFXyG+OUJsv+2SNMnYJKc0FieZmSmf3W6jnpMnggaUKw3bQ==",
   "success": true,
-  "projectFilePath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj",
+  "projectFilePath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pci151\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\pci151\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

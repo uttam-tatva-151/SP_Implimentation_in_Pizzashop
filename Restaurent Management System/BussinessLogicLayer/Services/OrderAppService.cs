@@ -79,7 +79,7 @@ namespace PMSServices.Services
                     foreach (Table table in tableList)
                     {
                         TableViewOrderAppVM tempTableViewVM = new();
-                        if (table.Status == "Occupied")
+                        if (table.Status == Constants.TABLE_OCCUPIED)
                             tempTableViewVM = await GetTableViewDetails(table.TableId, table);
                         else
                         {
@@ -112,7 +112,7 @@ namespace PMSServices.Services
             {
                 return tableViewOrderAppVM;
             }
-            if (orderData.Status == "InProgress" || orderData.Status == "Served")
+            if (orderData.Status == Constants.ORDER_IN_PROGRESS || orderData.Status == Constants.ORDER_SERVED)
             {
                 tableViewOrderAppVM.Status = "Running";
             }
@@ -144,10 +144,10 @@ namespace PMSServices.Services
 
             foreach (Table table in tableList)
             {
-                if (table.Status == "Occupied")
+                if (table.Status == Constants.TABLE_OCCUPIED)
                 {
                     Order? order = await _orderRepo.GetOrderDetailsByTableAssign(table.TableId);
-                    if (order != null && (order.Status == "InProgress" || order.Status == "Served"))
+                    if (order != null && (order.Status == Constants.ORDER_IN_PROGRESS || order.Status == Constants.ORDER_SERVED))
                         running++;
                     else
                         assigned++;
@@ -280,10 +280,10 @@ namespace PMSServices.Services
 
                 foreach (Table table in tables)
                 {
-                    if (table.Status == "Occupied")
+                    if (table.Status == Constants.TABLE_OCCUPIED)
                     {
                         Order? order = await _orderRepo.GetOrderDetailsByTableAssign(table.TableId);
-                        if (order != null && (order.Status == "InProgress" || order.Status == "Served"))
+                        if (order != null && (order.Status == Constants.ORDER_IN_PROGRESS || order.Status == Constants.ORDER_SERVED))
                             section.Running++;
                         else
                             section.Assigned++;

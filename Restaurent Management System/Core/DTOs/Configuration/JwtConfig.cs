@@ -1,5 +1,4 @@
-namespace PMSCore.DTOs
-{
+namespace PMSCore.DTOs.Configuration{
     public class JwtConfig
     {
         public string Key { get; set; } = null!;

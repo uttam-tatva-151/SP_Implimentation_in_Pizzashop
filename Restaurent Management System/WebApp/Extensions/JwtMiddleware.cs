@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using PMSCore.Beans;
-using PMSCore.DTOs;
+using PMSCore.DTOs.Configuration;
 using PMSServices.Interfaces;
 using PMSWebApp.Utilities;
 using System.IdentityModel.Tokens.Jwt;

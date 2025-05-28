@@ -5,13 +5,10 @@ namespace PMSData.Interfaces
 {
     public interface IInvoiceItemMappingRepo
     {
-        Task<ResponseResult> AddMappingAsync(InvoiceItemModifierMapping newItemMapping);
-        Task<ResponseResult> AddInvoiceItemModifierMappingsAsync(List<AddInvoiceItemModifierMappingInputDTO> mappings);
-        Task<ResponseResult> DeleteMappingsAsync(List<InvoiceItemModifierMapping> mappingsToDelete);
-        Task<List<InvoiceItemModifierMapping>> GetItemsForInvoiceAsync(int orderId);
-        Task<List<InvoiceItemModifierMapping>> GetItemsForKOTAsync(int orderId);
-        Task<ResponseResult> UpdateItemMappingAsync(InvoiceItemModifierMapping invoiceItemModifierMapping);
         Task<ResponseResult> UpdateMultipleItemMappingsAsync(List<InvoiceItemModifierMapping> invoiceItemModifierMapping);
+        Task<List<InvoiceItemModifierMapping>> GetItemsForInvoiceAsync(int orderId);
+        Task<ResponseResult> AddInvoiceItemModifierMappingsAsync(List<AddInvoiceItemModifierMappingInputDTO> mappings);
         Task<ResponseResult> UpdateInvoiceItemModifierMappingsAsync(List<UpdateInvoiceItemModifierMappingDTO> invoiceItemModifierMapping);
+        Task<ResponseResult> DeleteInvoiceItemModifierMappingsAsync(List<UpdateInvoiceItemModifierMappingDTO> mappingsToDelete);
     }
 }

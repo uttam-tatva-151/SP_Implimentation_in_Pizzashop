@@ -270,5 +270,22 @@ namespace PMSData.Reposetories
             }
             return result;
         }
+
+        public async Task<ResponseResult> UpdateOrderDetailsAsync(UpdateOrderDTO updateOrder)
+        {
+            try
+            {
+                _appDbContext.OrderDetails.Update(updateOrder);
+                await _appDbContext.SaveChangesAsync();
+                result.Message = MessageHelper.GetSuccessMessageForUpdateOperation(Constants.ORDERDETAILS);
+                result.Status = ResponseStatus.Success;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                result.Status = ResponseStatus.Error;
+            }
+            return result;
+        }
     }
 }

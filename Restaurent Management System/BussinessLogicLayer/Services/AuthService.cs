@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using PMSCore.Beans;
 using PMSCore.DTOs;
+using PMSCore.DTOs.Configuration;
 using PMSCore.ViewModel;
 using PMSData;
 using PMSData.Interfaces;

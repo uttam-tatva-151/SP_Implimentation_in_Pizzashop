@@ -1,21 +1,22 @@
+using Microsoft.Extensions.Options;
+using PMSCore.Beans;
+using PMSCore.DTOs.Configuration;
 using PMSWebApp.Extensions;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
 
-// Add services
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddApplicationServices(configuration);
-// builder.Services.AddSignalR();
 
 WebApplication app = builder.Build();
 
 // Configure middleware and error handling
 if (!app.Environment.IsDevelopment())
 {
-    app.UseStatusCodePagesWithReExecute("/ErrorHandler/HttpStatusCodeHandler/{0}");
-    app.UseExceptionHandler("/ErrorHandler/HttpStatusCodeHandler/500");
+    app.UseStatusCodePagesWithReExecute(Constants.ERROR_HANDLER_HTTP_STATUS_CODE_HANDLER_ROUTE);
+    app.UseExceptionHandler(Constants.ERROR_HANDLER_HTTP_STATUS_CODE_500_ROUTE);
     app.UseHsts();
 }
 app.UseMiddleware<JwtMiddleware>();
@@ -24,27 +25,25 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseSession();
 app.UseRouting();
-
-// Enable Authentication & Authorization
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapControllerRoute( 
-                    name: "default", 
-                    pattern: "{controller=Login}/{action=Index}");
 
+// Bind RouteSettings from configuration in service collection extension and Retrieve the strongly-typed settings here
+RouteSettings routeSettings = app.Services.GetRequiredService<IOptions<RouteSettings>>().Value;
+app.MapControllerRoute(name: routeSettings.DefaultRouteName,
+                        pattern: routeSettings.DefaultRoutePattern);
 
 app.MapFallback(context =>
 {
     string path = context.Request.Path.Value ?? string.Empty;
 
     // Avoid redirect loop if already on error page
-    if (path != null && path.StartsWith("/ErrorHandler", StringComparison.OrdinalIgnoreCase))
+    if (path != null && path.StartsWith(Constants.ERROR_HANDLER_ROUTE, StringComparison.OrdinalIgnoreCase))
     {
         context.Response.StatusCode = 404;
         return Task.CompletedTask;
     }
-
-    context.Response.Redirect("/ErrorHandler/HttpStatusCodeHandler/404");
+    context.Response.Redirect(Constants.ERROR_HANDLER_HTTP_STATUS_CODE_404_ROUTE);
     return Task.CompletedTask;
 });
 

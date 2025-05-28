@@ -16,234 +16,234 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\SP_Implimentation_in_Pizzashop\Restaurent Management System\WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Customers/Customer.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Customers/Customer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEN1c3RvbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Customers/_partial_CustomerTableGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Customers/_partial_CustomerTableGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXF9wYXJ0aWFsX0N1c3RvbWVyVGFibGVHcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Customers/_partial_Customer_HistoryGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Customers/_partial_Customer_HistoryGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXF9wYXJ0aWFsX0N1c3RvbWVyX0hpc3RvcnlHcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/ErrorHandler/Error.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/ErrorHandler/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JIYW5kbGVyXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Home/Index.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Home/_parial_Dashboard_Grid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Home/_parial_Dashboard_Grid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFyaWFsX0Rhc2hib2FyZF9HcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/KOT/KOT.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/KOT/KOT.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS09UXEtPVC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/KOT/_partial_KOTsGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/KOT/_partial_KOTsGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS09UXF9wYXJ0aWFsX0tPVHNHcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Login/ForgotPassword.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Login/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yZ290UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Login/Index.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Login/ResetPassword.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Login/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVzZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/Menu.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_AddItemGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_AddItemGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9BZGRJdGVtR3JpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_Add_ModifierGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_Add_ModifierGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9BZGRfTW9kaWZpZXJHcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_AllReadyExistingModifiers.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_AllReadyExistingModifiers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9BbGxSZWFkeUV4aXN0aW5nTW9kaWZpZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_CategoryListGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_CategoryListGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9DYXRlZ29yeUxpc3RHcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_EditItemGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_EditItemGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9FZGl0SXRlbUdyaWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_Edit_ModifierGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_Edit_ModifierGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9FZGl0X01vZGlmaWVyR3JpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_ItemListGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_ItemListGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9JdGVtTGlzdEdyaWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_ModifiersGroupListGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_ModifiersGroupListGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9Nb2RpZmllcnNHcm91cExpc3RHcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_ModifiersListGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Menu/_partial_ModifiersListGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxfcGFydGlhbF9Nb2RpZmllcnNMaXN0R3JpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/CustomersMenu.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/CustomersMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBNZW51XEN1c3RvbWVyc01lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/OrderAppMenu.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/OrderAppMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBNZW51XE9yZGVyQXBwTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/_partial_CustomerDetailsModal.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/_partial_CustomerDetailsModal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBNZW51XF9wYXJ0aWFsX0N1c3RvbWVyRGV0YWlsc01vZGFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/_partial_OrderAppMenu_ItemListGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/_partial_OrderAppMenu_ItemListGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBNZW51XF9wYXJ0aWFsX09yZGVyQXBwTWVudV9JdGVtTGlzdEdyaWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/_partial_OrderAppMenu_ItemModifierGroupRelation.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/_partial_OrderAppMenu_ItemModifierGroupRelation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBNZW51XF9wYXJ0aWFsX09yZGVyQXBwTWVudV9JdGVtTW9kaWZpZXJHcm91cFJlbGF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/_partial_OrderAppMenu_OrderPlace.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderAppMenu/_partial_OrderAppMenu_OrderPlace.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBNZW51XF9wYXJ0aWFsX09yZGVyQXBwTWVudV9PcmRlclBsYWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderApp/TableView.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderApp/TableView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBcVGFibGVWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderApp/_partial_TableView_ListGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderApp/_partial_TableView_ListGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBcX3BhcnRpYWxfVGFibGVWaWV3X0xpc3RHcmlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderApp/_partial_waitiningListAtAssignTable.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/OrderApp/_partial_waitiningListAtAssignTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJBcHBcX3BhcnRpYWxfd2FpdGluaW5nTGlzdEF0QXNzaWduVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Orders/Invoice.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Orders/Invoice.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEludm9pY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Orders/Order.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Orders/Order.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Orders/OrderDetails.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Orders/OrderDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE9yZGVyRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Orders/_partial_OrderTable.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Orders/_partial_OrderTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXF9wYXJ0aWFsX09yZGVyVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Profile/ChangePassword.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Profile/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Profile/UserProfile.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Profile/UserProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxVc2VyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/RoleAndPermissions/Permissions.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/RoleAndPermissions/Permissions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZUFuZFBlcm1pc3Npb25zXFBlcm1pc3Npb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/RoleAndPermissions/Role.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/RoleAndPermissions/Role.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZUFuZFBlcm1pc3Npb25zXFJvbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/SectionAndTables/SectionAndTables.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/SectionAndTables/SectionAndTables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbkFuZFRhYmxlc1xTZWN0aW9uQW5kVGFibGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/SectionAndTables/_partial_SectionListGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/SectionAndTables/_partial_SectionListGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbkFuZFRhYmxlc1xfcGFydGlhbF9TZWN0aW9uTGlzdEdyaWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/SectionAndTables/_partial_TablesListGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/SectionAndTables/_partial_TablesListGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbkFuZFRhYmxlc1xfcGFydGlhbF9UYWJsZXNMaXN0R3JpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_Header.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_Layout.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_LoginLayout.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_OrderAppLayout.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_OrderAppLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PcmRlckFwcExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_OrderAppNavbar.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_OrderAppNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PcmRlckFwcE5hdmJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_Sidebar.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Taxes/Taxes.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Taxes/Taxes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4ZXNcVGF4ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Taxes/_partial_TaxList.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/Taxes/_partial_TaxList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4ZXNcX3BhcnRpYWxfVGF4TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/User/AddUser.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/User/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/User/EditUser.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/User/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/User/UserList.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/User/UserList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/User/_partial_UserGrid.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/User/_partial_UserGrid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfcGFydGlhbF9Vc2VyR3JpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/WaitingList/WaitingList.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/WaitingList/WaitingList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FpdGluZ0xpc3RcV2FpdGluZ0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/WaitingList/_partial_WatingToken.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/WaitingList/_partial_WatingToken.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FpdGluZ0xpc3RcX3BhcnRpYWxfV2F0aW5nVG9rZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/_ViewImports.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/_ViewStart.cshtml]
+[D:/SP_Implimentation_in_Pizzashop/Restaurent Management System/WebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

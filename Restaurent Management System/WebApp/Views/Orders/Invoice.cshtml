@@ -17,12 +17,11 @@
         }
 
        .invoice-container {
-             width: 800px;
-            margin: auto;
+            width: 90%;
+            margin-top: 5%;
+            @* margin: auto; *@
             border: 1px solid #ddd;
             padding: 20px;
-            margin: 10px;
-            margin-top: 200px;
         }
         .invoice-header{
             display: flex;
@@ -34,7 +33,6 @@
         .details{
             display: flex;
             justify-content: space-between;
-    using PMSData;
             align-items: center;
             width: 100%;
             padding: 0 20px 0 20px ;
@@ -67,11 +65,17 @@
              margin-bottom: 3px;
         }
         .border-info{
-            border-top: 2px solid rgba(0, 103, 167, 0.5);
+            border-top: 2px solid rgba(0, 103, 167, 0.24);
             padding: 8px;
         }
         .text-align{
             grid-row: 2;
+        }
+        .m-0{
+            margin: 0px;
+        }
+        .text-align-end{
+            text-align: end !important;
         }
     </style>
 </head>
@@ -105,7 +109,7 @@
                     <th>Item</th>
                     <th>Quantity</th>
                     <th>Unit Price</th>
-                    <th>Total</th>
+                    <th class="text-align-end">Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -134,7 +138,7 @@
                                 {
                                     @foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in Model.OrderItems[i].Modifiers ??Enumerable.Empty<OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel>())
                                     {
-                                        <p>@modifier.ModiferQuantity</p>
+                                        <p class="m-0">@modifier.ModiferQuantity</p>
                                     }
                                 }
                             </td>
@@ -145,18 +149,18 @@
                                     @foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in
                                                             Model.OrderItems[i].Modifiers ??Enumerable.Empty<OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel>())
                                     {
-                                        <p>@modifier.ModifierPrice</p>
+                                        <p class="m-0">@modifier.ModifierPrice</p>
                                     }
                                 }
                             </td>
-                            <td class="text-end">
+                            <td class="text-end text-align-end">
                                 @Model.OrderItems[i].TotalPrice
                                 @if (Model.OrderItems[i].Modifiers?.Count > 0 &&  (Model.OrderItems[i].Modifiers?.Any(m => m.ModifierId != 0) == true))
                                 {
                                     @foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in
                                                             Model.OrderItems[i].Modifiers ??Enumerable.Empty<OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel>())
                                     {
-                                        <p>@modifier.ModifierTotalPrice</p>
+                                        <p class="m-0">@modifier.ModifierTotalPrice</p>
                                     }
                                 }
                             </td>

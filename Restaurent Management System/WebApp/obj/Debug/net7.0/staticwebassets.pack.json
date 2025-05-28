@@ -1,683 +1,683 @@
 {
   "Files": [
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\AccountLoginDetailsFormat.html",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\AccountLoginDetailsFormat.html",
       "PackagePath": "staticwebassets\\Templates\\AccountLoginDetailsFormat.html"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\Customer_Details_Data_Format.xlsx",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\Customer_Details_Data_Format.xlsx",
       "PackagePath": "staticwebassets\\Templates\\Customer_Details_Data_Format.xlsx"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\ForgotPasswordFormat.html",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\ForgotPasswordFormat.html",
       "PackagePath": "staticwebassets\\Templates\\ForgotPasswordFormat.html"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\Order_Sales_Data_Format.xlsx",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\Templates\\Order_Sales_Data_Format.xlsx",
       "PackagePath": "staticwebassets\\Templates\\Order_Sales_Data_Format.xlsx"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\Dashboard.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\Dashboard.css",
       "PackagePath": "staticwebassets\\css\\Dashboard.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\Global.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\Global.css",
       "PackagePath": "staticwebassets\\css\\Global.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\OrderAppLayout.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\OrderAppLayout.css",
       "PackagePath": "staticwebassets\\css\\OrderAppLayout.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\ProfileSection.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\ProfileSection.css",
       "PackagePath": "staticwebassets\\css\\ProfileSection.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\loginLayout.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\loginLayout.css",
       "PackagePath": "staticwebassets\\css\\loginLayout.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\mainLayout.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\css\\mainLayout.css",
       "PackagePath": "staticwebassets\\css\\mainLayout.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\favicon.ico",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\Animatation\\empty-box.gif",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\Animatation\\empty-box.gif",
       "PackagePath": "staticwebassets\\images\\Animatation\\empty-box.gif"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\Default_pfp.svg.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\Default_pfp.svg.png",
       "PackagePath": "staticwebassets\\images\\Default_pfp.svg.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\back-in-time.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\back-in-time.png",
       "PackagePath": "staticwebassets\\images\\KOT_Nevbar\\back-in-time.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\box.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\box.png",
       "PackagePath": "staticwebassets\\images\\KOT_Nevbar\\box.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\orderApp.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\orderApp.png",
       "PackagePath": "staticwebassets\\images\\KOT_Nevbar\\orderApp.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\reception-bell.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\reception-bell.png",
       "PackagePath": "staticwebassets\\images\\KOT_Nevbar\\reception-bell.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\smartphone.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\smartphone.png",
       "PackagePath": "staticwebassets\\images\\KOT_Nevbar\\smartphone.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\task.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\KOT_Nevbar\\task.png",
       "PackagePath": "staticwebassets\\images\\KOT_Nevbar\\task.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\QR.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\QR.png",
       "PackagePath": "staticwebassets\\images\\QR.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\assign_table.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\assign_table.png",
       "PackagePath": "staticwebassets\\images\\assign_table.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\camera.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\camera.png",
       "PackagePath": "staticwebassets\\images\\camera.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\category-sidebar.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\category-sidebar.png",
       "PackagePath": "staticwebassets\\images\\category-sidebar.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\chat.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\chat.png",
       "PackagePath": "staticwebassets\\images\\chat.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\chicken-pizza-with-bell-pepper-olives.jpg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\chicken-pizza-with-bell-pepper-olives.jpg",
       "PackagePath": "staticwebassets\\images\\chicken-pizza-with-bell-pepper-olives.jpg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\cloud-upload-icon.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\cloud-upload-icon.svg",
       "PackagePath": "staticwebassets\\images\\cloud-upload-icon.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\comment.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\comment.png",
       "PackagePath": "staticwebassets\\images\\comment.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\comments.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\comments.png",
       "PackagePath": "staticwebassets\\images\\comments.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\cowboy-vector.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\cowboy-vector.png",
       "PackagePath": "staticwebassets\\images\\cowboy-vector.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\delete.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\delete.png",
       "PackagePath": "staticwebassets\\images\\delete.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dining-menu.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dining-menu.png",
       "PackagePath": "staticwebassets\\images\\dining-menu.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dish.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dish.png",
       "PackagePath": "staticwebassets\\images\\dish.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dominos_background.jpg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\dominos_background.jpg",
       "PackagePath": "staticwebassets\\images\\dominos_background.jpg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\edit.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\edit.png",
       "PackagePath": "staticwebassets\\images\\edit.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\heros-image.avif",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\heros-image.avif",
       "PackagePath": "staticwebassets\\images\\heros-image.avif"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\Egg.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\Egg.png",
       "PackagePath": "staticwebassets\\images\\icons\\Egg.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\customer.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\customer.svg",
       "PackagePath": "staticwebassets\\images\\icons\\customer.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dashboard-active.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dashboard-active.svg",
       "PackagePath": "staticwebassets\\images\\icons\\dashboard-active.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dashboard-default.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dashboard-default.svg",
       "PackagePath": "staticwebassets\\images\\icons\\dashboard-default.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dinner-table.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dinner-table.svg",
       "PackagePath": "staticwebassets\\images\\icons\\dinner-table.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dots-6-vertical.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\dots-6-vertical.svg",
       "PackagePath": "staticwebassets\\images\\icons\\dots-6-vertical.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\exclamation-triangle-fill.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\exclamation-triangle-fill.svg",
       "PackagePath": "staticwebassets\\images\\icons\\exclamation-triangle-fill.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\eye.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\eye.png",
       "PackagePath": "staticwebassets\\images\\icons\\eye.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\list-check.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\list-check.svg",
       "PackagePath": "staticwebassets\\images\\icons\\list-check.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\non-veg-icon.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\non-veg-icon.svg",
       "PackagePath": "staticwebassets\\images\\icons\\non-veg-icon.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\order-value.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\order-value.svg",
       "PackagePath": "staticwebassets\\images\\icons\\order-value.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\pen.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\pen.svg",
       "PackagePath": "staticwebassets\\images\\icons\\pen.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\plus-square.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\plus-square.svg",
       "PackagePath": "staticwebassets\\images\\icons\\plus-square.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\shared-vision.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\shared-vision.png",
       "PackagePath": "staticwebassets\\images\\icons\\shared-vision.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\total-orders.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\total-orders.svg",
       "PackagePath": "staticwebassets\\images\\icons\\total-orders.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\total-sales.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\total-sales.svg",
       "PackagePath": "staticwebassets\\images\\icons\\total-sales.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\trash3-fill.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\trash3-fill.svg",
       "PackagePath": "staticwebassets\\images\\icons\\trash3-fill.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\ui-checks-grid.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\ui-checks-grid.svg",
       "PackagePath": "staticwebassets\\images\\icons\\ui-checks-grid.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\user-active.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\user-active.svg",
       "PackagePath": "staticwebassets\\images\\icons\\user-active.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\user-default.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\user-default.svg",
       "PackagePath": "staticwebassets\\images\\icons\\user-default.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\veg-icon.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\veg-icon.svg",
       "PackagePath": "staticwebassets\\images\\icons\\veg-icon.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\vegan-icon.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\vegan-icon.svg",
       "PackagePath": "staticwebassets\\images\\icons\\vegan-icon.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\waiting-list.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\waiting-list.svg",
       "PackagePath": "staticwebassets\\images\\icons\\waiting-list.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\waiting-time.svg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\icons\\waiting-time.svg",
       "PackagePath": "staticwebassets\\images\\icons\\waiting-time.svg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\idea_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\idea_active.png",
       "PackagePath": "staticwebassets\\images\\idea_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\idea_default.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\idea_default.png",
       "PackagePath": "staticwebassets\\images\\idea_default.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\key.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\key.png",
       "PackagePath": "staticwebassets\\images\\key.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\list.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\list.png",
       "PackagePath": "staticwebassets\\images\\list.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-facebook-48.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-facebook-48.png",
       "PackagePath": "staticwebassets\\images\\logos\\icons8-facebook-48.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-github-48.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-github-48.png",
       "PackagePath": "staticwebassets\\images\\logos\\icons8-github-48.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-google-48.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\icons8-google-48.png",
       "PackagePath": "staticwebassets\\images\\logos\\icons8-google-48.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\pizzashop_logo.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logos\\pizzashop_logo.png",
       "PackagePath": "staticwebassets\\images\\logos\\pizzashop_logo.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logout.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\logout.png",
       "PackagePath": "staticwebassets\\images\\logout.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\low_sells.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\low_sells.png",
       "PackagePath": "staticwebassets\\images\\low_sells.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\navbar_menu.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\navbar_menu.png",
       "PackagePath": "staticwebassets\\images\\navbar_menu.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\pen.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\pen.png",
       "PackagePath": "staticwebassets\\images\\pen.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\pngegg.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\pngegg.png",
       "PackagePath": "staticwebassets\\images\\pngegg.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\profile_div_bg.jpg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\profile_div_bg.jpg",
       "PackagePath": "staticwebassets\\images\\profile_div_bg.jpg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\qr-code.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\qr-code.png",
       "PackagePath": "staticwebassets\\images\\qr-code.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\refresh.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\refresh.png",
       "PackagePath": "staticwebassets\\images\\refresh.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\client.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\client.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\client.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\client_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\client_active.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\client_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\clipboard.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\clipboard.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\clipboard.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\clipboard_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\clipboard_active.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\clipboard_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dashboard.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dashboard.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\dashboard.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dashboard_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dashboard_active.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\dashboard_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dinner-table.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dinner-table.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\dinner-table.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dinner-table_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\dinner-table_active.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\dinner-table_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\menu.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\menu.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\menu.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\menu_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\menu_active.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\menu_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\money-bag.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\money-bag.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\money-bag.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\money-bag_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\money-bag_active.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\money-bag_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\roles-permissions.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\roles-permissions.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\roles-permissions.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\roles-permissions_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\roles-permissions_active.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\roles-permissions_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\users.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\users.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\users.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\users_active.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sidebar_icons\\users_active.png",
       "PackagePath": "staticwebassets\\images\\sidebar_icons\\users_active.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sorting arrows",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sorting arrows",
       "PackagePath": "staticwebassets\\images"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sorting arrows.jpg",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\sorting arrows.jpg",
       "PackagePath": "staticwebassets\\images\\sorting arrows.jpg"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\top_sells.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\top_sells.png",
       "PackagePath": "staticwebassets\\images\\top_sells.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\toppng.com-warning-icon-2400x2400.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\toppng.com-warning-icon-2400x2400.png",
       "PackagePath": "staticwebassets\\images\\toppng.com-warning-icon-2400x2400.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\transperent-pizza.png",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\images\\transperent-pizza.png",
       "PackagePath": "staticwebassets\\images\\transperent-pizza.png"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Area.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Area.js",
       "PackagePath": "staticwebassets\\js\\Area.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Customer.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Customer.js",
       "PackagePath": "staticwebassets\\js\\Customer.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Dashboard.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Dashboard.js",
       "PackagePath": "staticwebassets\\js\\Dashboard.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Global.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Global.js",
       "PackagePath": "staticwebassets\\js\\Global.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Home.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Home.js",
       "PackagePath": "staticwebassets\\js\\Home.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Login.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Login.js",
       "PackagePath": "staticwebassets\\js\\Login.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Menu.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Menu.js",
       "PackagePath": "staticwebassets\\js\\Menu.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\OrderApp.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\OrderApp.js",
       "PackagePath": "staticwebassets\\js\\OrderApp.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\OrderAppMenu.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\OrderAppMenu.js",
       "PackagePath": "staticwebassets\\js\\OrderAppMenu.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Orders.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Orders.js",
       "PackagePath": "staticwebassets\\js\\Orders.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Profile.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Profile.js",
       "PackagePath": "staticwebassets\\js\\Profile.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\RoleAndPermissions.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\RoleAndPermissions.js",
       "PackagePath": "staticwebassets\\js\\RoleAndPermissions.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Taxes.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Taxes.js",
       "PackagePath": "staticwebassets\\js\\Taxes.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Users.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\Users.js",
       "PackagePath": "staticwebassets\\js\\Users.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\WaitingList.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\WaitingList.js",
       "PackagePath": "staticwebassets\\js\\WaitingList.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\kotLogic.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\kotLogic.js",
       "PackagePath": "staticwebassets\\js\\kotLogic.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\site.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
 using PMSCore.Beans;
-using PMSCore.DTOs;
+using PMSCore.DTOs.Configuration;
 using PMSData;
 using PMSData.Interfaces;
 using PMSData.Reposetories;
@@ -16,20 +16,24 @@ namespace PMSWebApp.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
-            string? DatabaseConnectionString = configuration.GetConnectionString(Constants.DATABASE_DEFAULT_CONNECTION);
-            // Configure file upload size
-            services.Configure<FormOptions>(options =>
-            {
-                options.MultipartBodyLengthLimit = 50 * 1024 * 1024; // 50MB limit
-            });
 
-            // Bind JwtConfig and EmailSettings to strongly-typed classes
+            // Bind Configuration from app-json-setting file to strongly-typed classes
             services.Configure<JwtConfig>(configuration.GetSection(Constants.JWT_CONFIG));
             services.Configure<EmailSettings>(configuration.GetSection(Constants.EMAIL_CONFIG));
+            services.Configure<RouteSettings>(configuration.GetSection(Constants.DEFAULT_ROUTE_CONFIG));
 
             // Register DbContext with connection string from appsettings.json
+            string? DatabaseConnectionString = configuration.GetConnectionString(Constants.DATABASE_DEFAULT_CONNECTION);
             services.AddDbContext<AppDbContext>(options => options.UseNpgsql(DatabaseConnectionString));
 
+            // Configure file upload size
+            long maxFileUploadLength = configuration.GetValue<long>(Constants.MAX_FILE_UPLOAD_SIZE);
+            services.Configure<FormOptions>(options =>
+            {
+                options.MultipartBodyLengthLimit = maxFileUploadLength; // 10MB limit
+            });
+
+            //Register Data source Builder to register composite types of Database
             NpgsqlDataSourceBuilder dataSourceBuilder = new(DatabaseConnectionString);
             dataSourceBuilder.RegisterAppComposites();
             NpgsqlDataSource dataSource = dataSourceBuilder.Build();
@@ -82,7 +86,7 @@ namespace PMSWebApp.Extensions
             // Add Session
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromHours(10);
+                options.IdleTimeout = TimeSpan.FromHours(Constants.SESSION_IDLE_TIME_OUT_HOURS);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });

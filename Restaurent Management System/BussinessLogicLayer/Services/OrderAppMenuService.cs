@@ -123,7 +123,7 @@ namespace PMSServices.Services
 
             // Check if tax details are null or only contain "Other"
             if (orderDetails.taxDetails == null || !orderDetails.taxDetails.Any() ||
-                (orderDetails.taxDetails.Count == 1 && orderDetails.taxDetails.FirstOrDefault()?.TaxName == "Other"))
+                (orderDetails.taxDetails.Count == 1 && orderDetails.taxDetails.FirstOrDefault()?.TaxName == Constants.DEFAULT_ITEM_TAX))
             {
 
                 List<Taxis> defaultTaxes = await _taxRepo.GetDefaultTaxesAsync();
@@ -182,7 +182,6 @@ namespace PMSServices.Services
                 }
 
                 int invoiceId = existingOrder.Order.Invoices.First().InvoiceId;
-                order.EditorId = 4;
                 result = await UpdateItemListToOrder(
                     order.OrderItems,
                     existingOrder.Order.InvoiceItemModifierMappings,
@@ -196,12 +195,18 @@ namespace PMSServices.Services
                     return result;
                 }
                 (decimal subtotal, decimal total) = await CalculateTotalAmountToUpdateOrderAsync(order.OrderId, invoiceId);
-                existingOrder.Modifiedby = order.EditorId;
-                existingOrder.Modifiedat = DateTime.Now;
-                existingOrder.Order.Status = "InProgress";
-                existingOrder.Payment.ActualPrice = subtotal;
-                existingOrder.Payment.TotalPrice = total;
-                existingOrder.Order.ExtraComments = order.OrderInstruction;
+                UpdateOrderDTO updateOrder = new()
+                {
+                    OrderId = order.OrderId,
+                    Modifiedby = order.EditorId,
+                    OrderStatus = Constants.ORDER_IN_PROGRESS,
+                    Subtotal = subtotal,
+                    Total = total,
+                    PaymentMethod = order.PaymentMethod,
+                    PaymentStatus = Constants.PAYMENT_PENDING,
+                    OrderInstruction = order.OrderInstruction 
+                };
+                result = await _orderRepo.UpdateOrderDetailsAsync(updateOrder);
                 result = await _orderRepo.UpdateOrderAsync(existingOrder);
 
                 if (result.Status == ResponseStatus.Success)
@@ -237,7 +242,7 @@ namespace PMSServices.Services
                         List<Table> tableList = await _tableRepo.GetTableListFromTableIdsAsync(tableIds);
                         foreach (Table table in tableList)
                         {
-                            table.Status = "Available";
+                            table.Status = Constants.TABLE_AVAILABLE;
                         }
                         result = await _tableRepo.MassUpdateTablesAsync(tableList);
                         if (result.Status == ResponseStatus.Success)
@@ -268,11 +273,11 @@ namespace PMSServices.Services
 
             foreach (OrderExportDetails.TaxDetailsHelperModel tax in taxDetails)
             {
-                if (tax.TaxType == "Percentage")
+                if (tax.TaxType == Constants.TAX_TYPE_PERCENTAGE)
                 {
                     totalTax += SubTotal * tax.TaxValue / 100;
                 }
-                else if (tax.TaxType == "Flat Amount")
+                else if (tax.TaxType == Constants.TAX_TYPE_FLAT_AMOUNT)
                 {
                     totalTax += tax.TaxValue;
                 }
@@ -298,39 +303,47 @@ namespace PMSServices.Services
         private async Task<(decimal Subtotal, decimal Total)> CalculateTotalAmountToUpdateOrderAsync(int orderId, int invoiceId)
         {
             decimal subtotal = 0;
-            decimal totalTaxAmount = 0;
-            decimal itemTax = 0;
-            decimal ItemPrice = 0;
-            decimal modifierPrice = 0;
-            // Get item and modifier mappings
-            List<InvoiceItemModifierMapping> itemMappings = await _invoiceItemMapping.GetItemsForInvoiceAsync(orderId);
-            int quantity = itemMappings.FirstOrDefault()?.ItemQuantity ?? 0;
-            foreach (InvoiceItemModifierMapping mapping in itemMappings)
-            {
-                ItemPrice = mapping.ItemPrice;
-                modifierPrice = mapping.ModifierPrice ?? 0M;
-                subtotal += (ItemPrice + modifierPrice) * mapping.ItemQuantity;
-                itemTax += (ItemPrice * mapping.ItemTaxPercentage / 100) ?? 0M;
-            }
-            subtotal -= (itemMappings.Count - 1) * ItemPrice * quantity;
-            // Get tax mappings and calculate tax on subtotal
-            List<InvoiceTaxesMapping> taxMappings = await _taxRepo.GetTaxMappingsByInvoiceIdAsync(invoiceId);
+            decimal itemTaxTotal = 0;
+            decimal invoiceTaxTotal = 0;
 
+            List<InvoiceItemModifierMapping> invoiceMappings = await _invoiceItemMapping.GetItemsForInvoiceAsync(orderId);
+
+            foreach (IGrouping<string?, InvoiceItemModifierMapping> group in invoiceMappings.GroupBy(m => m.GroupListId))
+            {
+                InvoiceItemModifierMapping firstMapping = group.First();
+                int groupQuantity = firstMapping.ItemQuantity;
+                decimal basePrice = firstMapping.ItemPrice;
+
+                decimal taxPercent = firstMapping.ItemTaxPercentage ?? 0;
+                decimal totalModifierPrice = group.Sum(m => m.ModifierPrice ?? 0);
+
+                decimal itemTotalPrice = (basePrice + totalModifierPrice) * groupQuantity;
+                subtotal += itemTotalPrice;
+
+                if (taxPercent > 0)
+                {
+                    decimal itemTax = (basePrice * taxPercent / 100) * groupQuantity;
+                    itemTaxTotal += itemTax;
+                }
+            }
+
+            List<InvoiceTaxesMapping> taxMappings = await _taxRepo.GetTaxMappingsByInvoiceIdAsync(invoiceId);
             foreach (InvoiceTaxesMapping tax in taxMappings)
             {
-                if (tax.TaxType == "Percentage")
+                if (tax.TaxType == Constants.TAX_TYPE_PERCENTAGE)
                 {
-                    decimal taxAmount = subtotal * tax.InvoiceTaxValue / 100;
-                    totalTaxAmount += taxAmount;
+                    decimal taxAmount = (subtotal + itemTaxTotal) * tax.InvoiceTaxValue / 100;
+                    invoiceTaxTotal += taxAmount;
                 }
-                else if (tax.TaxType == "Flat Amount")
+                else if (tax.TaxType == Constants.TAX_TYPE_FLAT_AMOUNT)
                 {
-                    totalTaxAmount += tax.InvoiceTaxValue;
+                    invoiceTaxTotal += tax.InvoiceTaxValue;
                 }
             }
 
-            totalTaxAmount += itemTax;
-            decimal total = subtotal + totalTaxAmount;
+            // 3. Total = subtotal + all taxes
+            decimal total = subtotal + itemTaxTotal + invoiceTaxTotal;
+
 
             return (subtotal, total);
         }
@@ -366,18 +379,25 @@ namespace PMSServices.Services
             return result;
         }
 
-        private async Task<ResponseResult> DeleteRemovedMappingsAsync(List<OrderExportDetails.OrderItemHelperModel> orderItems, ICollection<InvoiceItemModifierMapping> existingMappings, int invoiceId)
-        {
+        private async Task<ResponseResult> DeleteRemovedMappingsAsync(List<OrderExportDetails.OrderItemHelperModel> orderItems, 
+                                                                      ICollection<InvoiceItemModifierMapping> existingMappings, 
+                                                                      int invoiceId){
+
             List<InvoiceItemModifierMapping> mappingsToDelete = existingMappings
                 .Where(existing =>
                     !orderItems.Any(o =>
-                        o.ItemId == existing.ItemId &&
-                        existing.InvoiceId == invoiceId))
+                        o.ItemId == existing.ItemId && existing.InvoiceId == invoiceId))
                 .ToList();
-
-            if (mappingsToDelete.Any())
+            List<UpdateInvoiceItemModifierMappingDTO> dtosToDelete = mappingsToDelete
+                    .Select(m => new UpdateInvoiceItemModifierMappingDTO
+                    {
+                        OrderId = m.OrderId,
+                        GroupListId = m.GroupListId??string.Empty
+                    })
+                    .ToList();
+            if (dtosToDelete.Any())
             {
-                ResponseResult deleteResult = await _invoiceItemMapping.DeleteMappingsAsync(mappingsToDelete);
+                ResponseResult deleteResult = await _invoiceItemMapping.DeleteInvoiceItemModifierMappingsAsync(dtosToDelete);
                 return deleteResult;
             }
             else
@@ -452,44 +472,7 @@ namespace PMSServices.Services
             return result;
         }
 
-        // private async Task<ResponseResult> AddMappingsWithModifiers(OrderExportDetails.OrderItemHelperModel orderItem, int orderId, int userId, int invoiceId)
-        // {
-        //     if (orderItem.Modifiers != null)
-        //         foreach (OrderExportDetails.OrderItemHelperModel.OrderModiferHelperModel modifier in orderItem.Modifiers)
-        //         {
-        //             Modifier? modifierEntity = await _modifierRepo.GetModifierByNameAsync(modifier.ModifierName);
-        //             if (modifierEntity == null)
-        //             {
-        //                 result.Status = ResponseStatus.NotFound;
-        //                 result.Message = MessageHelper.GetNotFoundMessage(Constants.MODIFIER);
-        //                 return result;
-        //             }
-        //             string UniqueGroupId = GenerateUniqueKey(orderItem);
-        //             InvoiceItemModifierMapping newMapping = new()
-        //             {
-        //                 OrderId = orderId,
-        //                 InvoiceId = invoiceId,
-        //                 ItemId = orderItem.ItemId,
-        //                 GroupListId = UniqueGroupId,
-        //                 ModifierId = modifierEntity.MId,
-        //                 ItemQuantity = orderItem.Quantity,
-        //                 ItemPrice = orderItem.UnitPrice,
-        //                 ModifiersQuantity = 1,
-        //                 ModifierPrice = modifierEntity.UnitPrice,
-        //                 Createby = userId,
-        //                 Createat = DateTime.Now
-        //             };
 
-        //             result = await _invoiceItemMapping.AddMappingAsync(newMapping);
-        //             if (result.Status != ResponseStatus.Success)
-        //             {
-        //                 return result;
-        //             }
-        //         }
-
-        //     result.Status = ResponseStatus.Success;
-        //     return result;
-        // }
 
         private async Task<ResponseResult> AddMappingsWithModifiers(OrderExportDetails.OrderItemHelperModel orderItem, int orderId, int userId, int invoiceId)
         {
@@ -518,7 +501,8 @@ namespace PMSServices.Services
                         ItemQuantity = orderItem.Quantity,
                         ItemPrice = orderItem.UnitPrice,
                         ModifiersQuantity = 1,
-                        ModifierPrice = modifierEntity.UnitPrice
+                        ModifierPrice = modifierEntity.UnitPrice,
+                        CreateBy = userId
                     };
 
                     mappingDTOs.Add(mappingDTO);
@@ -535,8 +519,11 @@ namespace PMSServices.Services
             return result;
         }
 
+
         private async Task<ResponseResult> AddMappingWithoutModifier(OrderExportDetails.OrderItemHelperModel orderItem, int orderId, int userId, int invoiceId)
         {
+            List<AddInvoiceItemModifierMappingInputDTO> mappingDTOs = new();
+
             Item? item = await _itemRepo.GetItemById(orderItem.ItemId);
             if (item == null)
             {
@@ -544,20 +531,28 @@ namespace PMSServices.Services
                 result.Message = MessageHelper.GetNotFoundMessage(Constants.ITEM);
                 return result;
             }
+
             string UniqueGroupId = GenerateUniqueKey(orderItem);
-            InvoiceItemModifierMapping newMapping = new()
+
+            AddInvoiceItemModifierMappingInputDTO mappingDTO = new()
             {
                 OrderId = orderId,
                 InvoiceId = invoiceId,
                 ItemId = orderItem.ItemId,
+                GroupListId = UniqueGroupId,
+                ModifierId = null,
                 ItemQuantity = orderItem.Quantity,
                 ItemPrice = orderItem.UnitPrice,
-                Createby = userId,
-                GroupListId = UniqueGroupId,
-                Createat = DateTime.Now
+                ModifiersQuantity = null,
+                ModifierPrice = null,
+                CreateBy = userId
             };
 
-            result = await _invoiceItemMapping.AddMappingAsync(newMapping);
+            mappingDTOs.Add(mappingDTO);
+
+            // Use the same bulk add method as with modifiers
+            result = await _invoiceItemMapping.AddInvoiceItemModifierMappingsAsync(mappingDTOs);
+
             return result;
         }
 

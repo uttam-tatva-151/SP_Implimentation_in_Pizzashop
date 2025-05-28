@@ -833,8 +833,10 @@ $(document).on("click", "#saveBtnForPlacedOrder", function () {
       `#totalAmount-${$(".priceSection").data("order-id")}`
     ).data("total-amount"),
     paymentMethod: $('input[name="paymentMethod"]:checked').attr("id"),
+    orderInstruction : $('#orderWiseComment').val(),
     orderItems: [],
   };
+
 
   $("#orderListSectionInOrderApp .itemInList").each(function () {
     const itemData = $(this).attr("data-item-details");
@@ -1044,8 +1046,9 @@ $(document).on("click", "#OrderCommentBtn", function () {
 });
 
 $(document).on("click", "#saveCommentBtn", function () {
-  const comment = $("#orderComment").val();
+  const comment = $("#orderComment").val().trim();
   $("#orderWiseComment").val(comment);
+  $("#commentModal").modal("hide");
 });
 $(document).on("click", "#saveSpecialInstructions", function () {
   const specialInstructions = $("#orderComment").val();

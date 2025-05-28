@@ -1,7 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using PMSCore.Beans;
-using PMSCore.ViewModel;
 using PMSData.Interfaces;
 
 namespace PMSData.Reposetories

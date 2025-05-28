@@ -139,10 +139,9 @@ namespace PMSCore.Beans
 
         #endregion
         #region Tax Type
-
         public const string TAX_TYPE_PERCENTAGE = "Percentage";
         public const string TAX_TYPE_FLAT_AMOUNT = "Flat Amount";
-
+    public const string DEFAULT_ITEM_TAX = "Other";
         #endregion
 
         #region  Layouts
@@ -181,6 +180,11 @@ namespace PMSCore.Beans
         public const string MENU_CONTROLLER = "Menu";
         public const string CUTOMER_CONTROLLER = "Customers";
         public const string ERROR_CONTROLLER = "ErrorHandler";
+
+        public const string ERROR_HANDLER_HTTP_STATUS_CODE_HANDLER_ROUTE = "/ErrorHandler/HttpStatusCodeHandler/{0}";
+        public const string ERROR_HANDLER_HTTP_STATUS_CODE_500_ROUTE = "/ErrorHandler/HttpStatusCodeHandler/500";
+        public const string ERROR_HANDLER_HTTP_STATUS_CODE_404_ROUTE = "/ErrorHandler/HttpStatusCodeHandler/404";
+        public const string ERROR_HANDLER_ROUTE = "/ErrorHandler";
 
         #endregion
 
@@ -271,6 +275,9 @@ namespace PMSCore.Beans
         public const string JWT_CONFIG = "JwtConfig";
         public const string EMAIL_CONFIG = "EmailSettings";
         public const string DATABASE_DEFAULT_CONNECTION = "DefaultConnection";
+        public const string MAX_FILE_UPLOAD_SIZE = "FileUpload:MaxMultipartBodyLengthInBytes";
+        public const string DEFAULT_ROUTE_CONFIG = "RouteSettings";
+        public const int SESSION_IDLE_TIME_OUT_HOURS = 10;
         #endregion
 
 

@@ -19,27 +19,7 @@ namespace PMSData.Reposetories
         {
             return await _appDbContext.InvoiceItemModifierMappings.Include(i => i.Item).AsNoTracking().Where(i => i.OrderId == orderId).ToListAsync();
         }
-        public async Task<List<InvoiceItemModifierMapping>> GetItemsForKOTAsync(int orderId)
-        {
-            return await _appDbContext.InvoiceItemModifierMappings.AsNoTracking().Where(i => i.OrderId == orderId).ToListAsync();
-        }
 
-        public async Task<ResponseResult> UpdateItemMappingAsync(InvoiceItemModifierMapping invoiceItemModifierMapping)
-        {
-            try
-            {
-                _appDbContext.InvoiceItemModifierMappings.Update(invoiceItemModifierMapping);
-                await _appDbContext.SaveChangesAsync();
-                result.Message = MessageHelper.GetSuccessMessageForUpdateOperation(Constants.MAPPING_RELATIONS);
-                result.Status = ResponseStatus.Success;
-            }
-            catch (Exception ex)
-            {
-                result.Message = ex.Message;
-                result.Status = ResponseStatus.Error;
-            }
-            return result;
-        }
         public async Task<ResponseResult> UpdateMultipleItemMappingsAsync(List<InvoiceItemModifierMapping> invoiceItemModifierMappings)
         {
             try
@@ -86,24 +66,8 @@ namespace PMSData.Reposetories
             return result;
         }
 
-        public async Task<ResponseResult> AddMappingAsync(InvoiceItemModifierMapping newItemMapping)
-        {
-            try
-            {
-                _appDbContext.InvoiceItemModifierMappings.Add(newItemMapping);
-                await _appDbContext.SaveChangesAsync();
-                result.Message = MessageHelper.GetSuccessMessageForAddOperation(Constants.MAPPING_RELATIONS);
-                result.Status = ResponseStatus.Success;
-            }
-            catch (Exception ex)
-            {
-                result.Message = ex.Message;
-                result.Status = ResponseStatus.Error;
-            }
-            return result;
-        }
-        
-         public async Task<ResponseResult> AddInvoiceItemModifierMappingsAsync(List<AddInvoiceItemModifierMappingInputDTO> mappings)
+
+        public async Task<ResponseResult> AddInvoiceItemModifierMappingsAsync(List<AddInvoiceItemModifierMappingInputDTO> mappings)
         {
             try
             {
@@ -131,13 +95,20 @@ namespace PMSData.Reposetories
             }
             return result;
         }
-        
-        public async Task<ResponseResult> DeleteMappingsAsync(List<InvoiceItemModifierMapping> mappingsToDelete)
+        public async Task<ResponseResult> DeleteInvoiceItemModifierMappingsAsync(List<UpdateInvoiceItemModifierMappingDTO> mappingsToDelete)
         {
             try
             {
-                _appDbContext.InvoiceItemModifierMappings.RemoveRange(mappingsToDelete);
-                await _appDbContext.SaveChangesAsync();
+                DbConnection connection = _appDbContext.Database.GetDbConnection();
+                if (connection.State != System.Data.ConnectionState.Open)
+                    await connection.OpenAsync();
+
+                NpgsqlConnection npgsqlConn = (NpgsqlConnection)connection;
+                using NpgsqlCommand query = new("CALL public.delete_invoice_item_modifier_mappings(@deletes)", npgsqlConn);
+                query.Parameters.AddWithValue("deletes", mappingsToDelete.ToArray());
+
+                await query.ExecuteNonQueryAsync();
+
                 result.Message = MessageHelper.GetSuccessMessageForDeleteOperation(Constants.MAPPING_RELATIONS);
                 result.Status = ResponseStatus.Success;
             }

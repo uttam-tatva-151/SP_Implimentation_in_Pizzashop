@@ -138,6 +138,7 @@ namespace PMSWebApp.Controllers
         {
             try
             {
+                order.EditorId = User.GetUserId();
                 result = await _orderAppMenuService.UpdateOrder(order);
             }
             catch (Exception ex)

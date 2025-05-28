@@ -9267,11 +9267,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
-              "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
+            "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
+              "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
             },
-            "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
-              "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj"
+            "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
+              "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj"
             }
           }
         }

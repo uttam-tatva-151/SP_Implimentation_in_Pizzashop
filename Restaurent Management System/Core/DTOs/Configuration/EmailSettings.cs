@@ -1,5 +1,4 @@
-namespace PMSCore.DTOs
-{
+namespace PMSCore.DTOs.Configuration{
     public class EmailSettings
     {
         public string SenderEmail { get; set; } = null!;

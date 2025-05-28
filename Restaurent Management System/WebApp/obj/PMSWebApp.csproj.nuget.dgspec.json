@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\PMSWebApp.csproj": {}
+    "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\PMSWebApp.csproj": {}
   },
   "projects": {
     "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj": {
@@ -26,11 +26,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
-                "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
+              "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
+                "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
               },
-              "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
-                "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj"
+              "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
+                "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj"
               }
             }
           }
@@ -114,14 +114,14 @@
         }
       }
     },
-    "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
+    "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj",
+        "projectUniqueName": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj",
         "projectName": "PMSCore",
-        "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj",
+        "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj",
         "packagesPath": "C:\\Users\\pci151\\.nuget\\packages\\",
-        "outputPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\obj\\",
+        "outputPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pci151\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -181,14 +181,14 @@
         }
       }
     },
-    "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
+    "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj",
+        "projectUniqueName": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj",
         "projectName": "PMSData",
-        "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj",
+        "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\PMSData.csproj",
         "packagesPath": "C:\\Users\\pci151\\.nuget\\packages\\",
-        "outputPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\obj\\",
+        "outputPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pci151\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -203,8 +203,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
-                "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
+              "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
+                "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
               }
             }
           }
@@ -268,14 +268,14 @@
         }
       }
     },
-    "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\PMSWebApp.csproj": {
+    "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\PMSWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\PMSWebApp.csproj",
+        "projectUniqueName": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\PMSWebApp.csproj",
         "projectName": "PMSWebApp",
-        "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\PMSWebApp.csproj",
+        "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\PMSWebApp.csproj",
         "packagesPath": "C:\\Users\\pci151\\.nuget\\packages\\",
-        "outputPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\obj\\",
+        "outputPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pci151\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -293,8 +293,8 @@
               "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj": {
                 "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\BussinessLogicLayer\\PMSServices.csproj"
               },
-              "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
-                "projectPath": "d:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
+              "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj": {
+                "projectPath": "D:\\SP_Implimentation_in_Pizzashop\\Restaurent Management System\\Core\\PMSCore.csproj"
               }
             }
           }

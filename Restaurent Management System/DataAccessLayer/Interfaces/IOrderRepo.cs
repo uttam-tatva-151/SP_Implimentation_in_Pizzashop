@@ -15,5 +15,6 @@ namespace PMSData.Interfaces
         Task<ResponseResult> AddOrderDetialsAsync(OrderDetail orderDetail);
         Task<ResponseResult> UpdateOrderAsync(OrderDetail existingOrder);
         Task<List<Order>> GetOrdersAsync(PaginationDetails paginationDetails);
+        Task<ResponseResult> UpdateOrderDetailsAsync(UpdateOrderDTO updateOrder);
     }
 }
